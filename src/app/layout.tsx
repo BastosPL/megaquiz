@@ -51,9 +51,8 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
-  verification: {
-    // Google Search Console - adicionar depois
-    // google: "SEU_CODIGO_AQUI",
+  other: {
+    "google-adsense-account": "ca-pub-7284698282537450",
   },
 };
 
