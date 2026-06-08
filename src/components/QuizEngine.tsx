@@ -126,7 +126,7 @@ export default function QuizEngine({ quiz }: QuizEngineProps) {
         } else {
           setResult(calculateTriviaResult(newScore, questions.length));
         }
-      }, 1200);
+      }, question.explanation ? 3500 : 1500);
     } else {
       // Personalidade — sem vidas
       const option = question.options.find((o) => o.id === optionId);
