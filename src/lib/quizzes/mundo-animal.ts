@@ -1,0 +1,183 @@
+import type { Quiz } from "@/lib/types";
+
+export const mundoAnimal: Quiz = {
+  id: "mundo-animal",
+  slug: "quiz-mundo-animal",
+  title: "Quiz Mundo Animal",
+  description: "Quanto voce sabe sobre o reino animal? 15 perguntas que vao testar seu conhecimento!",
+  type: "trivia",
+  category: "conhecimentos-gerais",
+  emoji: "🦁",
+  color: "#16A34A",
+  plays: 2104,
+  tags: ["animais", "natureza", "conhecimentos-gerais", "biologia"],
+  createdAt: "2026-06-08",
+  featured: false,
+  questions: [
+    {
+      id: "q1",
+      text: "Qual e o animal mais rapido do mundo?",
+      options: [
+        { id: "a", text: "Leopardo", isCorrect: false },
+        { id: "b", text: "Guepardo (Cheetah)", isCorrect: true },
+        { id: "c", text: "Falcao-peregrino", isCorrect: false },
+        { id: "d", text: "Lebre", isCorrect: false },
+      ],
+      explanation: "O guepardo atinge ate 120 km/h em corridas curtas. O falcao-peregrino e mais rapido em mergulho (390 km/h), mas em corrida o guepardo vence.",
+    },
+    {
+      id: "q2",
+      text: "Quantos coracoes tem um polvo?",
+      options: [
+        { id: "a", text: "1", isCorrect: false },
+        { id: "b", text: "2", isCorrect: false },
+        { id: "c", text: "3", isCorrect: true },
+        { id: "d", text: "5", isCorrect: false },
+      ],
+      explanation: "O polvo tem 3 coracoes: dois bombeiam sangue para as branquias e um para o resto do corpo.",
+    },
+    {
+      id: "q3",
+      text: "Qual animal tem a gestacao mais longa?",
+      options: [
+        { id: "a", text: "Baleia-azul", isCorrect: false },
+        { id: "b", text: "Rinoceronte", isCorrect: false },
+        { id: "c", text: "Elefante", isCorrect: true },
+        { id: "d", text: "Girafa", isCorrect: false },
+      ],
+      explanation: "A gestacao do elefante dura cerca de 22 meses, a mais longa entre os mamiferos terrestres.",
+    },
+    {
+      id: "q4",
+      text: "Qual destes animais e venenoso (e nao peconhento)?",
+      options: [
+        { id: "a", text: "Cobra coral", isCorrect: false },
+        { id: "b", text: "Aranha viuva-negra", isCorrect: false },
+        { id: "c", text: "Sapo-flecha (dendrobates)", isCorrect: true },
+        { id: "d", text: "Escorpiao", isCorrect: false },
+      ],
+      explanation: "Venenoso = voce morre se comer/tocar. Peconhento = ele injeta o veneno. O sapo-flecha e venenoso ao toque.",
+    },
+    {
+      id: "q5",
+      text: "Qual o maior animal que ja existiu na Terra?",
+      options: [
+        { id: "a", text: "Tiranossauro Rex", isCorrect: false },
+        { id: "b", text: "Baleia-azul", isCorrect: true },
+        { id: "c", text: "Megalodon", isCorrect: false },
+        { id: "d", text: "Argentinosaurus", isCorrect: false },
+      ],
+      explanation: "A baleia-azul e o maior animal que ja existiu, chegando a 30 metros e 180 toneladas — maior que qualquer dinossauro!",
+    },
+    {
+      id: "q6",
+      text: "Qual animal dorme ate 22 horas por dia?",
+      options: [
+        { id: "a", text: "Gato", isCorrect: false },
+        { id: "b", text: "Preguica", isCorrect: false },
+        { id: "c", text: "Coala", isCorrect: true },
+        { id: "d", text: "Tartaruga", isCorrect: false },
+      ],
+      explanation: "Coalas dormem ate 22 horas porque sua dieta de eucalipto tem pouquissima energia. A preguica dorme 'so' 15-20 horas.",
+    },
+    {
+      id: "q7",
+      text: "Qual o unico mamifero que voa de verdade?",
+      options: [
+        { id: "a", text: "Esquilo voador", isCorrect: false },
+        { id: "b", text: "Morcego", isCorrect: true },
+        { id: "c", text: "Colugos", isCorrect: false },
+        { id: "d", text: "Ornitorrinco", isCorrect: false },
+      ],
+      explanation: "O morcego e o unico mamifero com voo verdadeiro. Esquilos voadores apenas planam.",
+    },
+    {
+      id: "q8",
+      text: "Quantas patas tem uma aranha?",
+      options: [
+        { id: "a", text: "6", isCorrect: false },
+        { id: "b", text: "8", isCorrect: true },
+        { id: "c", text: "10", isCorrect: false },
+        { id: "d", text: "12", isCorrect: false },
+      ],
+      explanation: "Aranhas sao aracnideos e tem 8 patas. Insetos tem 6 patas.",
+    },
+    {
+      id: "q9",
+      text: "Qual animal produz o som mais alto do planeta?",
+      options: [
+        { id: "a", text: "Leao", isCorrect: false },
+        { id: "b", text: "Elefante", isCorrect: false },
+        { id: "c", text: "Baleia-azul", isCorrect: true },
+        { id: "d", text: "Bugio", isCorrect: false },
+      ],
+      explanation: "O chamado da baleia-azul chega a 188 decibeis, mais alto que um motor de jato (140dB)!",
+    },
+    {
+      id: "q10",
+      text: "Qual ave nao consegue voar?",
+      options: [
+        { id: "a", text: "Avestruz", isCorrect: true },
+        { id: "b", text: "Condor", isCorrect: false },
+        { id: "c", text: "Pelicano", isCorrect: false },
+        { id: "d", text: "Albatroz", isCorrect: false },
+      ],
+      explanation: "O avestruz e a maior ave do mundo e nao voa, mas compensa correndo a ate 70 km/h!",
+    },
+    {
+      id: "q11",
+      text: "Qual animal brasileiro esta criticamente ameacado de extincao?",
+      options: [
+        { id: "a", text: "Capivara", isCorrect: false },
+        { id: "b", text: "Mico-leao-dourado", isCorrect: true },
+        { id: "c", text: "Tucano", isCorrect: false },
+        { id: "d", text: "Jacare-do-pantanal", isCorrect: false },
+      ],
+      explanation: "O mico-leao-dourado e simbolo da conservacao no Brasil. Restam cerca de 3.200 na Mata Atlantica.",
+    },
+    {
+      id: "q12",
+      text: "Qual animal muda de cor para se camuflar?",
+      options: [
+        { id: "a", text: "Iguana", isCorrect: false },
+        { id: "b", text: "Salamandra", isCorrect: false },
+        { id: "c", text: "Camaleao", isCorrect: true },
+        { id: "d", text: "Lagarto-monitor", isCorrect: false },
+      ],
+      explanation: "O camaleao muda de cor controlando cristais em sua pele. Mas curioso: eles mudam mais por humor e temperatura do que camuflagem!",
+    },
+    {
+      id: "q13",
+      text: "Qual destes animais e um mamifero que bota ovo?",
+      options: [
+        { id: "a", text: "Pangolim", isCorrect: false },
+        { id: "b", text: "Tatu", isCorrect: false },
+        { id: "c", text: "Ornitorrinco", isCorrect: true },
+        { id: "d", text: "Castor", isCorrect: false },
+      ],
+      explanation: "O ornitorrinco e um dos poucos mamiferos monotremados — bota ovos, tem bico e e venenoso!",
+    },
+    {
+      id: "q14",
+      text: "Qual animal tem a mordida mais forte do mundo?",
+      options: [
+        { id: "a", text: "Tubarao-branco", isCorrect: false },
+        { id: "b", text: "Leao", isCorrect: false },
+        { id: "c", text: "Hipopotamo", isCorrect: false },
+        { id: "d", text: "Crocodilo-de-agua-salgada", isCorrect: true },
+      ],
+      explanation: "O crocodilo-de-agua-salgada tem a mordida mais poderosa ja medida: 3.700 PSI!",
+    },
+    {
+      id: "q15",
+      text: "Quantas especies de formigas existem aproximadamente?",
+      options: [
+        { id: "a", text: "Cerca de 500", isCorrect: false },
+        { id: "b", text: "Cerca de 5.000", isCorrect: false },
+        { id: "c", text: "Mais de 20.000", isCorrect: true },
+        { id: "d", text: "Cerca de 2.000", isCorrect: false },
+      ],
+      explanation: "Existem mais de 20.000 especies conhecidas de formigas! E estima-se que existam mais nao descobertas.",
+    },
+  ],
+};

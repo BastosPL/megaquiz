@@ -41,14 +41,14 @@ export const qualCidadeBrasileira: Quiz = {
       title: "Salvador",
       emoji: "🥁",
       description:
-        "Voce e pura cultura e alegria! Ama axe, pagode baiano, carnaval e comida boa. Sua personalidade vibrante contagia todo mundo ao redor. E dendê no sangue!",
+        "Voce e pura cultura e alegria! Ama axe, pagode baiano, carnaval e comida boa. Sua personalidade vibrante contagia todo mundo ao redor. E dende no sangue!",
     },
     {
       id: "curitiba",
       title: "Curitiba",
       emoji: "🌿",
       description:
-        "Voce e organizado e valoriza qualidade de vida! Ama parques, cafe colonial e um clima mais frio. Sua personalidade e pratica e eficiente — gospel no domingo, planejamento na segunda.",
+        "Voce e organizado e valoriza qualidade de vida! Ama parques, cafe colonial e um clima mais frio. Sua personalidade e pratica e eficiente, com fe e planejamento.",
     },
     {
       id: "portoalegre",
@@ -64,9 +64,10 @@ export const qualCidadeBrasileira: Quiz = {
       text: "Seu estilo musical e mais...",
       options: [
         { id: "a", text: "Funk e pagode", profilePoints: { rio: 3, salvador: 1 } },
-        { id: "b", text: "Sertanejo e sofrencia", profilePoints: { goiania: 3, curitiba: 1 } },
+        { id: "b", text: "Sertanejo e gospel", profilePoints: { goiania: 3, curitiba: 1 } },
         { id: "c", text: "Rap, trap e eletronica", profilePoints: { sp: 3, rio: 1 } },
         { id: "d", text: "Axe e forro", profilePoints: { salvador: 3, rio: 1 } },
+        { id: "e", text: "Outro estilo (rock, MPB, classica...)", profilePoints: { sp: 1, curitiba: 1, portoalegre: 1 } },
       ],
     },
     {
@@ -76,7 +77,8 @@ export const qualCidadeBrasileira: Quiz = {
         { id: "a", text: "Praia e futebol com os amigos", profilePoints: { rio: 3, salvador: 1 } },
         { id: "b", text: "Churrasco em familia com sertanejo", profilePoints: { goiania: 3, portoalegre: 2 } },
         { id: "c", text: "Igreja de manha e descanso em casa", profilePoints: { curitiba: 3, goiania: 1 } },
-        { id: "d", text: "Rolê na cidade, shopping ou balada", profilePoints: { sp: 3, rio: 1 } },
+        { id: "d", text: "Role na cidade, shopping ou balada", profilePoints: { sp: 3, rio: 1 } },
+        { id: "e", text: "Nenhuma dessas, cada domingo e diferente", profilePoints: { sp: 1, rio: 1, salvador: 1 } },
       ],
     },
     {
@@ -84,9 +86,10 @@ export const qualCidadeBrasileira: Quiz = {
       text: "Qual comida voce escolhe?",
       options: [
         { id: "a", text: "Acaraje e moqueca", profilePoints: { salvador: 3 } },
-        { id: "b", text: "Churrasco com chimichurri", profilePoints: { portoalegre: 3, goiania: 1 } },
+        { id: "b", text: "Churrasco com chimarrao", profilePoints: { portoalegre: 3, goiania: 1 } },
         { id: "c", text: "Sushi, hamburguer gourmet ou comida arabe", profilePoints: { sp: 3 } },
         { id: "d", text: "Feijoada completa ou pastel na feira", profilePoints: { rio: 3, sp: 1 } },
+        { id: "e", text: "Outra coisa (comida fitness, vegana...)", profilePoints: { curitiba: 2, sp: 1 } },
       ],
     },
     {
@@ -107,15 +110,16 @@ export const qualCidadeBrasileira: Quiz = {
         { id: "b", text: "Carreira e dinheiro", profilePoints: { sp: 3 } },
         { id: "c", text: "Diversao e experiencias", profilePoints: { rio: 3, salvador: 2 } },
         { id: "d", text: "Tradicao e raizes", profilePoints: { portoalegre: 3, salvador: 1 } },
+        { id: "e", text: "Outro (saude, liberdade, conhecimento...)", profilePoints: { curitiba: 1, sp: 1, rio: 1 } },
       ],
     },
     {
       id: "q6",
       text: "Numa festa voce e quem...",
       options: [
-        { id: "a", text: "Esta no meio da pista dancando funk/axe", profilePoints: { rio: 2, salvador: 3 } },
+        { id: "a", text: "Esta no meio da pista dancando", profilePoints: { rio: 2, salvador: 3 } },
         { id: "b", text: "Cantando sertanejo com os amigos", profilePoints: { goiania: 3 } },
-        { id: "c", text: "No canto batendo papo com cerveja artesanal", profilePoints: { curitiba: 2, portoalegre: 2 } },
+        { id: "c", text: "No canto batendo papo com cerveja", profilePoints: { curitiba: 2, portoalegre: 2 } },
         { id: "d", text: "Organizou a festa e conhece todo mundo", profilePoints: { sp: 3, rio: 1 } },
       ],
     },
@@ -123,10 +127,11 @@ export const qualCidadeBrasileira: Quiz = {
       id: "q7",
       text: "Seu time do coracao e mais provavelmente...",
       options: [
-        { id: "a", text: "Flamengo ou Vasco", profilePoints: { rio: 3 } },
+        { id: "a", text: "Flamengo, Vasco, Flu ou Botafogo", profilePoints: { rio: 3 } },
         { id: "b", text: "Corinthians, Palmeiras ou Sao Paulo", profilePoints: { sp: 3 } },
         { id: "c", text: "Gremio ou Internacional", profilePoints: { portoalegre: 3 } },
-        { id: "d", text: "Goias, Atletico-GO ou time do interior", profilePoints: { goiania: 2, curitiba: 1, salvador: 1 } },
+        { id: "d", text: "Bahia, Vitoria ou time nordestino", profilePoints: { salvador: 3 } },
+        { id: "e", text: "Outro time ou nao curto futebol", profilePoints: { goiania: 1, curitiba: 1, sp: 1 } },
       ],
     },
     {
@@ -147,6 +152,7 @@ export const qualCidadeBrasileira: Quiz = {
         { id: "b", text: "Gramado, Serra Gaucha, vinhos e fondue", profilePoints: { portoalegre: 3, curitiba: 2 } },
         { id: "c", text: "Viagem internacional, conhecer o mundo", profilePoints: { sp: 3 } },
         { id: "d", text: "Fazenda, cachoeira e natureza", profilePoints: { goiania: 3, curitiba: 1 } },
+        { id: "e", text: "Outro destino (montanha, cruzeiro...)", profilePoints: { sp: 1, rio: 1, curitiba: 1 } },
       ],
     },
     {
@@ -157,6 +163,7 @@ export const qualCidadeBrasileira: Quiz = {
         { id: "b", text: "Trabalho duro, resultado certo", profilePoints: { sp: 3, curitiba: 1 } },
         { id: "c", text: "Familia e tudo nessa vida", profilePoints: { goiania: 3, portoalegre: 1 } },
         { id: "d", text: "Orgulho de onde eu vim", profilePoints: { portoalegre: 3, salvador: 2 } },
+        { id: "e", text: "Nenhuma me define, sou unico(a)", profilePoints: { sp: 1, rio: 1, curitiba: 1 } },
       ],
     },
   ],

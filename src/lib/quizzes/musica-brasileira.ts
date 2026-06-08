@@ -1,0 +1,182 @@
+import type { Quiz } from "@/lib/types";
+
+export const musicaBrasileira: Quiz = {
+  id: "musica-brasileira",
+  slug: "quiz-musica-brasileira",
+  title: "Quiz Musica Brasileira",
+  description: "Do sertanejo ao funk, do axe ao rap — quanto voce manja de musica BR?",
+  type: "trivia",
+  category: "conhecimentos-gerais",
+  emoji: "🎵",
+  color: "#EC4899",
+  plays: 3210,
+  tags: ["musica", "brasil", "sertanejo", "funk", "conhecimentos-gerais"],
+  createdAt: "2026-06-08",
+  featured: true,
+  questions: [
+    {
+      id: "q1",
+      text: "Qual dupla sertaneja gravou 'Evidencias'?",
+      options: [
+        { id: "a", text: "Zeze Di Camargo e Luciano", isCorrect: true },
+        { id: "b", text: "Chitaozinho e Xororo", isCorrect: false },
+        { id: "c", text: "Leandro e Leonardo", isCorrect: false },
+        { id: "d", text: "Bruno e Marrone", isCorrect: false },
+      ],
+      explanation: "Evidencias (1990) de Zeze Di Camargo e Luciano e considerada uma das maiores musicas sertanejas de todos os tempos.",
+    },
+    {
+      id: "q2",
+      text: "Quem e conhecido como 'Rei do Baile Funk'?",
+      options: [
+        { id: "a", text: "MC Kevinho", isCorrect: false },
+        { id: "b", text: "Mr. Catra", isCorrect: true },
+        { id: "c", text: "MC Guime", isCorrect: false },
+        { id: "d", text: "Kondzilla", isCorrect: false },
+      ],
+      explanation: "Mr. Catra (Wagner Domingues, 1968-2018) foi um dos pioneiros e maiores nomes do funk carioca.",
+    },
+    {
+      id: "q3",
+      text: "Qual banda baiana criou o 'Axe Music'?",
+      options: [
+        { id: "a", text: "Olodum", isCorrect: false },
+        { id: "b", text: "Chiclete com Banana", isCorrect: false },
+        { id: "c", text: "Ara Ketu", isCorrect: false },
+        { id: "d", text: "Todas ajudaram, mas o termo veio do jornalismo", isCorrect: true },
+      ],
+      explanation: "O termo 'Axe Music' foi criado pelo jornalista Hagamenon Brito em 1987, de forma pejorativa, mas virou genero!",
+    },
+    {
+      id: "q4",
+      text: "Qual rapper brasileiro lancou o album 'Sobrevivendo no Inferno'?",
+      options: [
+        { id: "a", text: "Sabotage", isCorrect: false },
+        { id: "b", text: "Racionais MC's", isCorrect: true },
+        { id: "c", text: "MV Bill", isCorrect: false },
+        { id: "d", text: "Emicida", isCorrect: false },
+      ],
+      explanation: "Sobrevivendo no Inferno (1997) dos Racionais MC's vendeu mais de 1,5 milhao de copias e virou patrimonio cultural.",
+    },
+    {
+      id: "q5",
+      text: "Qual cantor e conhecido como 'Rei do Sertanejo Universitario'?",
+      options: [
+        { id: "a", text: "Gusttavo Lima", isCorrect: false },
+        { id: "b", text: "Luan Santana", isCorrect: true },
+        { id: "c", text: "Michel Telo", isCorrect: false },
+        { id: "d", text: "Jorge e Mateus", isCorrect: false },
+      ],
+      explanation: "Luan Santana estourou em 2009 com 'Meteoro' e e considerado um dos pioneiros do sertanejo universitario.",
+    },
+    {
+      id: "q6",
+      text: "Qual musica brasileira tem mais views no YouTube (ate 2026)?",
+      options: [
+        { id: "a", text: "Ai Se Eu Te Pego - Michel Telo", isCorrect: true },
+        { id: "b", text: "Envolver - Anitta", isCorrect: false },
+        { id: "c", text: "Bum Bum Tam Tam - MC Fioti", isCorrect: false },
+        { id: "d", text: "Sua Cara - Major Lazer ft Anitta", isCorrect: false },
+      ],
+      explanation: "Ai Se Eu Te Pego ultrapassou 3 bilhoes de views e foi um fenomeno mundial em 2011-2012!",
+    },
+    {
+      id: "q7",
+      text: "Quem cantou 'Tempos Modernos' e 'Maluco Beleza'?",
+      options: [
+        { id: "a", text: "Cazuza", isCorrect: false },
+        { id: "b", text: "Raul Seixas", isCorrect: true },
+        { id: "c", text: "Renato Russo", isCorrect: false },
+        { id: "d", text: "Belchior", isCorrect: false },
+      ],
+      explanation: "Raul Seixas, o 'Pai do Rock Brasileiro', gravou esses classicos eternos nos anos 70.",
+    },
+    {
+      id: "q8",
+      text: "Qual genero musical nasceu no Recife nos anos 90?",
+      options: [
+        { id: "a", text: "Brega funk", isCorrect: false },
+        { id: "b", text: "Manguebeat", isCorrect: true },
+        { id: "c", text: "Tecnobrega", isCorrect: false },
+        { id: "d", text: "Forro eletronico", isCorrect: false },
+      ],
+      explanation: "O Manguebeat misturou ritmos regionais com rock e eletronica. Chico Science e Nacao Zumbi foram os criadores.",
+    },
+    {
+      id: "q9",
+      text: "Qual cantora gospel brasileira e a mais ouvida no Spotify?",
+      options: [
+        { id: "a", text: "Aline Barros", isCorrect: false },
+        { id: "b", text: "Ana Vilela", isCorrect: false },
+        { id: "c", text: "Gabriela Rocha", isCorrect: true },
+        { id: "d", text: "Fernandinho", isCorrect: false },
+      ],
+      explanation: "Gabriela Rocha se tornou uma das artistas gospel mais ouvidas com hits como 'Nao Temas' e 'Eu Navegarei'.",
+    },
+    {
+      id: "q10",
+      text: "Que estilo musical gaucho usa gaita e violao?",
+      options: [
+        { id: "a", text: "Vanerinha", isCorrect: false },
+        { id: "b", text: "Musica nativista", isCorrect: true },
+        { id: "c", text: "Milonga", isCorrect: false },
+        { id: "d", text: "Chamamé", isCorrect: false },
+      ],
+      explanation: "A musica nativista gaucha valoriza a cultura do Rio Grande do Sul com gaita-ponto, violao e letras sobre a vida no campo.",
+    },
+    {
+      id: "q11",
+      text: "Quem gravou 'Macarena Brasileira' - a versao 'Danca da Manivela'?",
+      options: [
+        { id: "a", text: "Latino", isCorrect: true },
+        { id: "b", text: "Bonde do Role", isCorrect: false },
+        { id: "c", text: "Claudinho e Buchecha", isCorrect: false },
+        { id: "d", text: "Rouge", isCorrect: false },
+      ],
+    },
+    {
+      id: "q12",
+      text: "Qual e o festival de musica mais famoso do Brasil?",
+      options: [
+        { id: "a", text: "Lollapalooza Brasil", isCorrect: false },
+        { id: "b", text: "Rock in Rio", isCorrect: true },
+        { id: "c", text: "Festa do Peao de Barretos", isCorrect: false },
+        { id: "d", text: "Villa Mix", isCorrect: false },
+      ],
+      explanation: "Rock in Rio comecou em 1985 no Rio de Janeiro e se tornou um dos maiores festivais do mundo.",
+    },
+    {
+      id: "q13",
+      text: "Marilia Mendonca era conhecida como...",
+      options: [
+        { id: "a", text: "Rainha do Sertanejo", isCorrect: false },
+        { id: "b", text: "Rainha da Sofrencia", isCorrect: true },
+        { id: "c", text: "Diva Sertaneja", isCorrect: false },
+        { id: "d", text: "Princesa do Sertao", isCorrect: false },
+      ],
+      explanation: "Marilia Mendonca (1995-2021) revolucionou o sertanejo feminino e e a artista brasileira mais ouvida da historia do Spotify.",
+    },
+    {
+      id: "q14",
+      text: "Qual cidade e considerada o berco do samba?",
+      options: [
+        { id: "a", text: "Salvador", isCorrect: false },
+        { id: "b", text: "Sao Paulo", isCorrect: false },
+        { id: "c", text: "Rio de Janeiro", isCorrect: true },
+        { id: "d", text: "Recife", isCorrect: false },
+      ],
+      explanation: "O samba como genero se consolidou no Rio de Janeiro, especialmente na regiao da Praca Onze e no Morro da Mangueira.",
+    },
+    {
+      id: "q15",
+      text: "Qual artista brasileiro tem mais ouvintes mensais no Spotify (2026)?",
+      options: [
+        { id: "a", text: "Anitta", isCorrect: true },
+        { id: "b", text: "Ludmilla", isCorrect: false },
+        { id: "c", text: "Henrique e Juliano", isCorrect: false },
+        { id: "d", text: "Alok", isCorrect: false },
+      ],
+      explanation: "Anitta se consolidou como a artista brasileira de maior alcance global no streaming.",
+    },
+  ],
+};

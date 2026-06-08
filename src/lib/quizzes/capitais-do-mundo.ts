@@ -1,0 +1,181 @@
+import type { Quiz } from "@/lib/types";
+
+export const capitaisDoMundo: Quiz = {
+  id: "capitais-do-mundo",
+  slug: "quiz-capitais-do-mundo",
+  title: "Quiz Capitais do Mundo",
+  description: "Voce sabe as capitais dos paises? Teste sua geografia em 15 perguntas!",
+  type: "trivia",
+  category: "conhecimentos-gerais",
+  emoji: "🌍",
+  color: "#3B82F6",
+  plays: 1876,
+  tags: ["geografia", "capitais", "paises", "conhecimentos-gerais"],
+  createdAt: "2026-06-08",
+  featured: false,
+  questions: [
+    {
+      id: "q1",
+      text: "Qual e a capital da Australia?",
+      options: [
+        { id: "a", text: "Sydney", isCorrect: false },
+        { id: "b", text: "Melbourne", isCorrect: false },
+        { id: "c", text: "Canberra", isCorrect: true },
+        { id: "d", text: "Brisbane", isCorrect: false },
+      ],
+      explanation: "Muita gente acha que e Sydney, mas a capital e Canberra! Foi construida especificamente pra ser capital.",
+    },
+    {
+      id: "q2",
+      text: "Qual e a capital da Turquia?",
+      options: [
+        { id: "a", text: "Istambul", isCorrect: false },
+        { id: "b", text: "Ancara", isCorrect: true },
+        { id: "c", text: "Izmir", isCorrect: false },
+        { id: "d", text: "Antalia", isCorrect: false },
+      ],
+      explanation: "Istambul e a maior cidade, mas a capital e Ancara desde 1923.",
+    },
+    {
+      id: "q3",
+      text: "Qual e a capital do Canada?",
+      options: [
+        { id: "a", text: "Toronto", isCorrect: false },
+        { id: "b", text: "Vancouver", isCorrect: false },
+        { id: "c", text: "Montreal", isCorrect: false },
+        { id: "d", text: "Ottawa", isCorrect: true },
+      ],
+      explanation: "Ottawa e a capital do Canada, nao Toronto (que e a maior cidade).",
+    },
+    {
+      id: "q4",
+      text: "Qual e a capital da Africa do Sul? (Dica: tem 3 capitais)",
+      options: [
+        { id: "a", text: "Joanesburgo", isCorrect: false },
+        { id: "b", text: "Cidade do Cabo", isCorrect: false },
+        { id: "c", text: "Pretoria", isCorrect: true },
+        { id: "d", text: "Durban", isCorrect: false },
+      ],
+      explanation: "A Africa do Sul tem 3 capitais: Pretoria (executiva), Cidade do Cabo (legislativa) e Bloemfontein (judiciaria).",
+    },
+    {
+      id: "q5",
+      text: "Qual e a capital do Marrocos?",
+      options: [
+        { id: "a", text: "Casablanca", isCorrect: false },
+        { id: "b", text: "Marrakech", isCorrect: false },
+        { id: "c", text: "Rabat", isCorrect: true },
+        { id: "d", text: "Fez", isCorrect: false },
+      ],
+      explanation: "Rabat e a capital. Casablanca e a maior cidade e Marrakech a mais turistica.",
+    },
+    {
+      id: "q6",
+      text: "Qual e a capital da Nova Zelandia?",
+      options: [
+        { id: "a", text: "Auckland", isCorrect: false },
+        { id: "b", text: "Queenstown", isCorrect: false },
+        { id: "c", text: "Christchurch", isCorrect: false },
+        { id: "d", text: "Wellington", isCorrect: true },
+      ],
+      explanation: "Wellington e a capital! Auckland e a maior cidade mas fica na Ilha Norte.",
+    },
+    {
+      id: "q7",
+      text: "Qual e a capital do Paraguai?",
+      options: [
+        { id: "a", text: "Ciudad del Este", isCorrect: false },
+        { id: "b", text: "Assuncao", isCorrect: true },
+        { id: "c", text: "Encarnacion", isCorrect: false },
+        { id: "d", text: "San Lorenzo", isCorrect: false },
+      ],
+      explanation: "Assuncao (Asuncion) e a capital e maior cidade do Paraguai, nosso vizinho.",
+    },
+    {
+      id: "q8",
+      text: "Qual e a capital da Suica?",
+      options: [
+        { id: "a", text: "Zurique", isCorrect: false },
+        { id: "b", text: "Genebra", isCorrect: false },
+        { id: "c", text: "Berna", isCorrect: true },
+        { id: "d", text: "Basileia", isCorrect: false },
+      ],
+      explanation: "Berna e a capital federal. Zurique e a maior cidade e Genebra a sede da ONU.",
+    },
+    {
+      id: "q9",
+      text: "Qual e a capital de Myanmar (Birmania)?",
+      options: [
+        { id: "a", text: "Rangum", isCorrect: false },
+        { id: "b", text: "Mandalay", isCorrect: false },
+        { id: "c", text: "Naypyidaw", isCorrect: true },
+        { id: "d", text: "Bago", isCorrect: false },
+      ],
+      explanation: "Naypyidaw se tornou capital em 2006, substituindo Rangum. E uma das capitais mais 'vazias' do mundo!",
+    },
+    {
+      id: "q10",
+      text: "Qual e a capital da Colombia?",
+      options: [
+        { id: "a", text: "Medellin", isCorrect: false },
+        { id: "b", text: "Bogota", isCorrect: true },
+        { id: "c", text: "Cartagena", isCorrect: false },
+        { id: "d", text: "Cali", isCorrect: false },
+      ],
+      explanation: "Bogota e a capital e fica a 2.640 metros de altitude nos Andes!",
+    },
+    {
+      id: "q11",
+      text: "Qual e a capital da Noruega?",
+      options: [
+        { id: "a", text: "Bergen", isCorrect: false },
+        { id: "b", text: "Oslo", isCorrect: true },
+        { id: "c", text: "Stavanger", isCorrect: false },
+        { id: "d", text: "Tromso", isCorrect: false },
+      ],
+    },
+    {
+      id: "q12",
+      text: "Qual e a capital do Vietna?",
+      options: [
+        { id: "a", text: "Ho Chi Minh", isCorrect: false },
+        { id: "b", text: "Da Nang", isCorrect: false },
+        { id: "c", text: "Hanoi", isCorrect: true },
+        { id: "d", text: "Hue", isCorrect: false },
+      ],
+      explanation: "Hanoi e a capital. Ho Chi Minh (antiga Saigon) e a maior cidade.",
+    },
+    {
+      id: "q13",
+      text: "Qual e a capital do Egito?",
+      options: [
+        { id: "a", text: "Alexandria", isCorrect: false },
+        { id: "b", text: "Cairo", isCorrect: true },
+        { id: "c", text: "Luxor", isCorrect: false },
+        { id: "d", text: "Gize", isCorrect: false },
+      ],
+    },
+    {
+      id: "q14",
+      text: "Qual pais tem Ulan Bator como capital?",
+      options: [
+        { id: "a", text: "Cazaquistao", isCorrect: false },
+        { id: "b", text: "Mongolia", isCorrect: true },
+        { id: "c", text: "Quirguistao", isCorrect: false },
+        { id: "d", text: "Tibete", isCorrect: false },
+      ],
+      explanation: "Ulan Bator e a capital da Mongolia e abriga quase metade da populacao do pais!",
+    },
+    {
+      id: "q15",
+      text: "Qual e a capital do Sri Lanka?",
+      options: [
+        { id: "a", text: "Colombo", isCorrect: false },
+        { id: "b", text: "Sri Jayawardenepura Kotte", isCorrect: true },
+        { id: "c", text: "Kandy", isCorrect: false },
+        { id: "d", text: "Galle", isCorrect: false },
+      ],
+      explanation: "A capital oficial e Sri Jayawardenepura Kotte, mas Colombo e a maior cidade e capital comercial.",
+    },
+  ],
+};

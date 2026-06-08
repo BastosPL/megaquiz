@@ -261,7 +261,7 @@ export default function QuizEngine({ quiz }: QuizEngineProps) {
         {/* Options */}
         <div className="flex flex-col gap-3">
           {question.options.map((option, index) => {
-            const letters = ["A", "B", "C", "D"];
+            const letters = ["A", "B", "C", "D", "E", "F"];
             let optionStyle =
               "bg-bg-card border-border hover:border-primary/50 hover:shadow-md cursor-pointer";
 
