@@ -64,6 +64,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className={`${inter.variable} h-full antialiased`}>
       <head>
+        <meta name="google-adsense-account" content="ca-pub-7284698282537450" />
         {/* Google AdSense */}
         <Script
           async
