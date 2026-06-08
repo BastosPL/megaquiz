@@ -5,13 +5,13 @@ export const copa2026Trivia: Quiz = {
   slug: "quanto-voce-sabe-sobre-a-copa-2026",
   title: "Quanto voce sabe sobre a Copa do Mundo 2026?",
   description:
-    "Teste seus conhecimentos sobre a maior Copa da historia! 48 selecoes, 3 paises-sede e muitas curiosidades.",
+    "Teste seus conhecimentos sobre a maior Copa da historia! 48 selecoes, 3 paises-sede e muitas curiosidades. Cuidado: 3 erros e voce perde!",
   type: "trivia",
   category: "copa-do-mundo",
-  emoji: "⚽",
+  emoji: "🏆",
   color: "#16A34A",
   plays: 1247,
-  tags: ["copa do mundo", "futebol", "2026", "fifa"],
+  tags: ["copa do mundo", "futebol", "2026", "fifa", "selecoes"],
   createdAt: "2026-06-08",
   featured: true,
   questions: [
@@ -39,7 +39,7 @@ export const copa2026Trivia: Quiz = {
     },
     {
       id: "q3",
-      text: "Qual selecao e a maior campeã da Copa do Mundo?",
+      text: "Qual selecao e a maior campea da Copa do Mundo?",
       options: [
         { id: "a", text: "Alemanha", isCorrect: false },
         { id: "b", text: "Italia", isCorrect: false },
@@ -90,7 +90,7 @@ export const copa2026Trivia: Quiz = {
         { id: "c", text: "2006", isCorrect: false },
         { id: "d", text: "1994", isCorrect: false },
       ],
-      explanation: "O penta veio em 2002, na Copa da Coreia e Japao, com Ronaldo, Rivaldo e Ronaldinho.",
+      explanation: "O penta veio em 2002, na Coreia e Japao, com Ronaldo, Rivaldo e Ronaldinho.",
     },
     {
       id: "q8",
@@ -124,6 +124,167 @@ export const copa2026Trivia: Quiz = {
         { id: "d", text: "8 x 0", isCorrect: false },
       ],
       explanation: "Hungria 10 x 1 El Salvador em 1982. O 7x1 do Brasil (2014) e 'so' o 6o maior.",
+    },
+    {
+      id: "q11",
+      text: "Quem e o jogador com mais Copas do Mundo disputadas?",
+      options: [
+        { id: "a", text: "Lionel Messi", isCorrect: true },
+        { id: "b", text: "Cristiano Ronaldo", isCorrect: false },
+        { id: "c", text: "Lothar Matthaus", isCorrect: false },
+        { id: "d", text: "Cafu", isCorrect: false },
+      ],
+      explanation: "Messi disputou 5 Copas (2006, 2010, 2014, 2018, 2022), assim como Matthaus e Carbajal.",
+    },
+    {
+      id: "q12",
+      text: "Qual pais sediou a primeira Copa do Mundo em 1930?",
+      options: [
+        { id: "a", text: "Brasil", isCorrect: false },
+        { id: "b", text: "Italia", isCorrect: false },
+        { id: "c", text: "Uruguai", isCorrect: true },
+        { id: "d", text: "Argentina", isCorrect: false },
+      ],
+      explanation: "O Uruguai sediou e venceu a primeira Copa em 1930.",
+    },
+    {
+      id: "q13",
+      text: "Qual selecao tem a maior sequencia invicta em Copas?",
+      options: [
+        { id: "a", text: "Brasil (13 jogos)", isCorrect: true },
+        { id: "b", text: "Alemanha (11 jogos)", isCorrect: false },
+        { id: "c", text: "Italia (10 jogos)", isCorrect: false },
+        { id: "d", text: "Argentina (9 jogos)", isCorrect: false },
+      ],
+    },
+    {
+      id: "q14",
+      text: "O mascote oficial da Copa 2026 se chama...",
+      options: [
+        { id: "a", text: "Ike", isCorrect: true },
+        { id: "b", text: "Fuleco", isCorrect: false },
+        { id: "c", text: "La'eeb", isCorrect: false },
+        { id: "d", text: "Striker", isCorrect: false },
+      ],
+      explanation: "Ike e um cachorro animado criado para a Copa 2026.",
+    },
+    {
+      id: "q15",
+      text: "Qual selecao foi campea em 2018 na Russia?",
+      options: [
+        { id: "a", text: "Croacia", isCorrect: false },
+        { id: "b", text: "Franca", isCorrect: true },
+        { id: "c", text: "Belgica", isCorrect: false },
+        { id: "d", text: "Inglaterra", isCorrect: false },
+      ],
+      explanation: "A Franca venceu a Croacia por 4x2 na final em Moscou.",
+    },
+    {
+      id: "q16",
+      text: "Quem marcou o gol mais rapido da historia das Copas?",
+      options: [
+        { id: "a", text: "Hakan Sukur (11 segundos)", isCorrect: true },
+        { id: "b", text: "Clint Dempsey (30 segundos)", isCorrect: false },
+        { id: "c", text: "Ronaldo (15 segundos)", isCorrect: false },
+        { id: "d", text: "Neymar (20 segundos)", isCorrect: false },
+      ],
+      explanation: "Hakan Sukur (Turquia) marcou em 11 segundos contra a Coreia em 2002.",
+    },
+    {
+      id: "q17",
+      text: "Quantas vezes a Alemanha foi campea mundial?",
+      options: [
+        { id: "a", text: "3 vezes", isCorrect: false },
+        { id: "b", text: "4 vezes", isCorrect: true },
+        { id: "c", text: "5 vezes", isCorrect: false },
+        { id: "d", text: "2 vezes", isCorrect: false },
+      ],
+    },
+    {
+      id: "q18",
+      text: "Em qual Copa aconteceu o famoso 'Maracanazo'?",
+      options: [
+        { id: "a", text: "1950", isCorrect: true },
+        { id: "b", text: "1954", isCorrect: false },
+        { id: "c", text: "1962", isCorrect: false },
+        { id: "d", text: "1958", isCorrect: false },
+      ],
+      explanation: "O Uruguai venceu o Brasil na final de 1950, no Maracana lotado.",
+    },
+    {
+      id: "q19",
+      text: "Qual jogador brasileiro foi artilheiro da Copa de 2002?",
+      options: [
+        { id: "a", text: "Rivaldo", isCorrect: false },
+        { id: "b", text: "Ronaldo", isCorrect: true },
+        { id: "c", text: "Ronaldinho", isCorrect: false },
+        { id: "d", text: "Roberto Carlos", isCorrect: false },
+      ],
+      explanation: "Ronaldo marcou 8 gols na Copa de 2002, incluindo 2 na final.",
+    },
+    {
+      id: "q20",
+      text: "Qual selecao africana foi a primeira a chegar nas quartas de final?",
+      options: [
+        { id: "a", text: "Nigeria", isCorrect: false },
+        { id: "b", text: "Camaroes", isCorrect: true },
+        { id: "c", text: "Senegal", isCorrect: false },
+        { id: "d", text: "Gana", isCorrect: false },
+      ],
+      explanation: "Camaroes, liderado por Roger Milla, chegou as quartas em 1990.",
+    },
+    {
+      id: "q21",
+      text: "Quantas Copas a Italia venceu?",
+      options: [
+        { id: "a", text: "3 vezes", isCorrect: false },
+        { id: "b", text: "4 vezes", isCorrect: true },
+        { id: "c", text: "2 vezes", isCorrect: false },
+        { id: "d", text: "5 vezes", isCorrect: false },
+      ],
+    },
+    {
+      id: "q22",
+      text: "Qual a bola oficial da Copa de 2026?",
+      options: [
+        { id: "a", text: "Brazuca", isCorrect: false },
+        { id: "b", text: "Telstar", isCorrect: false },
+        { id: "c", text: "Al Rihla", isCorrect: false },
+        { id: "d", text: "adidas Oceaunz Flight", isCorrect: true },
+      ],
+    },
+    {
+      id: "q23",
+      text: "Quem foi o tecnico do Brasil na Copa de 1970?",
+      options: [
+        { id: "a", text: "Zagallo", isCorrect: true },
+        { id: "b", text: "Tele Santana", isCorrect: false },
+        { id: "c", text: "Parreira", isCorrect: false },
+        { id: "d", text: "Felipao", isCorrect: false },
+      ],
+      explanation: "Zagallo comandou o Brasil no tri em 1970, com Pele, Tostao e Jairzinho.",
+    },
+    {
+      id: "q24",
+      text: "Em que ano Pele ganhou sua primeira Copa do Mundo?",
+      options: [
+        { id: "a", text: "1954", isCorrect: false },
+        { id: "b", text: "1958", isCorrect: true },
+        { id: "c", text: "1962", isCorrect: false },
+        { id: "d", text: "1966", isCorrect: false },
+      ],
+      explanation: "Pele tinha apenas 17 anos quando o Brasil venceu a Copa de 1958 na Suecia.",
+    },
+    {
+      id: "q25",
+      text: "Quantos grupos tera a fase de grupos da Copa 2026?",
+      options: [
+        { id: "a", text: "8 grupos", isCorrect: false },
+        { id: "b", text: "12 grupos", isCorrect: true },
+        { id: "c", text: "16 grupos", isCorrect: false },
+        { id: "d", text: "10 grupos", isCorrect: false },
+      ],
+      explanation: "Com 48 selecoes, serao 12 grupos de 4 equipes cada.",
     },
   ],
 };

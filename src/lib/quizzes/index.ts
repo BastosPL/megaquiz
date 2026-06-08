@@ -2,11 +2,13 @@ import type { Quiz } from "@/lib/types";
 import { copa2026Trivia } from "./copa-2026-trivia";
 import { qualCidadeBrasileira } from "./qual-cidade-brasileira";
 import { qiTeste } from "./qi-teste";
+import { timesBrasileiros } from "./times-brasileiros";
 
 export const allQuizzes: Quiz[] = [
   copa2026Trivia,
   qualCidadeBrasileira,
   qiTeste,
+  timesBrasileiros,
 ];
 
 export function getQuizBySlug(slug: string): Quiz | undefined {
