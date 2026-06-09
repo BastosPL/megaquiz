@@ -12,21 +12,29 @@ import { seriesNetflix } from "./series-netflix";
 import { filmesClassicos } from "./filmes-classicos";
 import { historiaDoBrasil } from "./historia-do-brasil";
 import { qualPersonagemVoceSeria } from "./qual-personagem-voce-seria";
+import { qualProfissaoIdeal } from "./qual-profissao-ideal";
+import { geografiaDoBrasil } from "./geografia-do-brasil";
+import { futebolMundial } from "./futebol-mundial";
+import { curiosidadesCiencia } from "./curiosidades-ciencia";
 
 export const allQuizzes: Quiz[] = [
   copa2026Trivia,
   qualCidadeBrasileira,
   perfilProfissionalDisc,
   areaTiIdeal,
+  qualProfissaoIdeal,
   musicaBrasileira,
   qiTeste,
   timesBrasileiros,
+  futebolMundial,
   mundoAnimal,
   capitaisDoMundo,
+  historiaDoBrasil,
+  geografiaDoBrasil,
+  curiosidadesCiencia,
   seriesNetflix,
   filmesClassicos,
   qualPersonagemVoceSeria,
-  historiaDoBrasil,
 ];
 
 export function getQuizBySlug(slug: string): Quiz | undefined {

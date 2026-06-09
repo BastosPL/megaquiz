@@ -23,6 +23,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: `${quiz.emoji} ${quiz.title}`,
       description: quiz.description,
       type: "website",
+      url: `https://megaquiz.app.br/quiz/${slug}`,
+      siteName: "MegaQuiz",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${quiz.emoji} ${quiz.title}`,
+      description: quiz.description,
     },
   };
 }

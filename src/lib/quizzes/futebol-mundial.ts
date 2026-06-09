@@ -1,0 +1,173 @@
+import type { Quiz } from "@/lib/types";
+
+export const futebolMundial: Quiz = {
+  id: "futebol-mundial",
+  slug: "quiz-futebol-mundial",
+  title: "Quiz Futebol Mundial",
+  description: "De Pele a Messi — quanto voce sabe sobre o futebol pelo mundo?",
+  type: "trivia",
+  category: "esportes",
+  emoji: "⚽",
+  color: "#3B82F6",
+  plays: 5890,
+  tags: ["futebol", "esportes", "copa", "champions", "selecao"],
+  createdAt: "2026-06-09",
+  featured: false,
+  questions: [
+    {
+      id: "q1",
+      text: "Quantas Copas do Mundo o Brasil ja venceu?",
+      options: [
+        { id: "a", text: "4", isCorrect: false },
+        { id: "b", text: "5", isCorrect: true },
+        { id: "c", text: "6", isCorrect: false },
+        { id: "d", text: "3", isCorrect: false },
+      ],
+      explanation: "O Brasil e pentacampeao: 1958, 1962, 1970, 1994 e 2002.",
+    },
+    {
+      id: "q2",
+      text: "Quem e o maior artilheiro de Copas do Mundo?",
+      options: [
+        { id: "a", text: "Pele", isCorrect: false },
+        { id: "b", text: "Ronaldo Fenomeno", isCorrect: false },
+        { id: "c", text: "Miroslav Klose", isCorrect: true },
+        { id: "d", text: "Messi", isCorrect: false },
+      ],
+      explanation: "Klose marcou 16 gols em Copas pela Alemanha, superando Ronaldo (15).",
+    },
+    {
+      id: "q3",
+      text: "Qual selecao ganhou a Copa de 2022 no Qatar?",
+      options: [
+        { id: "a", text: "Franca", isCorrect: false },
+        { id: "b", text: "Brasil", isCorrect: false },
+        { id: "c", text: "Argentina", isCorrect: true },
+        { id: "d", text: "Croacia", isCorrect: false },
+      ],
+    },
+    {
+      id: "q4",
+      text: "Qual clube tem mais titulos da Champions League?",
+      options: [
+        { id: "a", text: "Barcelona", isCorrect: false },
+        { id: "b", text: "AC Milan", isCorrect: false },
+        { id: "c", text: "Real Madrid", isCorrect: true },
+        { id: "d", text: "Liverpool", isCorrect: false },
+      ],
+      explanation: "O Real Madrid e o maior campeao da Champions com 15 titulos.",
+    },
+    {
+      id: "q5",
+      text: "Qual foi o placar do historico 7x1 entre Brasil e Alemanha?",
+      options: [
+        { id: "a", text: "Final da Copa 2014", isCorrect: false },
+        { id: "b", text: "Semifinal da Copa 2014", isCorrect: true },
+        { id: "c", text: "Quartas de final da Copa 2014", isCorrect: false },
+        { id: "d", text: "Semifinal da Copa 2018", isCorrect: false },
+      ],
+    },
+    {
+      id: "q6",
+      text: "Quantas Bolas de Ouro Messi ja ganhou?",
+      options: [
+        { id: "a", text: "6", isCorrect: false },
+        { id: "b", text: "7", isCorrect: false },
+        { id: "c", text: "8", isCorrect: true },
+        { id: "d", text: "5", isCorrect: false },
+      ],
+    },
+    {
+      id: "q7",
+      text: "Qual pais sediou a primeira Copa do Mundo (1930)?",
+      options: [
+        { id: "a", text: "Brasil", isCorrect: false },
+        { id: "b", text: "Italia", isCorrect: false },
+        { id: "c", text: "Uruguai", isCorrect: true },
+        { id: "d", text: "Argentina", isCorrect: false },
+      ],
+    },
+    {
+      id: "q8",
+      text: "Qual jogador brasileiro e conhecido como 'O Fenomeno'?",
+      options: [
+        { id: "a", text: "Ronaldinho Gaucho", isCorrect: false },
+        { id: "b", text: "Ronaldo Nazario", isCorrect: true },
+        { id: "c", text: "Rivaldo", isCorrect: false },
+        { id: "d", text: "Romario", isCorrect: false },
+      ],
+    },
+    {
+      id: "q9",
+      text: "Qual selecao nunca ganhou uma Copa mas e sempre favorita?",
+      options: [
+        { id: "a", text: "Portugal", isCorrect: false },
+        { id: "b", text: "Holanda", isCorrect: true },
+        { id: "c", text: "Belgica", isCorrect: false },
+        { id: "d", text: "Colombia", isCorrect: false },
+      ],
+      explanation: "A Holanda chegou a 3 finais de Copa (1974, 1978 e 2010) mas nunca venceu.",
+    },
+    {
+      id: "q10",
+      text: "Qual estadio e conhecido como 'Teatro dos Sonhos'?",
+      options: [
+        { id: "a", text: "Camp Nou", isCorrect: false },
+        { id: "b", text: "Santiago Bernabeu", isCorrect: false },
+        { id: "c", text: "Old Trafford", isCorrect: true },
+        { id: "d", text: "Anfield", isCorrect: false },
+      ],
+    },
+    {
+      id: "q11",
+      text: "Neymar saiu de qual clube brasileiro?",
+      options: [
+        { id: "a", text: "Corinthians", isCorrect: false },
+        { id: "b", text: "Flamengo", isCorrect: false },
+        { id: "c", text: "Santos", isCorrect: true },
+        { id: "d", text: "Sao Paulo", isCorrect: false },
+      ],
+    },
+    {
+      id: "q12",
+      text: "Qual pais ganhou mais vezes a Copa America?",
+      options: [
+        { id: "a", text: "Brasil", isCorrect: false },
+        { id: "b", text: "Argentina", isCorrect: true },
+        { id: "c", text: "Uruguai", isCorrect: false },
+        { id: "d", text: "Chile", isCorrect: false },
+      ],
+    },
+    {
+      id: "q13",
+      text: "Qual goleiro brasileiro e considerado um dos maiores da historia?",
+      options: [
+        { id: "a", text: "Marcos", isCorrect: false },
+        { id: "b", text: "Taffarel", isCorrect: false },
+        { id: "c", text: "Dida", isCorrect: false },
+        { id: "d", text: "Todos sao lendas, mas nenhum e o maior mundial", isCorrect: true },
+      ],
+      explanation: "Todos sao grandes goleiros brasileiros! Mundialmente, nomes como Yashin, Buffon e Neuer disputam o titulo.",
+    },
+    {
+      id: "q14",
+      text: "Cristiano Ronaldo e natural de qual pais?",
+      options: [
+        { id: "a", text: "Espanha", isCorrect: false },
+        { id: "b", text: "Brasil", isCorrect: false },
+        { id: "c", text: "Portugal", isCorrect: true },
+        { id: "d", text: "Italia", isCorrect: false },
+      ],
+    },
+    {
+      id: "q15",
+      text: "Qual foi a maior goleada da historia das Copas?",
+      options: [
+        { id: "a", text: "Brasil 7x1 (contra Alemanha)", isCorrect: false },
+        { id: "b", text: "Hungria 10x1 El Salvador (1982)", isCorrect: true },
+        { id: "c", text: "Alemanha 8x0 Arabia Saudita (2002)", isCorrect: false },
+        { id: "d", text: "Portugal 7x0 Coreia do Norte (2010)", isCorrect: false },
+      ],
+    },
+  ],
+};
