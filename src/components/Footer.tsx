@@ -49,6 +49,9 @@ export default function Footer() {
               <Link href="/privacidade" className="text-sm text-gray-300 hover:text-white transition-colors">
                 Privacidade
               </Link>
+              <Link href="/termos" className="text-sm text-gray-300 hover:text-white transition-colors">
+                Termos de Uso
+              </Link>
             </nav>
           </div>
         </div>

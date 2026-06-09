@@ -8,6 +8,10 @@ import { capitaisDoMundo } from "./capitais-do-mundo";
 import { musicaBrasileira } from "./musica-brasileira";
 import { perfilProfissionalDisc } from "./perfil-profissional-disc";
 import { areaTiIdeal } from "./area-ti-ideal";
+import { seriesNetflix } from "./series-netflix";
+import { filmesClassicos } from "./filmes-classicos";
+import { historiaDoBrasil } from "./historia-do-brasil";
+import { qualPersonagemVoceSeria } from "./qual-personagem-voce-seria";
 
 export const allQuizzes: Quiz[] = [
   copa2026Trivia,
@@ -19,6 +23,10 @@ export const allQuizzes: Quiz[] = [
   timesBrasileiros,
   mundoAnimal,
   capitaisDoMundo,
+  seriesNetflix,
+  filmesClassicos,
+  qualPersonagemVoceSeria,
+  historiaDoBrasil,
 ];
 
 export function getQuizBySlug(slug: string): Quiz | undefined {
