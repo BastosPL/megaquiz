@@ -16,25 +16,59 @@ import { qualProfissaoIdeal } from "./qual-profissao-ideal";
 import { geografiaDoBrasil } from "./geografia-do-brasil";
 import { futebolMundial } from "./futebol-mundial";
 import { curiosidadesCiencia } from "./curiosidades-ciencia";
+import { qualJogadorCopa2026 } from "./qual-jogador-copa-2026";
+import { bandeirasCopa2026 } from "./bandeiras-copa-2026";
+import { golsHistoricosCopa } from "./gols-historicos-copa";
+import { qualArtilheiroHistorico } from "./qual-artilheiro-historico";
+import { qualRedeSocial } from "./qual-rede-social";
+import { qualGeracaoSuaAlma } from "./qual-geracao-sua-alma";
+import { jeitoDeComerPersonalidade } from "./jeito-de-comer-personalidade";
+import { qualSignoDeveriaSer } from "./qual-signo-deveria-ser";
+import { casaDePapelPersonagem } from "./casa-de-papel-personagem";
+import { round6Sobreviveria } from "./round6-sobreviveria";
+import { qualVilaoDeSerie } from "./qual-vilao-de-serie";
+import { vestibular1990 } from "./vestibular-1990";
+import { mitologiaGrega } from "./mitologia-grega";
+import { verdadeOuMitoSaude } from "./verdade-ou-mito-saude";
 
 export const allQuizzes: Quiz[] = [
+  // Copa do Mundo 2026
   copa2026Trivia,
+  qualJogadorCopa2026,
+  bandeirasCopa2026,
+  golsHistoricosCopa,
+  qualArtilheiroHistorico,
+  // Personalidade
   qualCidadeBrasileira,
+  qualRedeSocial,
+  qualGeracaoSuaAlma,
+  jeitoDeComerPersonalidade,
+  qualSignoDeveriaSer,
+  // Carreira
   perfilProfissionalDisc,
   areaTiIdeal,
   qualProfissaoIdeal,
-  musicaBrasileira,
+  // Series & Filmes
+  seriesNetflix,
+  filmesClassicos,
+  qualPersonagemVoceSeria,
+  casaDePapelPersonagem,
+  round6Sobreviveria,
+  qualVilaoDeSerie,
+  // Conhecimentos Gerais
   qiTeste,
-  timesBrasileiros,
-  futebolMundial,
+  musicaBrasileira,
   mundoAnimal,
   capitaisDoMundo,
   historiaDoBrasil,
   geografiaDoBrasil,
   curiosidadesCiencia,
-  seriesNetflix,
-  filmesClassicos,
-  qualPersonagemVoceSeria,
+  vestibular1990,
+  mitologiaGrega,
+  verdadeOuMitoSaude,
+  // Esportes
+  timesBrasileiros,
+  futebolMundial,
 ];
 
 export function getQuizBySlug(slug: string): Quiz | undefined {
