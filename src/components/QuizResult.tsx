@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import type { Quiz, QuizResult } from "@/lib/types";
+import { getAffiliateLink } from "@/lib/affiliate-links";
 
 interface QuizResultProps {
   quiz: Quiz;
@@ -16,6 +17,11 @@ export default function QuizResultView({
 }: QuizResultProps) {
   const [copied, setCopied] = useState(false);
   const isTrivia = quiz.type === "trivia";
+
+  const affiliate =
+    !isTrivia && result.profile
+      ? getAffiliateLink(quiz.id, result.profile.id)
+      : null;
 
   const siteUrl = typeof window !== "undefined" ? window.location.origin : "";
   const quizUrl = `${siteUrl}/quiz/${quiz.slug}`;
@@ -99,6 +105,29 @@ export default function QuizResultView({
             <p className="text-text-light text-center mb-4 leading-relaxed">
               {result.profile.description}
             </p>
+          )}
+
+          {/* Affiliate CTA */}
+          {affiliate && (
+            <a
+              href={affiliate.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block mb-4 p-4 rounded-xl border-2 border-dashed text-center transition-all hover:scale-[1.02]"
+              style={{ borderColor: quiz.color, backgroundColor: `${quiz.color}10` }}
+            >
+              <p className="text-sm text-text-light mb-1">
+                Vista a camisa do seu craque!
+              </p>
+              <p className="font-bold text-text text-lg">
+                🛒 {affiliate.label}
+              </p>
+              {affiliate.price && (
+                <p className="text-sm font-semibold mt-1" style={{ color: quiz.color }}>
+                  A partir de {affiliate.price} na Shopee
+                </p>
+              )}
+            </a>
           )}
 
           {/* Share buttons */}
