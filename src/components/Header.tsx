@@ -33,6 +33,18 @@ export default function Header() {
           >
             Ver todas
           </Link>
+          <Link
+            href="/blog"
+            className="px-3 py-1.5 text-sm text-text-light hover:text-primary hover:bg-primary/5 rounded-lg transition-colors"
+          >
+            📝 Blog
+          </Link>
+          <Link
+            href="/sobre"
+            className="px-3 py-1.5 text-sm text-text-light hover:text-primary hover:bg-primary/5 rounded-lg transition-colors"
+          >
+            Sobre
+          </Link>
         </nav>
 
         <button
@@ -63,6 +75,20 @@ export default function Header() {
                 {cat.emoji} {cat.name}
               </Link>
             ))}
+            <Link
+              href="/blog"
+              onClick={() => setMenuOpen(false)}
+              className="px-3 py-2.5 text-sm text-text-light hover:text-primary hover:bg-primary/5 rounded-lg transition-colors"
+            >
+              📝 Blog
+            </Link>
+            <Link
+              href="/sobre"
+              onClick={() => setMenuOpen(false)}
+              className="px-3 py-2.5 text-sm text-text-light hover:text-primary hover:bg-primary/5 rounded-lg transition-colors"
+            >
+              ℹ️ Sobre
+            </Link>
           </nav>
         </div>
       )}

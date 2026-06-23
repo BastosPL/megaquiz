@@ -14,7 +14,7 @@ export default function ContatoPage() {
           Contato
         </h1>
         <p className="text-text-light text-lg">
-          Tem alguma sugestao, duvida ou quer enviar um quiz? Fale com a gente!
+          Tem alguma sugestão, dúvida ou quer enviar um quiz? Fale com a gente!
         </p>
       </div>
 
@@ -44,10 +44,10 @@ export default function ContatoPage() {
         </div>
 
         <div className="bg-bg-card rounded-2xl border border-border p-6">
-          <h2 className="font-bold text-text mb-3 text-center">💡 Sugestoes de quiz</h2>
+          <h2 className="font-bold text-text mb-3 text-center">💡 Sugestões de quiz</h2>
           <p className="text-sm text-text-light text-center">
             Tem uma ideia de quiz que todo mundo ia amar? Manda pra gente por email
-            com o assunto <strong>&quot;Sugestao de Quiz&quot;</strong> e podemos criar!
+            com o assunto <strong>&quot;Sugestão de Quiz&quot;</strong> e podemos criar!
           </p>
         </div>
       </div>

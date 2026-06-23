@@ -35,9 +35,12 @@ export default async function CategoryPage({ params }: Props) {
       <div className="text-center mb-8">
         <span className="text-5xl mb-3 block">{category.emoji}</span>
         <h1 className="text-2xl sm:text-3xl font-extrabold text-text mb-2">
-          {category.name}
+          Quizzes de {category.name}
         </h1>
-        <p className="text-text-light">{category.description}</p>
+        <p className="text-text-light mb-3">{category.description}</p>
+        <p className="text-text-light text-sm max-w-2xl mx-auto">
+          {category.longDescription}
+        </p>
       </div>
 
       {quizzes.length > 0 ? (

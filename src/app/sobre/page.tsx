@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Sobre o MegaQuiz",
-  description: "Conheca o MegaQuiz - a plataforma de quizzes mais divertida do Brasil",
+  description: "Conheça o MegaQuiz - a plataforma de quizzes mais divertida do Brasil",
 };
 
 export default function SobrePage() {
@@ -21,29 +21,32 @@ export default function SobrePage() {
 
       <div className="space-y-6 text-text-light leading-relaxed">
         <div className="bg-bg-card rounded-2xl border border-border p-6">
-          <h2 className="text-lg font-bold text-text mb-3">🎯 Nossa missao</h2>
+          <h2 className="text-lg font-bold text-text mb-3">🎯 Nossa missão</h2>
           <p>
             O MegaQuiz nasceu com um objetivo simples: criar os melhores quizzes
-            da internet em portugues. Queremos que voce se divirta, aprenda coisas
-            novas e desafie seus amigos — tudo de graca!
+            da internet em português. Queremos que você se divirta, aprenda coisas
+            novas e desafie seus amigos — tudo de graça!
+          </p>
+          <p className="mt-3">
+            MegaQuiz é um projeto brasileiro criado para oferecer entretenimento educativo e diversão para todos.
           </p>
         </div>
 
         <div className="bg-bg-card rounded-2xl border border-border p-6">
           <h2 className="text-lg font-bold text-text mb-3">🇧🇷 Feito para brasileiros</h2>
           <p>
-            Todos os nossos quizzes sao criados pensando no publico brasileiro.
-            De perguntas sobre a Copa do Mundo ate testes de personalidade com
-            cidades brasileiras — aqui voce encontra conteudo que faz sentido pra voce.
+            Todos os nossos quizzes são criados pensando no público brasileiro.
+            De perguntas sobre a Copa do Mundo até testes de personalidade com
+            cidades brasileiras — aqui você encontra conteúdo que faz sentido pra você.
           </p>
         </div>
 
         <div className="bg-bg-card rounded-2xl border border-border p-6">
-          <h2 className="text-lg font-bold text-text mb-3">📊 Nossos numeros</h2>
+          <h2 className="text-lg font-bold text-text mb-3">📊 Nossos números</h2>
           <div className="grid grid-cols-3 gap-4 mt-4">
             <div className="text-center">
-              <span className="text-2xl font-extrabold text-primary block">9+</span>
-              <span className="text-xs text-text-light">Quizzes</span>
+              <span className="text-2xl font-extrabold text-primary block">30+</span>
+              <span className="text-xs text-text-light">Quizzes Disponíveis</span>
             </div>
             <div className="text-center">
               <span className="text-2xl font-extrabold text-primary block">6</span>
@@ -59,8 +62,8 @@ export default function SobrePage() {
         <div className="bg-bg-card rounded-2xl border border-border p-6">
           <h2 className="text-lg font-bold text-text mb-3">💡 Como funciona</h2>
           <ul className="space-y-2">
-            <li>✅ <strong>Trivia:</strong> Responda perguntas, voce tem 3 vidas — erre 3 e comeca de novo!</li>
-            <li>✅ <strong>Personalidade:</strong> Descubra qual perfil combina com voce</li>
+            <li>✅ <strong>Trivia:</strong> Responda perguntas, você tem 3 vidas — erre 3 e começa de novo!</li>
+            <li>✅ <strong>Personalidade:</strong> Descubra qual perfil combina com você</li>
             <li>✅ <strong>Compartilhe:</strong> Mande seu resultado pros amigos e desafie eles</li>
           </ul>
         </div>

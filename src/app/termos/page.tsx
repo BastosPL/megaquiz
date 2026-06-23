@@ -14,94 +14,94 @@ export default function TermosPage() {
 
       <div className="prose prose-sm text-text-light space-y-4">
         <p>
-          <strong>Ultima atualizacao:</strong> 08 de junho de 2026
+          <strong>Última atualização:</strong> 08 de junho de 2026
         </p>
 
         <p>
           Ao acessar e utilizar o site <strong>MegaQuiz</strong> (megaquiz.app.br),
-          voce concorda com os termos e condicoes descritos abaixo. Se voce nao
-          concordar com algum destes termos, por favor, nao utilize o site.
+          você concorda com os termos e condições descritos abaixo. Se você não
+          concordar com algum destes termos, por favor, não utilize o site.
         </p>
 
-        <h2 className="text-lg font-bold text-text mt-6">1. Descricao do servico</h2>
+        <h2 className="text-lg font-bold text-text mt-6">1. Descrição do serviço</h2>
         <p>
-          O MegaQuiz e uma plataforma gratuita de quizzes e testes online em portugues.
+          O MegaQuiz é uma plataforma gratuita de quizzes e testes online em português.
           Oferecemos quizzes de trivia, personalidade, conhecimentos gerais e outros
-          temas para fins de entretenimento e educacao.
+          temas para fins de entretenimento e educação.
         </p>
 
         <h2 className="text-lg font-bold text-text mt-6">2. Uso permitido</h2>
-        <p>Ao utilizar o MegaQuiz, voce concorda em:</p>
+        <p>Ao utilizar o MegaQuiz, você concorda em:</p>
         <ul className="list-disc pl-6 space-y-1">
-          <li>Utilizar o site apenas para fins pessoais e nao comerciais</li>
-          <li>Nao tentar acessar areas restritas do site ou seus sistemas</li>
-          <li>Nao reproduzir, duplicar ou copiar o conteudo sem autorizacao</li>
-          <li>Nao utilizar o site para qualquer finalidade ilegal</li>
+          <li>Utilizar o site apenas para fins pessoais e não comerciais</li>
+          <li>Não tentar acessar áreas restritas do site ou seus sistemas</li>
+          <li>Não reproduzir, duplicar ou copiar o conteúdo sem autorização</li>
+          <li>Não utilizar o site para qualquer finalidade ilegal</li>
         </ul>
 
         <h2 className="text-lg font-bold text-text mt-6">3. Propriedade intelectual</h2>
         <p>
-          Todo o conteudo do MegaQuiz, incluindo textos, graficos, logotipos, icones,
-          imagens, quizzes e software, e de propriedade exclusiva do MegaQuiz ou de
-          seus criadores e e protegido pelas leis brasileiras de direitos autorais.
+          Todo o conteúdo do MegaQuiz, incluindo textos, gráficos, logotipos, ícones,
+          imagens, quizzes e software, é de propriedade exclusiva do MegaQuiz ou de
+          seus criadores e é protegido pelas leis brasileiras de direitos autorais.
         </p>
 
         <h2 className="text-lg font-bold text-text mt-6">4. Resultados dos quizzes</h2>
         <p>
-          Os resultados dos quizzes sao gerados para fins de entretenimento e nao
-          devem ser interpretados como aconselhamento profissional, medico, psicologico
-          ou de qualquer outra natureza. Os quizzes de personalidade e carreira sao
-          baseados em modelos simplificados e nao substituem avaliacoes profissionais.
+          Os resultados dos quizzes são gerados para fins de entretenimento e não
+          devem ser interpretados como aconselhamento profissional, médico, psicológico
+          ou de qualquer outra natureza. Os quizzes de personalidade e carreira são
+          baseados em modelos simplificados e não substituem avaliações profissionais.
         </p>
 
         <h2 className="text-lg font-bold text-text mt-6">5. Publicidade</h2>
         <p>
-          O MegaQuiz exibe anuncios fornecidos por terceiros, incluindo o Google AdSense.
-          Esses anuncios podem utilizar cookies para exibir conteudo personalizado.
-          O MegaQuiz nao se responsabiliza pelo conteudo dos anuncios exibidos.
-          Para mais informacoes, consulte nossa{" "}
+          O MegaQuiz exibe anúncios fornecidos por terceiros, incluindo o Google AdSense.
+          Esses anúncios podem utilizar cookies para exibir conteúdo personalizado.
+          O MegaQuiz não se responsabiliza pelo conteúdo dos anúncios exibidos.
+          Para mais informações, consulte nossa{" "}
           <a href="/privacidade" className="text-primary hover:underline">
-            Politica de Privacidade
+            Política de Privacidade
           </a>.
         </p>
 
         <h2 className="text-lg font-bold text-text mt-6">6. Compartilhamento de resultados</h2>
         <p>
           Ao compartilhar seus resultados em redes sociais (WhatsApp, X/Twitter, etc.),
-          voce o faz por sua propria vontade. O MegaQuiz nao se responsabiliza pelo uso
-          que terceiros possam fazer das informacoes compartilhadas por voce.
+          você o faz por sua própria vontade. O MegaQuiz não se responsabiliza pelo uso
+          que terceiros possam fazer das informações compartilhadas por você.
         </p>
 
-        <h2 className="text-lg font-bold text-text mt-6">7. Disponibilidade do servico</h2>
+        <h2 className="text-lg font-bold text-text mt-6">7. Disponibilidade do serviço</h2>
         <p>
           O MegaQuiz se reserva o direito de modificar, suspender ou descontinuar
-          qualquer parte do site a qualquer momento, sem aviso previo. Nao garantimos
-          que o site estara disponivel de forma ininterrupta ou livre de erros.
+          qualquer parte do site a qualquer momento, sem aviso prévio. Não garantimos
+          que o site estará disponível de forma ininterrupta ou livre de erros.
         </p>
 
-        <h2 className="text-lg font-bold text-text mt-6">8. Limitacao de responsabilidade</h2>
+        <h2 className="text-lg font-bold text-text mt-6">8. Limitação de responsabilidade</h2>
         <p>
-          O MegaQuiz e fornecido &quot;como esta&quot;, sem garantias de qualquer tipo.
-          Em nenhuma circunstancia seremos responsaveis por danos diretos, indiretos,
+          O MegaQuiz é fornecido &quot;como está&quot;, sem garantias de qualquer tipo.
+          Em nenhuma circunstância seremos responsáveis por danos diretos, indiretos,
           incidentais ou consequentes decorrentes do uso ou da impossibilidade de uso do site.
         </p>
 
-        <h2 className="text-lg font-bold text-text mt-6">9. Alteracoes nos termos</h2>
+        <h2 className="text-lg font-bold text-text mt-6">9. Alterações nos termos</h2>
         <p>
           Reservamo-nos o direito de atualizar estes termos a qualquer momento.
-          Alteracoes serao publicadas nesta pagina com a data de atualizacao revisada.
-          O uso continuado do site apos alteracoes constitui aceitacao dos novos termos.
+          Alterações serão publicadas nesta página com a data de atualização revisada.
+          O uso continuado do site após alterações constitui aceitação dos novos termos.
         </p>
 
-        <h2 className="text-lg font-bold text-text mt-6">10. Legislacao aplicavel</h2>
+        <h2 className="text-lg font-bold text-text mt-6">10. Legislação aplicável</h2>
         <p>
-          Estes termos sao regidos pelas leis da Republica Federativa do Brasil.
-          Qualquer disputa sera resolvida nos tribunais competentes do Brasil.
+          Estes termos são regidos pelas leis da República Federativa do Brasil.
+          Qualquer disputa será resolvida nos tribunais competentes do Brasil.
         </p>
 
         <h2 className="text-lg font-bold text-text mt-6">11. Contato</h2>
         <p>
-          Para duvidas sobre estes termos, entre em contato:{" "}
+          Para dúvidas sobre estes termos, entre em contato:{" "}
           <a href="mailto:contato@megaquiz.app.br" className="text-primary hover:underline">
             contato@megaquiz.app.br
           </a>

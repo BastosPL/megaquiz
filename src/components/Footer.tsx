@@ -40,6 +40,9 @@ export default function Footer() {
               Links
             </h3>
             <nav className="flex flex-col gap-2">
+              <Link href="/blog" className="text-sm text-gray-300 hover:text-white transition-colors">
+                Blog
+              </Link>
               <Link href="/sobre" className="text-sm text-gray-300 hover:text-white transition-colors">
                 Sobre
               </Link>
