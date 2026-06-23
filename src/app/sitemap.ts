@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { allQuizzes } from "@/lib/quizzes";
 import { CATEGORIES } from "@/lib/types";
+import { allArticles } from "@/lib/articles";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://megaquiz.app.br";
@@ -56,6 +57,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.2,
     },
+    {
+      url: `${baseUrl}/blog`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.7,
+    },
+    ...allArticles.map((article) => ({
+      url: `${baseUrl}/blog/${article.slug}`,
+      lastModified: new Date(article.date),
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    })),
     ...quizPages,
     ...categoryPages,
   ];
