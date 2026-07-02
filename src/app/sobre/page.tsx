@@ -23,9 +23,9 @@ export default function SobrePage() {
         <div className="bg-bg-card rounded-2xl border border-border p-6">
           <h2 className="text-lg font-bold text-text mb-3">👤 Quem está por trás</h2>
           <p>
-            O MegaQuiz é um projeto criado e mantido por <strong>Patrick Bastos</strong>,
-            desenvolvedor de software baseado em <strong>Recife, PE — Brasil</strong>.
-            Com experiência em desenvolvimento web e sistemas digitais, Patrick criou
+            O MegaQuiz é um projeto criado e mantido pelo <strong>Grupo Bastos</strong>,
+            baseado em <strong>Recife, PE — Brasil</strong>.
+            Com experiência em desenvolvimento web e sistemas digitais, o Grupo Bastos criou
             o MegaQuiz para unir tecnologia e entretenimento, oferecendo quizzes de
             qualidade em português para o público brasileiro.
           </p>

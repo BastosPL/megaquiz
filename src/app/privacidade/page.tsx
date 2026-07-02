@@ -80,7 +80,7 @@ export default function PrivacidadePage() {
           coletados por este site é:
         </p>
         <ul className="list-none pl-0 space-y-1">
-          <li><strong>Responsável:</strong> Patrick Bastos</li>
+          <li><strong>Responsável:</strong> Grupo Bastos</li>
           <li><strong>Localização:</strong> Recife, PE — Brasil</li>
           <li><strong>Email de contato:</strong> contato@megaquiz.app.br</li>
         </ul>
