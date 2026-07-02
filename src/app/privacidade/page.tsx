@@ -14,7 +14,7 @@ export default function PrivacidadePage() {
 
       <div className="prose prose-sm text-text-light space-y-4">
         <p>
-          <strong>Última atualização:</strong> 08 de junho de 2026
+          <strong>Última atualização:</strong> 02 de julho de 2026
         </p>
 
         <h2 className="text-lg font-bold text-text mt-6">1. Informações que coletamos</h2>
@@ -74,7 +74,22 @@ export default function PrivacidadePage() {
           <strong>contato@megaquiz.app.br</strong>
         </p>
 
-        <h2 className="text-lg font-bold text-text mt-6">7. Alterações</h2>
+        <h2 className="text-lg font-bold text-text mt-6">7. Controlador de Dados</h2>
+        <p>
+          Nos termos da LGPD (Lei nº 13.709/2018), o controlador dos dados pessoais
+          coletados por este site é:
+        </p>
+        <ul className="list-none pl-0 space-y-1">
+          <li><strong>Responsável:</strong> Patrick Bastos</li>
+          <li><strong>Localização:</strong> Recife, PE — Brasil</li>
+          <li><strong>Email de contato:</strong> contato@megaquiz.app.br</li>
+        </ul>
+        <p>
+          Para qualquer solicitação relacionada aos seus dados pessoais, entre em
+          contato pelo email acima.
+        </p>
+
+        <h2 className="text-lg font-bold text-text mt-6">8. Alterações</h2>
         <p>
           Esta política pode ser atualizada periodicamente. Recomendamos que você revise
           esta página regularmente.

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Contato",
-  description: "Entre em contato com o MegaQuiz",
+  description: "Entre em contato com o MegaQuiz — envie sugestões, dúvidas ou ideias de quizzes",
 };
 
 export default function ContatoPage() {
@@ -18,36 +18,117 @@ export default function ContatoPage() {
         </p>
       </div>
 
-      <div className="space-y-4 max-w-md mx-auto">
-        <div className="bg-bg-card rounded-2xl border border-border p-6 text-center">
-          <span className="text-3xl block mb-3">📧</span>
-          <h2 className="font-bold text-text mb-1">Email</h2>
-          <a
-            href="mailto:contato@megaquiz.app.br"
-            className="text-primary hover:underline"
+      <div className="space-y-6 max-w-lg mx-auto">
+        <div className="bg-bg-card rounded-2xl border border-border p-6">
+          <h2 className="font-bold text-text mb-4 text-center">📝 Formulário de contato</h2>
+          <form
+            action="mailto:contato@megaquiz.app.br"
+            method="POST"
+            encType="text/plain"
+            className="space-y-4"
           >
-            contato@megaquiz.app.br
-          </a>
+            <div>
+              <label htmlFor="nome" className="block text-sm font-medium text-text mb-1">
+                Nome
+              </label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                required
+                placeholder="Seu nome"
+                className="w-full px-4 py-2.5 rounded-xl border border-border bg-bg text-text placeholder:text-text-light/50 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors"
+              />
+            </div>
+
+            <div>
+              <label htmlFor="email" className="block text-sm font-medium text-text mb-1">
+                Email
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="seu@email.com"
+                className="w-full px-4 py-2.5 rounded-xl border border-border bg-bg text-text placeholder:text-text-light/50 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors"
+              />
+            </div>
+
+            <div>
+              <label htmlFor="assunto" className="block text-sm font-medium text-text mb-1">
+                Assunto
+              </label>
+              <select
+                id="assunto"
+                name="assunto"
+                required
+                className="w-full px-4 py-2.5 rounded-xl border border-border bg-bg text-text focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors"
+              >
+                <option value="">Selecione um assunto</option>
+                <option value="Sugestão de Quiz">Sugestão de Quiz</option>
+                <option value="Dúvida">Dúvida</option>
+                <option value="Erro no site">Erro no site</option>
+                <option value="Parceria">Parceria</option>
+                <option value="Outro">Outro</option>
+              </select>
+            </div>
+
+            <div>
+              <label htmlFor="mensagem" className="block text-sm font-medium text-text mb-1">
+                Mensagem
+              </label>
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                required
+                rows={5}
+                placeholder="Escreva sua mensagem aqui..."
+                className="w-full px-4 py-2.5 rounded-xl border border-border bg-bg text-text placeholder:text-text-light/50 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors resize-none"
+              />
+            </div>
+
+            <button
+              type="submit"
+              className="w-full py-3 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors"
+            >
+              Enviar mensagem
+            </button>
+          </form>
         </div>
 
-        <div className="bg-bg-card rounded-2xl border border-border p-6 text-center">
-          <span className="text-3xl block mb-3">📱</span>
-          <h2 className="font-bold text-text mb-1">Instagram</h2>
-          <a
-            href="https://instagram.com/megaquiz.br"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-primary hover:underline"
-          >
-            @megaquiz.br
-          </a>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="bg-bg-card rounded-2xl border border-border p-6 text-center">
+            <span className="text-3xl block mb-3">📧</span>
+            <h2 className="font-bold text-text mb-1">Email</h2>
+            <a
+              href="mailto:contato@megaquiz.app.br"
+              className="text-primary hover:underline text-sm"
+            >
+              contato@megaquiz.app.br
+            </a>
+          </div>
+
+          <div className="bg-bg-card rounded-2xl border border-border p-6 text-center">
+            <span className="text-3xl block mb-3">📱</span>
+            <h2 className="font-bold text-text mb-1">Instagram</h2>
+            <a
+              href="https://instagram.com/megaquiz.br"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:underline text-sm"
+            >
+              @megaquiz.br
+            </a>
+          </div>
         </div>
 
         <div className="bg-bg-card rounded-2xl border border-border p-6">
           <h2 className="font-bold text-text mb-3 text-center">💡 Sugestões de quiz</h2>
           <p className="text-sm text-text-light text-center">
-            Tem uma ideia de quiz que todo mundo ia amar? Manda pra gente por email
-            com o assunto <strong>&quot;Sugestão de Quiz&quot;</strong> e podemos criar!
+            Tem uma ideia de quiz que todo mundo ia amar? Use o formulário acima
+            com o assunto <strong>&quot;Sugestão de Quiz&quot;</strong> ou mande
+            direto por email!
           </p>
         </div>
       </div>
