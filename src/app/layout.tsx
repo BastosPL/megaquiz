@@ -54,6 +54,10 @@ export const metadata: Metadata = {
   },
   other: {
     "google-adsense-account": "ca-pub-7284698282537450",
+    "theme-color": "#0d9488",
+    "mobile-web-app-capable": "yes",
+    "apple-mobile-web-app-capable": "yes",
+    "apple-mobile-web-app-status-bar-style": "default",
   },
 };
 
