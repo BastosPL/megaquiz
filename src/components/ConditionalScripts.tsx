@@ -1,41 +1,48 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import Script from "next/script";
+import { useEffect } from "react";
+
+function loadScript(src: string) {
+  if (document.querySelector(`script[src="${src}"]`)) return;
+  const s = document.createElement("script");
+  s.src = src;
+  s.async = true;
+  document.head.appendChild(s);
+}
+
+function initGA4() {
+  if ((window as any).__ga4_loaded) return;
+  (window as any).__ga4_loaded = true;
+
+  loadScript("https://www.googletagmanager.com/gtag/js?id=G-2CK9LKG3HT");
+
+  (window as any).dataLayer = (window as any).dataLayer || [];
+  function gtag(...args: any[]) {
+    (window as any).dataLayer.push(args);
+  }
+  gtag("js", new Date());
+  gtag("config", "G-2CK9LKG3HT");
+}
+
+function initAdSense() {
+  loadScript(
+    "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7284698282537450"
+  );
+}
 
 export default function ConditionalScripts() {
-  const [consented, setConsented] = useState(false);
-
   useEffect(() => {
-    const check = () => {
-      setConsented(localStorage.getItem("cookie-consent") === "accepted");
+    const activate = () => {
+      if (localStorage.getItem("cookie-consent") === "accepted") {
+        initGA4();
+        initAdSense();
+      }
     };
-    check();
-    window.addEventListener("cookie-consent-update", check);
-    return () => window.removeEventListener("cookie-consent-update", check);
+
+    activate();
+    window.addEventListener("cookie-consent-update", activate);
+    return () => window.removeEventListener("cookie-consent-update", activate);
   }, []);
 
-  if (!consented) return null;
-
-  return (
-    <>
-      <Script
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7284698282537450"
-        crossOrigin="anonymous"
-        strategy="afterInteractive"
-      />
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-2CK9LKG3HT"
-        strategy="afterInteractive"
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-2CK9LKG3HT');
-        `}
-      </Script>
-    </>
-  );
+  return null;
 }
