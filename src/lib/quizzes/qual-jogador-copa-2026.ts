@@ -10,7 +10,6 @@ export const qualJogadorCopa2026: Quiz = {
   category: "copa-do-mundo",
   emoji: "⚽",
   color: "#059669",
-  plays: 8740,
   tags: ["copa", "futebol", "2026", "jogadores", "personalidade", "selecoes"],
   createdAt: "2026-06-11",
   featured: true,
@@ -20,7 +19,7 @@ export const qualJogadorCopa2026: Quiz = {
       title: "Vini Jr (Brasil)",
       emoji: "🇧🇷",
       description:
-        "Voce e pura velocidade e ousadia! Dribla qualquer obstaculo na vida e no campo. Tem sangue nos olhos, nao desiste nunca e adora provar que os criticos estao errados. Bola de Ouro merecida!",
+        "Voce e pura velocidade e ousadia! Dribla qualquer obstaculo na vida e no campo. Tem sangue nos olhos, nao desiste nunca e adora provar que os criticos estao errados. Eleito melhor jogador da Champions League 2023/24!",
     },
     {
       id: "neymar",

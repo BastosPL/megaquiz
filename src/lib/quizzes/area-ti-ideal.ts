@@ -10,7 +10,6 @@ export const areaTiIdeal: Quiz = {
   category: "carreira",
   emoji: "💻",
   color: "#7C3AED",
-  plays: 4310,
   tags: ["carreira", "tecnologia", "programacao", "TI", "personalidade"],
   createdAt: "2026-06-08",
   featured: true,

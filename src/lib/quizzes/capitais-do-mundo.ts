@@ -9,7 +9,6 @@ export const capitaisDoMundo: Quiz = {
   category: "conhecimentos-gerais",
   emoji: "🌍",
   color: "#3B82F6",
-  plays: 1876,
   tags: ["geografia", "capitais", "paises", "conhecimentos-gerais"],
   createdAt: "2026-06-08",
   featured: false,

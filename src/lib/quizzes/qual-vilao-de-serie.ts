@@ -9,7 +9,6 @@ export const qualVilaoDeSerie: Quiz = {
   category: "series-filmes",
   emoji: "😈",
   color: "#7C3AED",
-  plays: 6200,
   tags: ["vilao", "series", "personalidade", "netflix", "divertido"],
   createdAt: "2026-06-11",
   featured: false,

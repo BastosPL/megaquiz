@@ -9,7 +9,6 @@ export const mitologiaGrega: Quiz = {
   category: "conhecimentos-gerais",
   emoji: "⚡",
   color: "#D97706",
-  plays: 3400,
   tags: ["mitologia", "grecia", "deuses", "educacao", "historia"],
   createdAt: "2026-06-11",
   featured: false,

@@ -9,7 +9,6 @@ export const qualProfissaoIdeal: Quiz = {
   category: "carreira",
   emoji: "💼",
   color: "#F59E0B",
-  plays: 7100,
   tags: ["carreira", "profissao", "trabalho", "vocacao", "teste"],
   createdAt: "2026-06-09",
   featured: false,

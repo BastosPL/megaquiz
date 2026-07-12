@@ -9,7 +9,6 @@ export const geografiaDoBrasil: Quiz = {
   category: "conhecimentos-gerais",
   emoji: "🗺️",
   color: "#10B981",
-  plays: 4560,
   tags: ["geografia", "brasil", "estados", "enem", "educacao"],
   createdAt: "2026-06-09",
   featured: false,

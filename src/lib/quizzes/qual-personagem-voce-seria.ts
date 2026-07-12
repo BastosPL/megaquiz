@@ -9,7 +9,6 @@ export const qualPersonagemVoceSeria: Quiz = {
   category: "series-filmes",
   emoji: "🎭",
   color: "#8B5CF6",
-  plays: 8200,
   tags: ["personalidade", "series", "personagens", "divertido"],
   createdAt: "2026-06-09",
   featured: true,

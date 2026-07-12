@@ -9,7 +9,6 @@ export const casaDePapelPersonagem: Quiz = {
   category: "series-filmes",
   emoji: "🔴",
   color: "#DC2626",
-  plays: 8900,
   tags: ["la casa de papel", "series", "netflix", "personalidade", "viral"],
   createdAt: "2026-06-11",
   featured: true,

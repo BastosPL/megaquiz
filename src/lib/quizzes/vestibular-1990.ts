@@ -9,7 +9,6 @@ export const vestibular1990: Quiz = {
   category: "conhecimentos-gerais",
   emoji: "📚",
   color: "#D97706",
-  plays: 4500,
   tags: ["vestibular", "educacao", "enem", "historia", "nostalgia"],
   createdAt: "2026-06-11",
   featured: false,

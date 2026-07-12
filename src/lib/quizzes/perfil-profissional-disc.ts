@@ -10,7 +10,6 @@ export const perfilProfissionalDisc: Quiz = {
   category: "carreira",
   emoji: "💼",
   color: "#0EA5E9",
-  plays: 5420,
   tags: ["carreira", "profissional", "DISC", "lideranca", "personalidade", "trabalho"],
   createdAt: "2026-06-08",
   featured: true,

@@ -9,7 +9,6 @@ export const curiosidadesCiencia: Quiz = {
   category: "conhecimentos-gerais",
   emoji: "🔬",
   color: "#6366F1",
-  plays: 3780,
   tags: ["ciencia", "curiosidades", "espaco", "biologia", "educacao"],
   createdAt: "2026-06-09",
   featured: false,

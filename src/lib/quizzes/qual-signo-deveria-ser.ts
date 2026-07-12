@@ -9,7 +9,6 @@ export const qualSignoDeveriaSer: Quiz = {
   category: "personalidade",
   emoji: "♈",
   color: "#EC4899",
-  plays: 11200,
   tags: ["signo", "zodiaco", "personalidade", "astrologia", "viral"],
   createdAt: "2026-06-11",
   featured: true,

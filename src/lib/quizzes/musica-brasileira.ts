@@ -9,7 +9,6 @@ export const musicaBrasileira: Quiz = {
   category: "conhecimentos-gerais",
   emoji: "🎵",
   color: "#EC4899",
-  plays: 3210,
   tags: ["musica", "brasil", "sertanejo", "funk", "conhecimentos-gerais"],
   createdAt: "2026-06-08",
   featured: true,
@@ -82,14 +81,14 @@ export const musicaBrasileira: Quiz = {
     },
     {
       id: "q7",
-      text: "Quem cantou 'Tempos Modernos' e 'Maluco Beleza'?",
+      text: "Quem cantou 'Tente Outra Vez' e 'Maluco Beleza'?",
       options: [
         { id: "a", text: "Cazuza", isCorrect: false },
         { id: "b", text: "Raul Seixas", isCorrect: true },
         { id: "c", text: "Renato Russo", isCorrect: false },
         { id: "d", text: "Belchior", isCorrect: false },
       ],
-      explanation: "Raul Seixas, o 'Pai do Rock Brasileiro', gravou esses classicos eternos nos anos 70.",
+      explanation: "Raul Seixas, o 'Pai do Rock Brasileiro', gravou esses classicos nos anos 70.",
     },
     {
       id: "q8",

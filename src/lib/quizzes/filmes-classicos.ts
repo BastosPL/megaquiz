@@ -9,7 +9,6 @@ export const filmesClassicos: Quiz = {
   category: "series-filmes",
   emoji: "🎬",
   color: "#FFD700",
-  plays: 3920,
   tags: ["filmes", "cinema", "hollywood", "classicos", "oscar"],
   createdAt: "2026-06-09",
   featured: false,

@@ -9,7 +9,6 @@ export const qualRedeSocial: Quiz = {
   category: "personalidade",
   emoji: "📱",
   color: "#8B5CF6",
-  plays: 9100,
   tags: ["redes sociais", "personalidade", "internet", "viral", "divertido"],
   createdAt: "2026-06-11",
   featured: true,

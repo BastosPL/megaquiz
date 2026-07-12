@@ -64,13 +64,10 @@ export default function QuizEngine({ quiz }: QuizEngineProps) {
   const calculateTriviaResult = useCallback(
     (finalScore: number, total: number): QuizResult => {
       const percentage = Math.round((finalScore / total) * 100);
-      const percentile =
-        percentage >= 90 ? 95 : percentage >= 70 ? 80 : percentage >= 50 ? 55 : 30;
       return {
         score: finalScore,
         totalQuestions: total,
         percentage,
-        percentile,
         shareText: `Acertei ${finalScore}/${total} no quiz "${quiz.title}"! Consegue me superar?`,
       };
     },

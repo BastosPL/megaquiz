@@ -10,7 +10,6 @@ export const qualCidadeBrasileira: Quiz = {
   category: "personalidade",
   emoji: "🇧🇷",
   color: "#8B5CF6",
-  plays: 3891,
   tags: ["personalidade", "brasil", "cidades", "teste"],
   createdAt: "2026-06-08",
   featured: true,

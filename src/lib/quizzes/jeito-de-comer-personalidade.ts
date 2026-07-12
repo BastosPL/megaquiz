@@ -9,7 +9,6 @@ export const jeitoDeComerPersonalidade: Quiz = {
   category: "personalidade",
   emoji: "🍕",
   color: "#F59E0B",
-  plays: 6890,
   tags: ["comida", "personalidade", "viral", "divertido", "gastronomia"],
   createdAt: "2026-06-11",
   featured: true,

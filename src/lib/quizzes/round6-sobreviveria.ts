@@ -9,7 +9,6 @@ export const round6Sobreviveria: Quiz = {
   category: "series-filmes",
   emoji: "🦑",
   color: "#DC2626",
-  plays: 7300,
   tags: ["round 6", "squid game", "netflix", "series", "survival"],
   createdAt: "2026-06-11",
   featured: false,

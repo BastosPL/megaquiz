@@ -89,18 +89,6 @@ export default function QuizResultView({
 
         {/* Body */}
         <div className="p-6">
-          {isTrivia && result.percentile && (
-            <div className="text-center mb-4 p-3 bg-primary/5 rounded-xl">
-              <p className="text-sm text-text-light">
-                Voce foi melhor que{" "}
-                <span className="font-bold text-primary">
-                  {result.percentile}%
-                </span>{" "}
-                das pessoas!
-              </p>
-            </div>
-          )}
-
           {!isTrivia && result.profile && (
             <p className="text-text-light text-center mb-4 leading-relaxed">
               {result.profile.description}
@@ -109,25 +97,28 @@ export default function QuizResultView({
 
           {/* Affiliate CTA */}
           {affiliate && (
-            <a
-              href={affiliate.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block mb-4 p-4 rounded-xl border-2 border-dashed text-center transition-all hover:scale-[1.02]"
-              style={{ borderColor: quiz.color, backgroundColor: `${quiz.color}10` }}
-            >
-              <p className="text-sm text-text-light mb-1">
-                Vista a camisa do seu craque!
-              </p>
-              <p className="font-bold text-text text-lg">
-                🛒 {affiliate.label}
-              </p>
-              {affiliate.price && (
-                <p className="text-sm font-semibold mt-1" style={{ color: quiz.color }}>
-                  A partir de {affiliate.price} na Shopee
+            <div className="mb-4">
+              <p className="text-xs text-text-light text-center mb-1 opacity-70">Publicidade</p>
+              <a
+                href={affiliate.url}
+                target="_blank"
+                rel="noopener noreferrer sponsored nofollow"
+                className="block p-4 rounded-xl border-2 border-dashed text-center transition-all hover:scale-[1.02]"
+                style={{ borderColor: quiz.color, backgroundColor: `${quiz.color}10` }}
+              >
+                <p className="text-sm text-text-light mb-1">
+                  Vista a camisa do seu craque!
                 </p>
-              )}
-            </a>
+                <p className="font-bold text-text text-lg">
+                  🛒 {affiliate.label}
+                </p>
+                {affiliate.price && (
+                  <p className="text-sm font-semibold mt-1" style={{ color: quiz.color }}>
+                    A partir de {affiliate.price} na Shopee
+                  </p>
+                )}
+              </a>
+            </div>
           )}
 
           {/* Share buttons */}

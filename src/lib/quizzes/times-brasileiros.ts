@@ -10,7 +10,6 @@ export const timesBrasileiros: Quiz = {
   category: "esportes",
   emoji: "⚽",
   color: "#F59E0B",
-  plays: 5621,
   tags: ["futebol brasileiro", "times", "brasileirao", "esportes"],
   createdAt: "2026-06-08",
   featured: true,

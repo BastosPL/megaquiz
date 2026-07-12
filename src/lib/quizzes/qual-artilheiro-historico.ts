@@ -9,7 +9,6 @@ export const qualArtilheiroHistorico: Quiz = {
   category: "copa-do-mundo",
   emoji: "🏆",
   color: "#059669",
-  plays: 3870,
   tags: ["copa", "futebol", "artilheiro", "personalidade", "lendas"],
   createdAt: "2026-06-11",
   featured: false,

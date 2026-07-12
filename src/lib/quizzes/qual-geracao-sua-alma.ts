@@ -9,7 +9,6 @@ export const qualGeracaoSuaAlma: Quiz = {
   category: "personalidade",
   emoji: "⏳",
   color: "#8B5CF6",
-  plays: 7650,
   tags: ["geracao", "personalidade", "viral", "divertido", "millennial"],
   createdAt: "2026-06-11",
   featured: true,

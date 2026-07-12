@@ -9,7 +9,6 @@ export const historiaDoBrasil: Quiz = {
   category: "conhecimentos-gerais",
   emoji: "🇧🇷",
   color: "#009739",
-  plays: 6340,
   tags: ["historia", "brasil", "educacao", "enem", "vestibular"],
   createdAt: "2026-06-09",
   featured: true,

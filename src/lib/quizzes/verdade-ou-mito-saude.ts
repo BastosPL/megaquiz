@@ -9,7 +9,6 @@ export const verdadeOuMitoSaude: Quiz = {
   category: "conhecimentos-gerais",
   emoji: "🏥",
   color: "#10B981",
-  plays: 5200,
   tags: ["saude", "mitos", "verdade", "corpo humano", "curiosidades"],
   createdAt: "2026-06-11",
   featured: true,

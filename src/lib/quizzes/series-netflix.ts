@@ -9,7 +9,6 @@ export const seriesNetflix: Quiz = {
   category: "series-filmes",
   emoji: "📺",
   color: "#E50914",
-  plays: 4780,
   tags: ["netflix", "series", "filmes", "streaming", "entretenimento"],
   createdAt: "2026-06-08",
   featured: true,
@@ -160,14 +159,14 @@ export const seriesNetflix: Quiz = {
     },
     {
       id: "q15",
-      text: "Qual serie se passa numa prisao feminina?",
+      text: "Qual dessas series de prisao feminina e producao original Netflix?",
       options: [
         { id: "a", text: "Wentworth", isCorrect: false },
         { id: "b", text: "Vis a Vis", isCorrect: false },
         { id: "c", text: "Orange Is the New Black", isCorrect: true },
-        { id: "d", text: "Todas as anteriores", isCorrect: false },
+        { id: "d", text: "Nenhuma das anteriores", isCorrect: false },
       ],
-      explanation: "Todas se passam em prisoes femininas, mas Orange Is the New Black e a mais famosa da Netflix!",
+      explanation: "Orange Is the New Black e producao original Netflix. Wentworth e australiana e Vis a Vis e espanhola.",
     },
   ],
 };

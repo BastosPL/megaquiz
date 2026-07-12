@@ -43,8 +43,6 @@ export interface QuizResult {
   percentage?: number;
   /** Para personalidade */
   profile?: QuizProfile;
-  /** Ranking comparativo */
-  percentile?: number;
   shareText: string;
 }
 
@@ -61,8 +59,6 @@ export interface Quiz {
   questions: QuizQuestion[];
   /** Perfis (apenas para personalidade) */
   profiles?: QuizProfile[];
-  /** Total de plays */
-  plays: number;
   /** Tags para SEO */
   tags: string[];
   createdAt: string;

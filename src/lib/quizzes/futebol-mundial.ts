@@ -9,7 +9,6 @@ export const futebolMundial: Quiz = {
   category: "esportes",
   emoji: "⚽",
   color: "#3B82F6",
-  plays: 5890,
   tags: ["futebol", "esportes", "copa", "champions", "selecao"],
   createdAt: "2026-06-09",
   featured: false,

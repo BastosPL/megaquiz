@@ -9,7 +9,6 @@ export const mundoAnimal: Quiz = {
   category: "conhecimentos-gerais",
   emoji: "🦁",
   color: "#16A34A",
-  plays: 2104,
   tags: ["animais", "natureza", "conhecimentos-gerais", "biologia"],
   createdAt: "2026-06-08",
   featured: false,

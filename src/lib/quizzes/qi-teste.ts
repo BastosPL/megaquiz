@@ -2,15 +2,14 @@ import type { Quiz } from "@/lib/types";
 
 export const qiTeste: Quiz = {
   id: "qi-teste",
-  slug: "so-quem-tem-qi-acima-de-120-acerta-8",
-  title: "So quem tem QI acima de 120 acerta 8/10",
+  slug: "desafio-conhecimentos-gerais-8-perguntas",
+  title: "Voce consegue acertar 8 destas 10 perguntas?",
   description:
-    "Sera que voce e mais inteligente que 92% da populacao? Faca este teste e descubra!",
+    "Um desafio de conhecimentos gerais que vai testar o que voce sabe!",
   type: "trivia",
   category: "conhecimentos-gerais",
   emoji: "🧠",
   color: "#3B82F6",
-  plays: 8432,
   tags: ["qi", "inteligencia", "conhecimentos gerais", "desafio"],
   createdAt: "2026-06-08",
   featured: true,

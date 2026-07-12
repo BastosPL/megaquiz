@@ -10,7 +10,6 @@ export const copa2026Trivia: Quiz = {
   category: "copa-do-mundo",
   emoji: "🏆",
   color: "#16A34A",
-  plays: 1247,
   tags: ["copa do mundo", "futebol", "2026", "fifa", "selecoes"],
   createdAt: "2026-06-08",
   featured: true,
@@ -159,14 +158,14 @@ export const copa2026Trivia: Quiz = {
     },
     {
       id: "q14",
-      text: "O mascote oficial da Copa 2026 se chama...",
+      text: "Quantos mascotes oficiais tem a Copa 2026?",
       options: [
-        { id: "a", text: "Ike", isCorrect: true },
-        { id: "b", text: "Fuleco", isCorrect: false },
-        { id: "c", text: "La'eeb", isCorrect: false },
-        { id: "d", text: "Striker", isCorrect: false },
+        { id: "a", text: "1", isCorrect: false },
+        { id: "b", text: "2", isCorrect: false },
+        { id: "c", text: "3", isCorrect: true },
+        { id: "d", text: "4", isCorrect: false },
       ],
-      explanation: "Ike e um cachorro animado criado para a Copa 2026.",
+      explanation: "A Copa 2026 e a primeira com 3 mascotes: Maple (alce, Canada), Zayu (onca-pintada, Mexico) e Clutch (aguia-careca, EUA).",
     },
     {
       id: "q15",
@@ -250,7 +249,7 @@ export const copa2026Trivia: Quiz = {
         { id: "a", text: "Brazuca", isCorrect: false },
         { id: "b", text: "Telstar", isCorrect: false },
         { id: "c", text: "Al Rihla", isCorrect: false },
-        { id: "d", text: "adidas Oceaunz Flight", isCorrect: true },
+        { id: "d", text: "adidas Trionda", isCorrect: true },
       ],
     },
     {

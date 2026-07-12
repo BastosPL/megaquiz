@@ -9,7 +9,6 @@ export const bandeirasCopa2026: Quiz = {
   category: "copa-do-mundo",
   emoji: "🏳️",
   color: "#059669",
-  plays: 3210,
   tags: ["copa", "bandeiras", "paises", "geografia", "2026"],
   createdAt: "2026-06-11",
   featured: false,
@@ -67,7 +66,7 @@ export const bandeirasCopa2026: Quiz = {
     },
     {
       id: "q6",
-      text: "Bandeira vermelha com circulo branco e sol nascente — qual pais?",
+      text: "Bandeira branca com circulo vermelho no centro — qual pais?",
       options: [
         { id: "a", text: "China", isCorrect: false },
         { id: "b", text: "Coreia do Sul", isCorrect: false },
