@@ -46,6 +46,18 @@ export interface QuizResult {
   shareText: string;
 }
 
+export interface ContentSource {
+  label: string;
+  url?: string;
+  organization?: string;
+  accessedAt?: string;
+}
+
+export interface ArticleSection {
+  heading?: string;
+  text: string;
+}
+
 export interface Quiz {
   id: string;
   slug: string;
@@ -63,6 +75,14 @@ export interface Quiz {
   tags: string[];
   createdAt: string;
   featured?: boolean;
+  author?: string;
+  authorBio?: string;
+  sources?: ContentSource[];
+  lastReviewedAt?: string;
+  disclaimer?: string;
+  disclaimerResult?: string;
+  introText?: string;
+  methodologyNote?: string;
 }
 
 export interface CategoryInfo {

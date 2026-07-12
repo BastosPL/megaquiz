@@ -95,6 +95,18 @@ export default function QuizResultView({
             </p>
           )}
 
+          {quiz.disclaimerResult && (
+            <p className="text-xs text-center text-text-light/70 mb-4 italic">
+              {quiz.disclaimerResult}
+            </p>
+          )}
+
+          {quiz.methodologyNote && !isTrivia && (
+            <div className="mb-4 p-4 rounded-xl bg-bg border border-border">
+              <p className="text-sm text-text-light whitespace-pre-line">{quiz.methodologyNote}</p>
+            </div>
+          )}
+
           {/* Affiliate CTA */}
           {affiliate && (
             <div className="mb-4">

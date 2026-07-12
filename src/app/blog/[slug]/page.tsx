@@ -70,14 +70,60 @@ export default async function ArticlePage({ params }: Props) {
             </span>
             <span>·</span>
             <span>{article.readTime} min de leitura</span>
+            {article.author && (
+              <>
+                <span>·</span>
+                <span>{article.author}</span>
+              </>
+            )}
           </div>
         </header>
 
         <div className="space-y-5 text-text-light leading-relaxed text-base">
-          {article.content.map((paragraph, i) => (
-            <p key={i}>{paragraph}</p>
+          {article.content.map((section, i) => (
+            <div key={i}>
+              {section.heading && (
+                <h2 className="text-xl font-bold text-text mt-8 mb-3">{section.heading}</h2>
+              )}
+              <p>{section.text}</p>
+            </div>
           ))}
         </div>
+
+        {article.sources && article.sources.length > 0 && (
+          <div className="mt-8 pt-6 border-t border-border">
+            <h2 className="text-lg font-bold text-text mb-3">Fontes</h2>
+            <ul className="space-y-1 text-sm text-text-light">
+              {article.sources.map((source, i) => (
+                <li key={i}>
+                  {source.url ? (
+                    <a href={source.url} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                      {source.label}
+                    </a>
+                  ) : (
+                    source.label
+                  )}
+                  {source.organization && <span className="text-text-light/70"> — {source.organization}</span>}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {(article.author || article.lastReviewedAt) && (
+          <div className="mt-4 text-xs text-text-light">
+            {article.author && article.authorBio && <p>{article.author} — {article.authorBio}</p>}
+            {article.lastReviewedAt && (
+              <p className="mt-1">Ultima revisao: {new Date(article.lastReviewedAt).toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })}</p>
+            )}
+          </div>
+        )}
+
+        {article.disclaimer && (
+          <div className="mt-4 p-3 rounded-lg bg-blue-50 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-800">
+            <p className="text-xs text-blue-800 dark:text-blue-200">{article.disclaimer}</p>
+          </div>
+        )}
 
         <div className="mt-10 bg-bg-card rounded-2xl border border-border p-6 text-center">
           <h2 className="text-lg font-bold text-text mb-2">
