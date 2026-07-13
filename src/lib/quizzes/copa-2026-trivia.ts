@@ -13,6 +13,14 @@ export const copa2026Trivia: Quiz = {
   tags: ["copa do mundo", "futebol", "2026", "fifa", "selecoes"],
   createdAt: "2026-06-08",
   featured: true,
+  author: "Equipe Editorial MegaQuiz",
+  authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
+  sources: [
+    { label: "FIFA.com — History of the FIFA World Cup", url: "https://www.fifa.com/en/tournaments/mens/worldcup", organization: "FIFA", accessedAt: "2026-07-12" },
+    { label: "FIFA.com — FIFA World Cup 26", url: "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026", organization: "FIFA", accessedAt: "2026-07-12" },
+  ],
+  lastReviewedAt: "2026-07-12",
+  introText: "Teste seus conhecimentos sobre a história e as curiosidades da Copa do Mundo, do primeiro torneio em 1930 até a edição de 2026.",
   questions: [
     {
       id: "q1",
@@ -155,6 +163,7 @@ export const copa2026Trivia: Quiz = {
         { id: "c", text: "Italia (10 jogos)", isCorrect: false },
         { id: "d", text: "Argentina (9 jogos)", isCorrect: false },
       ],
+      explanation: "O Brasil ficou 13 jogos invicto entre as Copas de 2002 e 2006.",
     },
     {
       id: "q14",
@@ -198,6 +207,7 @@ export const copa2026Trivia: Quiz = {
         { id: "c", text: "5 vezes", isCorrect: false },
         { id: "d", text: "2 vezes", isCorrect: false },
       ],
+      explanation: "A Alemanha foi campea em 1954, 1974, 1990 e 2014.",
     },
     {
       id: "q18",
@@ -241,6 +251,7 @@ export const copa2026Trivia: Quiz = {
         { id: "c", text: "2 vezes", isCorrect: false },
         { id: "d", text: "5 vezes", isCorrect: false },
       ],
+      explanation: "A Italia foi campea em 1934, 1938, 1982 e 2006.",
     },
     {
       id: "q22",
@@ -251,6 +262,7 @@ export const copa2026Trivia: Quiz = {
         { id: "c", text: "Al Rihla", isCorrect: false },
         { id: "d", text: "adidas Trionda", isCorrect: true },
       ],
+      explanation: "A Trionda e a bola oficial da Copa 2026, produzida pela adidas. O nome homenageia as 3 nacoes-sede.",
     },
     {
       id: "q23",

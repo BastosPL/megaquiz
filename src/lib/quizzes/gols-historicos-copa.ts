@@ -12,6 +12,14 @@ export const golsHistoricosCopa: Quiz = {
   tags: ["copa", "gols", "futebol", "historia", "selecao"],
   createdAt: "2026-06-11",
   featured: false,
+  author: "Equipe Editorial MegaQuiz",
+  authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
+  sources: [
+    { label: "FIFA.com — Classic Goals", url: "https://www.fifa.com/en/tournaments/mens/worldcup", organization: "FIFA", accessedAt: "2026-07-12" },
+    { label: "FIFA.com — Awards & Records", organization: "FIFA", accessedAt: "2026-07-12" },
+  ],
+  lastReviewedAt: "2026-07-12",
+  introText: "Reviva os gols mais marcantes da história das Copas do Mundo, de Pelé a Messi.",
   questions: [
     {
       id: "q1",
@@ -55,6 +63,7 @@ export const golsHistoricosCopa: Quiz = {
         { id: "c", text: "Guillermo Stabile (Argentina)", isCorrect: false },
         { id: "d", text: "Bert Patenaude (EUA)", isCorrect: false },
       ],
+      explanation: "Lucien Laurent marcou o primeiro gol da historia das Copas, aos 19 minutos de Franca 4x1 Mexico, em 13 de julho de 1930.",
     },
     {
       id: "q5",
@@ -65,6 +74,7 @@ export const golsHistoricosCopa: Quiz = {
         { id: "c", text: "6", isCorrect: false },
         { id: "d", text: "8", isCorrect: false },
       ],
+      explanation: "Pele marcou 4 gols na Copa de 1970 no Mexico, incluindo o primeiro da final contra a Italia (4x1).",
     },
     {
       id: "q6",
@@ -75,6 +85,7 @@ export const golsHistoricosCopa: Quiz = {
         { id: "c", text: "Ozil", isCorrect: false },
         { id: "d", text: "Gotze", isCorrect: false },
       ],
+      explanation: "Thomas Muller abriu o placar aos 11 minutos. A Alemanha fez 5 gols em 18 minutos no primeiro tempo.",
     },
     {
       id: "q7",
@@ -85,6 +96,7 @@ export const golsHistoricosCopa: Quiz = {
         { id: "c", text: "Italia", isCorrect: false },
         { id: "d", text: "Holanda", isCorrect: false },
       ],
+      explanation: "Zidane marcou dois gols de cabeca contra o Brasil na final de 1998 (3x0). A Franca conquistou seu primeiro titulo mundial.",
     },
     {
       id: "q8",
@@ -128,6 +140,7 @@ export const golsHistoricosCopa: Quiz = {
         { id: "c", text: "Xavi", isCorrect: false },
         { id: "d", text: "Fernando Torres", isCorrect: false },
       ],
+      explanation: "Iniesta marcou aos 116 minutos da prorrogacao contra a Holanda, dando a Espanha seu primeiro titulo mundial.",
     },
     {
       id: "q12",
@@ -138,6 +151,7 @@ export const golsHistoricosCopa: Quiz = {
         { id: "c", text: "Copa 2014 (Brasil)", isCorrect: true },
         { id: "d", text: "Copa 2002 (Japao/Coreia)", isCorrect: false },
       ],
+      explanation: "Klose marcou seu 16o gol na Copa 2014 no Brasil, superando Ronaldo Fenomeno (15 gols) como maior artilheiro de Copas.",
     },
     {
       id: "q13",
@@ -170,6 +184,7 @@ export const golsHistoricosCopa: Quiz = {
         { id: "c", text: "Maradona", isCorrect: true },
         { id: "d", text: "Platini", isCorrect: false },
       ],
+      explanation: "Maradona marcou com a mao contra a Inglaterra nas quartas de final de 1986. Ele disse que foi 'a mao de Deus'.",
     },
   ],
 };

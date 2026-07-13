@@ -12,6 +12,14 @@ export const bandeirasCopa2026: Quiz = {
   tags: ["copa", "bandeiras", "paises", "geografia", "2026"],
   createdAt: "2026-06-11",
   featured: false,
+  author: "Equipe Editorial MegaQuiz",
+  authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
+  sources: [
+    { label: "FIFA.com — FIFA World Cup 26 Teams", url: "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026", organization: "FIFA", accessedAt: "2026-07-12" },
+    { label: "CIA World Factbook — Country Flags", organization: "CIA", accessedAt: "2026-07-12" },
+  ],
+  lastReviewedAt: "2026-07-12",
+  introText: "Reconheça as bandeiras das seleções que disputam a Copa do Mundo de 2026. Cada bandeira conta uma história.",
   questions: [
     {
       id: "q1",
@@ -22,6 +30,7 @@ export const bandeirasCopa2026: Quiz = {
         { id: "c", text: "Bolivia", isCorrect: false },
         { id: "d", text: "Camaroes", isCorrect: false },
       ],
+      explanation: "A bandeira do Brasil foi adotada em 1889, com o losango amarelo sobre fundo verde e o globo azul com a faixa 'Ordem e Progresso'.",
     },
     {
       id: "q2",
@@ -32,6 +41,7 @@ export const bandeirasCopa2026: Quiz = {
         { id: "c", text: "Honduras", isCorrect: false },
         { id: "d", text: "El Salvador", isCorrect: false },
       ],
+      explanation: "O sol na bandeira argentina e o Sol de Maio, simbolo da Revolucao de Maio de 1810.",
     },
     {
       id: "q3",
@@ -46,13 +56,14 @@ export const bandeirasCopa2026: Quiz = {
     },
     {
       id: "q4",
-      text: "Bandeira verde com estrela e lua crescente — qual selecao?",
+      text: "Qual seleção tem uma bandeira verde com uma inscrição árabe branca e uma espada?",
       options: [
-        { id: "a", text: "Arabia Saudita", isCorrect: false },
-        { id: "b", text: "Argelia", isCorrect: false },
-        { id: "c", text: "Paquistao", isCorrect: true },
+        { id: "a", text: "Irã", isCorrect: false },
+        { id: "b", text: "Argélia", isCorrect: false },
+        { id: "c", text: "Arábia Saudita", isCorrect: true },
         { id: "d", text: "Turquia", isCorrect: false },
       ],
+      explanation: "A bandeira da Arábia Saudita traz a Shahada (credo islâmico) em caligrafia branca e uma espada horizontal. O design atual foi adotado em 1973.",
     },
     {
       id: "q5",
@@ -63,6 +74,7 @@ export const bandeirasCopa2026: Quiz = {
         { id: "c", text: "Franca", isCorrect: true },
         { id: "d", text: "Italia", isCorrect: false },
       ],
+      explanation: "A tricolor francesa (bleu, blanc, rouge) foi adotada durante a Revolucao Francesa e simboliza liberdade, igualdade e fraternidade.",
     },
     {
       id: "q6",
@@ -73,6 +85,7 @@ export const bandeirasCopa2026: Quiz = {
         { id: "c", text: "Japao", isCorrect: true },
         { id: "d", text: "Vietna", isCorrect: false },
       ],
+      explanation: "A bandeira do Japao e chamada Nisshoki ('bandeira do sol nascente'). O circulo vermelho representa o sol.",
     },
     {
       id: "q7",
@@ -83,6 +96,7 @@ export const bandeirasCopa2026: Quiz = {
         { id: "c", text: "Gana", isCorrect: false },
         { id: "d", text: "Costa do Marfim", isCorrect: false },
       ],
+      explanation: "A bandeira da Nigeria foi desenhada em 1959 por um estudante de 23 anos, Michael Taiwo Akinkunmi, num concurso nacional.",
     },
     {
       id: "q8",
@@ -104,6 +118,7 @@ export const bandeirasCopa2026: Quiz = {
         { id: "c", text: "Inglaterra", isCorrect: true },
         { id: "d", text: "Georgia", isCorrect: false },
       ],
+      explanation: "A Cruz de Sao Jorge (vermelha sobre fundo branco) e o simbolo da Inglaterra, diferente do Union Jack do Reino Unido.",
     },
     {
       id: "q10",
@@ -125,6 +140,7 @@ export const bandeirasCopa2026: Quiz = {
         { id: "c", text: "Costa do Marfim", isCorrect: false },
         { id: "d", text: "Hungria", isCorrect: false },
       ],
+      explanation: "A bandeira da Irlanda e verde (catolicos), laranja (protestantes) e branca (paz entre os dois grupos) na vertical.",
     },
     {
       id: "q12",
@@ -135,6 +151,7 @@ export const bandeirasCopa2026: Quiz = {
         { id: "c", text: "Serbia", isCorrect: false },
         { id: "d", text: "Eslovenia", isCorrect: false },
       ],
+      explanation: "O xadrez vermelho e branco (sahovnica) e simbolo da Croacia desde a Idade Media.",
     },
     {
       id: "q13",
@@ -145,6 +162,7 @@ export const bandeirasCopa2026: Quiz = {
         { id: "c", text: "Coreia do Norte", isCorrect: false },
         { id: "d", text: "Turquia", isCorrect: false },
       ],
+      explanation: "A bandeira do Vietna foi adotada em 1955. A estrela amarela de cinco pontas representa as cinco classes sociais.",
     },
     {
       id: "q14",
@@ -155,6 +173,7 @@ export const bandeirasCopa2026: Quiz = {
         { id: "c", text: "Guatemala", isCorrect: false },
         { id: "d", text: "Nicaragua", isCorrect: false },
       ],
+      explanation: "O sol na bandeira do Uruguai e o Sol de Maio, mesmo simbolo da Argentina, referente a Revolucao de Maio.",
     },
     {
       id: "q15",
@@ -165,6 +184,7 @@ export const bandeirasCopa2026: Quiz = {
         { id: "c", text: "Angola", isCorrect: false },
         { id: "d", text: "Uganda", isCorrect: false },
       ],
+      explanation: "As cores da bandeira alema (preto, vermelho e dourado) vem dos uniformes dos voluntarios nas Guerras Napoleonicas.",
     },
   ],
 };
