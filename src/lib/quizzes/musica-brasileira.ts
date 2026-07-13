@@ -12,6 +12,13 @@ export const musicaBrasileira: Quiz = {
   tags: ["musica", "brasil", "sertanejo", "funk", "conhecimentos-gerais"],
   createdAt: "2026-06-08",
   featured: true,
+  author: "Equipe Editorial MegaQuiz",
+  authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
+  sources: [
+    { label: "Dicionário Cravo Albin da Música Popular Brasileira", url: "https://dicionariompb.com.br/", organization: "Instituto Cultural Cravo Albin", accessedAt: "2026-07-12" },
+  ],
+  lastReviewedAt: "2026-07-12",
+  introText: "Do sertanejo ao funk, do axé ao rap — prove que você conhece a música brasileira.",
   questions: [
     {
       id: "q1",
@@ -132,6 +139,7 @@ export const musicaBrasileira: Quiz = {
         { id: "c", text: "Claudinho e Buchecha", isCorrect: false },
         { id: "d", text: "Rouge", isCorrect: false },
       ],
+      explanation: "Latino ficou famoso nos anos 2000 com versões brasileiras de hits internacionais e músicas dançantes.",
     },
     {
       id: "q12",

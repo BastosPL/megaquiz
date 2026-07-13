@@ -12,6 +12,14 @@ export const curiosidadesCiencia: Quiz = {
   tags: ["ciencia", "curiosidades", "espaco", "biologia", "educacao"],
   createdAt: "2026-06-09",
   featured: false,
+  author: "Equipe Editorial MegaQuiz",
+  authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
+  sources: [
+    { label: "NASA — Solar System Exploration", url: "https://solarsystem.nasa.gov/", organization: "NASA", accessedAt: "2026-07-12" },
+    { label: "Britannica — Science", organization: "Encyclopædia Britannica", accessedAt: "2026-07-12" },
+  ],
+  lastReviewedAt: "2026-07-12",
+  introText: "Do espaço ao corpo humano, da física à biologia — teste seus conhecimentos científicos com curiosidades surpreendentes.",
   questions: [
     {
       id: "q1",
@@ -33,6 +41,7 @@ export const curiosidadesCiencia: Quiz = {
         { id: "c", text: "226", isCorrect: false },
         { id: "d", text: "256", isCorrect: false },
       ],
+      explanation: "Bebes nascem com cerca de 270 ossos, mas muitos se fundem durante o crescimento, resultando em 206 na idade adulta.",
     },
     {
       id: "q3",
@@ -43,6 +52,7 @@ export const curiosidadesCiencia: Quiz = {
         { id: "c", text: "Hidrogenio", isCorrect: true },
         { id: "d", text: "Helio", isCorrect: false },
       ],
+      explanation: "O hidrogenio compoe cerca de 75% da massa do universo. O helio vem em segundo, com cerca de 24%.",
     },
     {
       id: "q4",
@@ -75,6 +85,7 @@ export const curiosidadesCiencia: Quiz = {
         { id: "c", text: "Uma medida de velocidade", isCorrect: false },
         { id: "d", text: "Uma medida de energia", isCorrect: false },
       ],
+      explanation: "Um ano-luz equivale a cerca de 9,46 trilhoes de quilometros — a distancia que a luz percorre em um ano.",
     },
     {
       id: "q7",
@@ -96,6 +107,7 @@ export const curiosidadesCiencia: Quiz = {
         { id: "c", text: "60-70%", isCorrect: true },
         { id: "d", text: "70-80%", isCorrect: false },
       ],
+      explanation: "A porcentagem varia com a idade: bebes tem cerca de 75%, adultos 60-70%, e idosos um pouco menos.",
     },
     {
       id: "q9",
@@ -106,6 +118,7 @@ export const curiosidadesCiencia: Quiz = {
         { id: "c", text: "Niels Bohr", isCorrect: false },
         { id: "d", text: "Stephen Hawking", isCorrect: false },
       ],
+      explanation: "Einstein publicou a Teoria da Relatividade Especial em 1905 e a Geral em 1915, revolucionando a fisica.",
     },
     {
       id: "q10",
@@ -127,6 +140,7 @@ export const curiosidadesCiencia: Quiz = {
         { id: "c", text: "Gas carbonico (CO2)", isCorrect: true },
         { id: "d", text: "Metano", isCorrect: false },
       ],
+      explanation: "As plantas absorvem CO2 e liberam oxigenio durante a fotossintese, processo essencial para a vida na Terra.",
     },
     {
       id: "q12",
@@ -137,6 +151,7 @@ export const curiosidadesCiencia: Quiz = {
         { id: "c", text: "15 milhoes de graus", isCorrect: true },
         { id: "d", text: "100 milhoes de graus", isCorrect: false },
       ],
+      explanation: "O nucleo do Sol atinge cerca de 15 milhoes de graus Celsius, onde ocorre a fusao nuclear do hidrogenio em helio.",
     },
     {
       id: "q13",
@@ -147,6 +162,7 @@ export const curiosidadesCiencia: Quiz = {
         { id: "c", text: "7-8 litros", isCorrect: false },
         { id: "d", text: "10-12 litros", isCorrect: false },
       ],
+      explanation: "Um adulto tem em media 4,5 a 5,5 litros de sangue, que e bombeado pelo coracao cerca de 100 mil vezes por dia.",
     },
     {
       id: "q14",
@@ -157,6 +173,7 @@ export const curiosidadesCiencia: Quiz = {
         { id: "c", text: "Cobre", isCorrect: false },
         { id: "d", text: "Ouro", isCorrect: false },
       ],
+      explanation: "O aluminio representa cerca de 8% da crosta terrestre. E abundante, mas so foi isolado como metal em 1825.",
     },
     {
       id: "q15",

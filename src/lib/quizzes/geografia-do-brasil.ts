@@ -12,6 +12,14 @@ export const geografiaDoBrasil: Quiz = {
   tags: ["geografia", "brasil", "estados", "enem", "educacao"],
   createdAt: "2026-06-09",
   featured: false,
+  author: "Equipe Editorial MegaQuiz",
+  authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
+  sources: [
+    { label: "IBGE — Informações sobre estados e municípios", url: "https://www.ibge.gov.br/", organization: "IBGE", accessedAt: "2026-07-12" },
+    { label: "ICMBio — Biomas brasileiros", organization: "ICMBio/MMA", accessedAt: "2026-07-12" },
+  ],
+  lastReviewedAt: "2026-07-12",
+  introText: "Biomas, rios, estados e regiões — teste o que você sabe sobre a geografia do Brasil.",
   questions: [
     {
       id: "q1",
@@ -33,6 +41,7 @@ export const geografiaDoBrasil: Quiz = {
         { id: "c", text: "27", isCorrect: true },
         { id: "d", text: "28", isCorrect: false },
       ],
+      explanation: "Sao 26 estados mais o Distrito Federal, totalizando 27 unidades federativas.",
     },
     {
       id: "q3",
@@ -43,6 +52,7 @@ export const geografiaDoBrasil: Quiz = {
         { id: "c", text: "Rio Parana", isCorrect: false },
         { id: "d", text: "Rio Tocantins", isCorrect: false },
       ],
+      explanation: "O Rio Amazonas tem cerca de 6.400 km de extensao e e tambem o maior rio do mundo em volume de agua.",
     },
     {
       id: "q4",
@@ -64,6 +74,7 @@ export const geografiaDoBrasil: Quiz = {
         { id: "c", text: "Goiania", isCorrect: false },
         { id: "d", text: "Palmas", isCorrect: false },
       ],
+      explanation: "Campo Grande e a capital do MS. Cuiaba e a capital do Mato Grosso (sem o 'do Sul').",
     },
     {
       id: "q6",
@@ -96,6 +107,7 @@ export const geografiaDoBrasil: Quiz = {
         { id: "c", text: "Argentina e Paraguai", isCorrect: false },
         { id: "d", text: "Bolivia e Suriname", isCorrect: false },
       ],
+      explanation: "Equador e Chile sao os unicos paises sul-americanos que nao fazem fronteira com o Brasil.",
     },
     {
       id: "q9",
@@ -106,6 +118,7 @@ export const geografiaDoBrasil: Quiz = {
         { id: "c", text: "Sergipe", isCorrect: true },
         { id: "d", text: "Espirito Santo", isCorrect: false },
       ],
+      explanation: "Sergipe tem apenas 21.915 km², sendo o menor estado brasileiro em area territorial.",
     },
     {
       id: "q10",
@@ -116,6 +129,7 @@ export const geografiaDoBrasil: Quiz = {
         { id: "c", text: "Para e Amazonas", isCorrect: false },
         { id: "d", text: "Minas Gerais e Bahia", isCorrect: false },
       ],
+      explanation: "O Pantanal ocupa partes do MT e MS, sendo a maior planicie alagavel do mundo (~150 mil km²).",
     },
     {
       id: "q11",
@@ -148,6 +162,7 @@ export const geografiaDoBrasil: Quiz = {
         { id: "c", text: "Rio Grande do Sul", isCorrect: false },
         { id: "d", text: "Mato Grosso do Sul", isCorrect: false },
       ],
+      explanation: "As Cataratas do Iguacu ficam em Foz do Iguacu (PR), na fronteira com a Argentina. Sao Patrimonio Mundial da UNESCO.",
     },
     {
       id: "q14",
@@ -158,6 +173,7 @@ export const geografiaDoBrasil: Quiz = {
         { id: "c", text: "GMT -4", isCorrect: false },
         { id: "d", text: "GMT -5", isCorrect: false },
       ],
+      explanation: "O horario de Brasilia (GMT -3) e o fuso oficial. O Brasil tem 4 fusos horarios no total.",
     },
     {
       id: "q15",
@@ -168,6 +184,7 @@ export const geografiaDoBrasil: Quiz = {
         { id: "c", text: "Maranhao, Piaui e Ceara", isCorrect: false },
         { id: "d", text: "Mato Grosso, Goias e Bahia", isCorrect: false },
       ],
+      explanation: "A linha do Equador cruza Amazonas, Para, Amapa e Roraima, todos na regiao Norte do Brasil.",
     },
   ],
 };

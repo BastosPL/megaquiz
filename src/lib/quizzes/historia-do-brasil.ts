@@ -12,6 +12,14 @@ export const historiaDoBrasil: Quiz = {
   tags: ["historia", "brasil", "educacao", "enem", "vestibular"],
   createdAt: "2026-06-09",
   featured: true,
+  author: "Equipe Editorial MegaQuiz",
+  authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
+  sources: [
+    { label: "Governo Federal — Portal da História do Brasil", organization: "Governo Federal do Brasil", accessedAt: "2026-07-12" },
+    { label: "Britannica — History of Brazil", organization: "Encyclopædia Britannica", accessedAt: "2026-07-12" },
+  ],
+  lastReviewedAt: "2026-07-12",
+  introText: "Do descobrimento à república — reviva os momentos que moldaram o Brasil.",
   questions: [
     {
       id: "q1",
@@ -33,6 +41,7 @@ export const historiaDoBrasil: Quiz = {
         { id: "c", text: "Dom Pedro I", isCorrect: true },
         { id: "d", text: "Tiradentes", isCorrect: false },
       ],
+      explanation: "Dom Pedro I proclamou a independencia em 7 de setembro de 1822, as margens do rio Ipiranga, em Sao Paulo.",
     },
     {
       id: "q3",
@@ -54,6 +63,7 @@ export const historiaDoBrasil: Quiz = {
         { id: "c", text: "Floriano Peixoto", isCorrect: false },
         { id: "d", text: "Prudente de Morais", isCorrect: false },
       ],
+      explanation: "Deodoro da Fonseca proclamou a Republica em 15 de novembro de 1889 e se tornou o primeiro presidente.",
     },
     {
       id: "q5",
@@ -64,6 +74,7 @@ export const historiaDoBrasil: Quiz = {
         { id: "c", text: "Conjuracao Baiana", isCorrect: false },
         { id: "d", text: "Guerra dos Canudos", isCorrect: false },
       ],
+      explanation: "A Inconfidencia Mineira (1789) foi um dos primeiros movimentos pela independencia. Tiradentes foi executado em 1792.",
     },
     {
       id: "q6",
@@ -85,6 +96,7 @@ export const historiaDoBrasil: Quiz = {
         { id: "c", text: "21 anos (1964-1985)", isCorrect: true },
         { id: "d", text: "25 anos (1964-1989)", isCorrect: false },
       ],
+      explanation: "A ditadura militar durou 21 anos e teve 5 presidentes militares, do AI-1 ao processo de redemocratizacao.",
     },
     {
       id: "q8",
@@ -106,6 +118,7 @@ export const historiaDoBrasil: Quiz = {
         { id: "c", text: "Jose do Patrocinio", isCorrect: false },
         { id: "d", text: "Joaquim Nabuco", isCorrect: false },
       ],
+      explanation: "A Princesa Isabel assinou a Lei Aurea em 13 de maio de 1888 enquanto atuava como regente do Imperio.",
     },
     {
       id: "q10",
@@ -116,6 +129,7 @@ export const historiaDoBrasil: Quiz = {
         { id: "c", text: "A declaracao de Independencia", isCorrect: true },
         { id: "d", text: "O inicio da ditadura", isCorrect: false },
       ],
+      explanation: "O Grito do Ipiranga, em 7 de setembro de 1822, marca a declaracao de independencia do Brasil por Dom Pedro I.",
     },
     {
       id: "q11",
@@ -137,6 +151,7 @@ export const historiaDoBrasil: Quiz = {
         { id: "c", text: "Lula", isCorrect: false },
         { id: "d", text: "Joao Goulart", isCorrect: false },
       ],
+      explanation: "Getulio Vargas governou o Brasil em dois periodos (1930-1945 e 1951-1954) e criou a CLT e a Petrobras.",
     },
     {
       id: "q13",
@@ -147,6 +162,7 @@ export const historiaDoBrasil: Quiz = {
         { id: "c", text: "Portugal", isCorrect: true },
         { id: "d", text: "Holanda", isCorrect: false },
       ],
+      explanation: "Portugal colonizou o Brasil de 1500 a 1822, quando Dom Pedro I declarou a independencia.",
     },
     {
       id: "q14",
@@ -168,6 +184,7 @@ export const historiaDoBrasil: Quiz = {
         { id: "c", text: "Diretas Ja", isCorrect: true },
         { id: "d", text: "Caras-Pintadas", isCorrect: false },
       ],
+      explanation: "Diretas Ja foi o maior movimento civico da historia do Brasil, com comicios de ate 1,5 milhao de pessoas.",
     },
   ],
 };
