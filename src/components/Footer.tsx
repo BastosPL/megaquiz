@@ -46,6 +46,12 @@ export default function Footer() {
               <Link href="/sobre" className="text-sm text-gray-300 hover:text-white transition-colors">
                 Sobre
               </Link>
+              <Link href="/politica-editorial" className="text-sm text-gray-300 hover:text-white transition-colors">
+                Política Editorial
+              </Link>
+              <Link href="/metodologia" className="text-sm text-gray-300 hover:text-white transition-colors">
+                Metodologia
+              </Link>
               <Link href="/contato" className="text-sm text-gray-300 hover:text-white transition-colors">
                 Contato
               </Link>
