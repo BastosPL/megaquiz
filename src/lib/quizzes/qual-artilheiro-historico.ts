@@ -12,6 +12,13 @@ export const qualArtilheiroHistorico: Quiz = {
   tags: ["copa", "futebol", "artilheiro", "personalidade", "lendas"],
   createdAt: "2026-06-11",
   featured: false,
+  author: "Equipe Editorial MegaQuiz",
+  authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
+  sources: [
+    { label: "FIFA.com — All-time World Cup Top Scorers", organization: "FIFA", accessedAt: "2026-07-12" },
+  ],
+  lastReviewedAt: "2026-07-12",
+  introText: "Descubra qual lenda da artilharia do futebol mundial mais combina com seu perfil.",
   profiles: [
     {
       id: "pele",

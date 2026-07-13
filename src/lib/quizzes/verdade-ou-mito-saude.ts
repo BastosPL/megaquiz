@@ -12,6 +12,16 @@ export const verdadeOuMitoSaude: Quiz = {
   tags: ["saude", "mitos", "verdade", "corpo humano", "curiosidades"],
   createdAt: "2026-06-11",
   featured: true,
+  author: "Equipe Editorial MegaQuiz",
+  authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
+  sources: [
+    { label: "OMS — Fact Sheets", url: "https://www.who.int/news-room/fact-sheets", organization: "OMS/WHO", accessedAt: "2026-07-12" },
+    { label: "PubMed — National Library of Medicine", url: "https://pubmed.ncbi.nlm.nih.gov/", organization: "NIH/NLM", accessedAt: "2026-07-12" },
+  ],
+  lastReviewedAt: "2026-07-12",
+  introText: "Separe fatos de ficção sobre saúde. Muitas crenças populares já foram desmentidas pela ciência — mas algumas são surpreendentemente verdadeiras.",
+  disclaimer: "Este quiz tem finalidade educativa e de entretenimento. As informações apresentadas são baseadas em fontes científicas, mas não substituem orientação médica profissional. Consulte um profissional de saúde para decisões sobre sua saúde.",
+  disclaimerResult: "Resultado recreativo. Não constitui orientação médica.",
   questions: [
     {
       id: "q1",

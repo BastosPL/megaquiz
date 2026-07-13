@@ -69,6 +69,7 @@ export default function ContatoPage() {
                 <option value="Sugestão de Quiz">Sugestão de Quiz</option>
                 <option value="Dúvida">Dúvida</option>
                 <option value="Erro no site">Erro no site</option>
+                <option value="Erro factual">Erro factual em quiz ou artigo</option>
                 <option value="Parceria">Parceria</option>
                 <option value="Outro">Outro</option>
               </select>
@@ -124,7 +125,19 @@ export default function ContatoPage() {
         </div>
 
         <div className="bg-bg-card rounded-2xl border border-border p-6">
-          <h2 className="font-bold text-text mb-3 text-center">💡 Sugestões de quiz</h2>
+          <h2 className="font-bold text-text mb-3 text-center">Reportar um erro</h2>
+          <p className="text-sm text-text-light text-center">
+            Encontrou um erro factual, uma informação desatualizada ou um problema
+            técnico? Use o formulário acima com o assunto{" "}
+            <strong>&quot;Erro no site&quot;</strong> ou{" "}
+            <strong>&quot;Erro factual em quiz ou artigo&quot;</strong> e descreva
+            o problema com detalhes. Analisamos todos os relatos conforme a
+            gravidade e corrigimos erros confirmados o mais rápido possível.
+          </p>
+        </div>
+
+        <div className="bg-bg-card rounded-2xl border border-border p-6">
+          <h2 className="font-bold text-text mb-3 text-center">Sugestões de quiz</h2>
           <p className="text-sm text-text-light text-center">
             Tem uma ideia de quiz que todo mundo ia amar? Use o formulário acima
             com o assunto <strong>&quot;Sugestão de Quiz&quot;</strong> ou mande

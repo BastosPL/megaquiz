@@ -12,6 +12,13 @@ export const qualVilaoDeSerie: Quiz = {
   tags: ["vilao", "series", "personalidade", "netflix", "divertido"],
   createdAt: "2026-06-11",
   featured: false,
+  author: "Equipe Editorial MegaQuiz",
+  authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
+  sources: [
+    { label: "IMDb — Most Popular TV Shows", url: "https://www.imdb.com/chart/tvmeter/", organization: "IMDb", accessedAt: "2026-07-12" },
+  ],
+  lastReviewedAt: "2026-07-12",
+  introText: "Todo mundo tem um lado sombrio. Descubra qual vilão de série mais combina com você.",
   profiles: [
     {
       id: "walter",

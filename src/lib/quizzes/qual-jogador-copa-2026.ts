@@ -13,6 +13,13 @@ export const qualJogadorCopa2026: Quiz = {
   tags: ["copa", "futebol", "2026", "jogadores", "personalidade", "selecoes"],
   createdAt: "2026-06-11",
   featured: true,
+  author: "Equipe Editorial MegaQuiz",
+  authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
+  sources: [
+    { label: "FIFA.com — FIFA World Cup 26 Players", organization: "FIFA", accessedAt: "2026-07-12" },
+  ],
+  lastReviewedAt: "2026-07-12",
+  introText: "Descubra qual craque da Copa 2026 tem o estilo de jogo mais parecido com o seu.",
   profiles: [
     {
       id: "vini",

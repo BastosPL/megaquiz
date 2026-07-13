@@ -12,6 +12,13 @@ export const qualPersonagemVoceSeria: Quiz = {
   tags: ["personalidade", "series", "personagens", "divertido"],
   createdAt: "2026-06-09",
   featured: true,
+  author: "Equipe Editorial MegaQuiz",
+  authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
+  sources: [
+    { label: "IMDb — Most Popular TV Shows", url: "https://www.imdb.com/chart/tvmeter/", organization: "IMDb", accessedAt: "2026-07-12" },
+  ],
+  lastReviewedAt: "2026-07-12",
+  introText: "De Eleven a Walter White, descubra qual personagem icônico de série combina com sua personalidade.",
   profiles: [
     {
       id: "professor",

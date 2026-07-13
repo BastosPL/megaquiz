@@ -12,6 +12,11 @@ export const qualSignoDeveriaSer: Quiz = {
   tags: ["signo", "zodiaco", "personalidade", "astrologia", "viral"],
   createdAt: "2026-06-11",
   featured: true,
+  author: "Equipe Editorial MegaQuiz",
+  authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
+  sources: [],
+  lastReviewedAt: "2026-07-12",
+  introText: "Será que seu signo do zodíaco combina com sua personalidade? Descubra qual signo deveria ser o seu.",
   profiles: [
     {
       id: "aries",

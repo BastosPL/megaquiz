@@ -12,6 +12,11 @@ export const qualRedeSocial: Quiz = {
   tags: ["redes sociais", "personalidade", "internet", "viral", "divertido"],
   createdAt: "2026-06-11",
   featured: true,
+  author: "Equipe Editorial MegaQuiz",
+  authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
+  sources: [],
+  lastReviewedAt: "2026-07-12",
+  introText: "TikTok, Instagram, X ou Reddit? Descubra qual rede social combina com seu jeito de usar a internet.",
   profiles: [
     {
       id: "tiktok",

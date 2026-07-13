@@ -13,6 +13,14 @@ export const timesBrasileiros: Quiz = {
   tags: ["futebol brasileiro", "times", "brasileirao", "esportes"],
   createdAt: "2026-06-08",
   featured: true,
+  author: "Equipe Editorial MegaQuiz",
+  authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
+  sources: [
+    { label: "CBF — Campeonato Brasileiro Série A", url: "https://www.cbf.com.br/", organization: "CBF", accessedAt: "2026-07-12" },
+    { label: "CONMEBOL — Libertadores", organization: "CONMEBOL", accessedAt: "2026-07-12" },
+  ],
+  lastReviewedAt: "2026-07-12",
+  introText: "Do Flamengo ao Grêmio, do Corinthians ao Bahia — prove que você conhece o futebol brasileiro.",
   questions: [
     {
       id: "q1",
@@ -45,6 +53,7 @@ export const timesBrasileiros: Quiz = {
         { id: "c", text: "Corinthians", isCorrect: true },
         { id: "d", text: "Santos", isCorrect: false },
       ],
+      explanation: "Timao e o apelido carinhoso do Corinthians, fundado em 1910 no bairro do Bom Retiro, em Sao Paulo.",
     },
     {
       id: "q4",
@@ -66,6 +75,7 @@ export const timesBrasileiros: Quiz = {
         { id: "c", text: "Palmeiras", isCorrect: true },
         { id: "d", text: "Guarani", isCorrect: false },
       ],
+      explanation: "Verdao e o apelido do Palmeiras por causa das cores verde e branco do clube, fundado em 1914.",
     },
     {
       id: "q6",
@@ -87,6 +97,7 @@ export const timesBrasileiros: Quiz = {
         { id: "c", text: "Classico da Rivalidade", isCorrect: false },
         { id: "d", text: "Derby Carioca", isCorrect: false },
       ],
+      explanation: "O Fla-Flu e um dos classicos mais tradicionais do futebol brasileiro, disputado desde 1912.",
     },
     {
       id: "q8",
@@ -97,6 +108,7 @@ export const timesBrasileiros: Quiz = {
         { id: "c", text: "Juventude", isCorrect: false },
         { id: "d", text: "Caxias", isCorrect: false },
       ],
+      explanation: "O Gremio e chamado de Tricolor por suas cores azul, preto e branco. O Inter e o Colorado (vermelho).",
     },
     {
       id: "q9",
@@ -129,6 +141,7 @@ export const timesBrasileiros: Quiz = {
         { id: "c", text: "America Mineiro", isCorrect: false },
         { id: "d", text: "Atletico Goianiense", isCorrect: false },
       ],
+      explanation: "O Atletico Mineiro e chamado de Galo por causa do mascote, um galo carijó. Foi campeao da Libertadores em 2013.",
     },
     {
       id: "q12",
@@ -139,6 +152,7 @@ export const timesBrasileiros: Quiz = {
         { id: "c", text: "2020", isCorrect: false },
         { id: "d", text: "1995", isCorrect: false },
       ],
+      explanation: "O Palmeiras venceu o Deportivo Cali na final de 1999. Depois conquistou novamente em 2020 e 2021.",
     },
     {
       id: "q13",
@@ -160,6 +174,7 @@ export const timesBrasileiros: Quiz = {
         { id: "c", text: "Atletico Paranaense", isCorrect: false },
         { id: "d", text: "Coritiba", isCorrect: false },
       ],
+      explanation: "O Beira-Rio e a casa do Internacional desde 1969, com capacidade para mais de 50 mil torcedores.",
     },
     {
       id: "q15",
@@ -181,6 +196,7 @@ export const timesBrasileiros: Quiz = {
         { id: "c", text: "Flamengo", isCorrect: true },
         { id: "d", text: "Fluminense", isCorrect: false },
       ],
+      explanation: "Mengao e uma variacao carinhosa de Flamengo, o clube com a maior torcida do Brasil.",
     },
     {
       id: "q17",
@@ -202,6 +218,7 @@ export const timesBrasileiros: Quiz = {
         { id: "c", text: "Inter x Caxias", isCorrect: false },
         { id: "d", text: "Gremio x Coritiba", isCorrect: false },
       ],
+      explanation: "O Grenal e o maior classico do sul do Brasil, disputado desde 1909 entre Gremio e Internacional.",
     },
     {
       id: "q19",
@@ -223,6 +240,7 @@ export const timesBrasileiros: Quiz = {
         { id: "c", text: "Cruzeiro", isCorrect: false },
         { id: "d", text: "Palmeiras", isCorrect: false },
       ],
+      explanation: "O Gremio venceu o Sport na final da primeira Copa do Brasil, em 1989.",
     },
   ],
 };

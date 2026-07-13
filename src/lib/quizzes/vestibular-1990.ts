@@ -12,6 +12,13 @@ export const vestibular1990: Quiz = {
   tags: ["vestibular", "educacao", "enem", "historia", "nostalgia"],
   createdAt: "2026-06-11",
   featured: false,
+  author: "Equipe Editorial MegaQuiz",
+  authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
+  sources: [
+    { label: "Questões de vestibulares brasileiros (anos 1990)", organization: "Universidades brasileiras", accessedAt: "2026-07-12" },
+  ],
+  lastReviewedAt: "2026-07-12",
+  introText: "Perguntas reais de vestibulares dos anos 90. Será que você passaria naquela época?",
   questions: [
     {
       id: "q1",
@@ -22,6 +29,7 @@ export const vestibular1990: Quiz = {
         { id: "c", text: "Republica parlamentarista", isCorrect: false },
         { id: "d", text: "Anarquia", isCorrect: false },
       ],
+      explanation: "A ditadura militar brasileira durou 21 anos, com 5 presidentes militares e restricao de liberdades civis.",
     },
     {
       id: "q2",
@@ -32,6 +40,7 @@ export const vestibular1990: Quiz = {
         { id: "c", text: "NaCl", isCorrect: false },
         { id: "d", text: "O2", isCorrect: false },
       ],
+      explanation: "H2O significa dois atomos de hidrogenio ligados a um de oxigenio — a molecula mais essencial para a vida.",
     },
     {
       id: "q3",
@@ -53,6 +62,7 @@ export const vestibular1990: Quiz = {
         { id: "c", text: "14", isCorrect: false },
         { id: "d", text: "16", isCorrect: false },
       ],
+      explanation: "12 x 12 = 144, portanto a raiz quadrada de 144 e 12.",
     },
     {
       id: "q5",
@@ -63,6 +73,7 @@ export const vestibular1990: Quiz = {
         { id: "c", text: "1991", isCorrect: false },
         { id: "d", text: "1993", isCorrect: false },
       ],
+      explanation: "O Muro de Berlim caiu em 9 de novembro de 1989, marcando o fim simbolico da Guerra Fria.",
     },
     {
       id: "q6",
@@ -73,6 +84,7 @@ export const vestibular1990: Quiz = {
         { id: "c", text: "Umero", isCorrect: false },
         { id: "d", text: "Costela", isCorrect: false },
       ],
+      explanation: "O femur e o osso mais longo e resistente do corpo humano, localizado na coxa.",
     },
     {
       id: "q7",
@@ -94,6 +106,7 @@ export const vestibular1990: Quiz = {
         { id: "c", text: "Reacao quimica do sangue", isCorrect: false },
         { id: "d", text: "Processo de fotossintese", isCorrect: false },
       ],
+      explanation: "A mitose produz duas celulas geneticamente identicas. A meiose, diferente, gera celulas com metade dos cromossomos.",
     },
     {
       id: "q9",
@@ -104,6 +117,7 @@ export const vestibular1990: Quiz = {
         { id: "c", text: "Rafael", isCorrect: false },
         { id: "d", text: "Van Gogh", isCorrect: false },
       ],
+      explanation: "Leonardo da Vinci pintou a Mona Lisa entre 1503 e 1519. Hoje ela esta no Museu do Louvre, em Paris.",
     },
     {
       id: "q10",
@@ -125,6 +139,7 @@ export const vestibular1990: Quiz = {
         { id: "c", text: "Tratado de Madrid", isCorrect: false },
         { id: "d", text: "Tratado de Utrecht", isCorrect: false },
       ],
+      explanation: "O Tratado de Tordesilhas (1494) dividiu o mundo entre Portugal e Espanha com uma linha a 370 leguas de Cabo Verde.",
     },
     {
       id: "q12",
@@ -135,6 +150,7 @@ export const vestibular1990: Quiz = {
         { id: "c", text: "Gas carbonico (CO2)", isCorrect: true },
         { id: "d", text: "Helio (He)", isCorrect: false },
       ],
+      explanation: "O CO2 e o principal gas de efeito estufa emitido por atividades humanas, especialmente queima de combustiveis fosseis.",
     },
     {
       id: "q13",
@@ -156,6 +172,7 @@ export const vestibular1990: Quiz = {
         { id: "c", text: "Perigoso", isCorrect: false },
         { id: "d", text: "Produtivo", isCorrect: false },
       ],
+      explanation: "Prodigioso vem do latim 'prodigiosus' e significa algo extraordinario, espantoso ou fora do comum.",
     },
     {
       id: "q15",
@@ -166,6 +183,7 @@ export const vestibular1990: Quiz = {
         { id: "c", text: "100 km", isCorrect: false },
         { id: "d", text: "60 km", isCorrect: false },
       ],
+      explanation: "120 km/h dividido por 60 = 2 km por minuto. Em 45 minutos: 2 x 45 = 90 km.",
     },
   ],
 };

@@ -12,6 +12,14 @@ export const futebolMundial: Quiz = {
   tags: ["futebol", "esportes", "copa", "champions", "selecao"],
   createdAt: "2026-06-09",
   featured: false,
+  author: "Equipe Editorial MegaQuiz",
+  authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
+  sources: [
+    { label: "FIFA.com — Tournaments", url: "https://www.fifa.com/en/tournaments/mens/worldcup", organization: "FIFA", accessedAt: "2026-07-12" },
+    { label: "UEFA.com — Champions League History", organization: "UEFA", accessedAt: "2026-07-12" },
+  ],
+  lastReviewedAt: "2026-07-12",
+  introText: "Teste o que você sabe sobre o futebol jogado ao redor do mundo, dos grandes clubes aos torneios internacionais.",
   questions: [
     {
       id: "q1",
@@ -44,6 +52,7 @@ export const futebolMundial: Quiz = {
         { id: "c", text: "Argentina", isCorrect: true },
         { id: "d", text: "Croacia", isCorrect: false },
       ],
+      explanation: "A Argentina venceu a Franca nos penaltis (4x2) apos 3x3 no tempo regulamentar e prorrogacao, em final historica.",
     },
     {
       id: "q4",
@@ -65,6 +74,7 @@ export const futebolMundial: Quiz = {
         { id: "c", text: "Quartas de final da Copa 2014", isCorrect: false },
         { id: "d", text: "Semifinal da Copa 2018", isCorrect: false },
       ],
+      explanation: "O 7x1 foi na semifinal da Copa 2014, no Mineirao, em Belo Horizonte. A Alemanha marcou 5 gols em 18 minutos.",
     },
     {
       id: "q6",
@@ -75,6 +85,7 @@ export const futebolMundial: Quiz = {
         { id: "c", text: "8", isCorrect: true },
         { id: "d", text: "5", isCorrect: false },
       ],
+      explanation: "Messi ganhou 8 Bolas de Ouro: 2009, 2010, 2011, 2012, 2015, 2019, 2021 e 2023.",
     },
     {
       id: "q7",
@@ -85,6 +96,7 @@ export const futebolMundial: Quiz = {
         { id: "c", text: "Uruguai", isCorrect: true },
         { id: "d", text: "Argentina", isCorrect: false },
       ],
+      explanation: "O Uruguai sediou e venceu a primeira Copa, derrotando a Argentina por 4x2 na final no Estadio Centenario.",
     },
     {
       id: "q8",
@@ -95,6 +107,7 @@ export const futebolMundial: Quiz = {
         { id: "c", text: "Rivaldo", isCorrect: false },
         { id: "d", text: "Romario", isCorrect: false },
       ],
+      explanation: "Ronaldo Nazario, o Fenomeno, e considerado um dos maiores atacantes da historia. Marcou 15 gols em Copas.",
     },
     {
       id: "q9",
@@ -116,6 +129,7 @@ export const futebolMundial: Quiz = {
         { id: "c", text: "Old Trafford", isCorrect: true },
         { id: "d", text: "Anfield", isCorrect: false },
       ],
+      explanation: "Old Trafford, em Manchester, e a casa do Manchester United e recebeu esse apelido por sua atmosfera.",
     },
     {
       id: "q11",
@@ -126,6 +140,7 @@ export const futebolMundial: Quiz = {
         { id: "c", text: "Santos", isCorrect: true },
         { id: "d", text: "Sao Paulo", isCorrect: false },
       ],
+      explanation: "Neymar jogou no Santos de 2009 a 2013 antes de ir para o Barcelona.",
     },
     {
       id: "q12",
@@ -136,6 +151,7 @@ export const futebolMundial: Quiz = {
         { id: "c", text: "Uruguai", isCorrect: false },
         { id: "d", text: "Chile", isCorrect: false },
       ],
+      explanation: "A Argentina venceu a Copa America 16 vezes, sendo a maior campeã do torneio.",
     },
     {
       id: "q13",
@@ -157,6 +173,7 @@ export const futebolMundial: Quiz = {
         { id: "c", text: "Portugal", isCorrect: true },
         { id: "d", text: "Italia", isCorrect: false },
       ],
+      explanation: "Cristiano Ronaldo nasceu na Ilha da Madeira, Portugal, em 1985. E o maior artilheiro de selecoes da historia.",
     },
     {
       id: "q15",
@@ -167,6 +184,7 @@ export const futebolMundial: Quiz = {
         { id: "c", text: "Alemanha 8x0 Arabia Saudita (2002)", isCorrect: false },
         { id: "d", text: "Portugal 7x0 Coreia do Norte (2010)", isCorrect: false },
       ],
+      explanation: "Hungria 10x1 El Salvador na fase de grupos da Copa de 1982, na Espanha, e a maior goleada da historia das Copas.",
     },
   ],
 };

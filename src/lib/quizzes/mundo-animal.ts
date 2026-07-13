@@ -12,6 +12,14 @@ export const mundoAnimal: Quiz = {
   tags: ["animais", "natureza", "conhecimentos-gerais", "biologia"],
   createdAt: "2026-06-08",
   featured: false,
+  author: "Equipe Editorial MegaQuiz",
+  authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
+  sources: [
+    { label: "IUCN Red List — Leontopithecus rosalia", url: "https://www.iucnredlist.org/species/11506/17935340", organization: "IUCN", accessedAt: "2026-07-12" },
+    { label: "National Geographic — Animals", organization: "National Geographic", accessedAt: "2026-07-12" },
+  ],
+  lastReviewedAt: "2026-07-12",
+  introText: "Do guepardo ao ornitorrinco — teste o que você sabe sobre o fascinante mundo animal.",
   questions: [
     {
       id: "q1",
@@ -125,14 +133,14 @@ export const mundoAnimal: Quiz = {
     },
     {
       id: "q11",
-      text: "Qual animal brasileiro esta criticamente ameacado de extincao?",
+      text: "Qual animal brasileiro está ameaçado de extinção?",
       options: [
         { id: "a", text: "Capivara", isCorrect: false },
-        { id: "b", text: "Mico-leao-dourado", isCorrect: true },
+        { id: "b", text: "Mico-leão-dourado", isCorrect: true },
         { id: "c", text: "Tucano", isCorrect: false },
-        { id: "d", text: "Jacare-do-pantanal", isCorrect: false },
+        { id: "d", text: "Jacaré-do-pantanal", isCorrect: false },
       ],
-      explanation: "O mico-leao-dourado e simbolo da conservacao no Brasil. Restam cerca de 3.200 na Mata Atlantica.",
+      explanation: "O mico-leão-dourado (Leontopithecus rosalia) é classificado como 'Em Perigo' (Endangered) pela Lista Vermelha da IUCN. A espécie vive na Mata Atlântica do Rio de Janeiro e é símbolo da conservação no Brasil.",
     },
     {
       id: "q12",

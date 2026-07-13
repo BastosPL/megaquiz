@@ -12,6 +12,14 @@ export const capitaisDoMundo: Quiz = {
   tags: ["geografia", "capitais", "paises", "conhecimentos-gerais"],
   createdAt: "2026-06-08",
   featured: false,
+  author: "Equipe Editorial MegaQuiz",
+  authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
+  sources: [
+    { label: "CIA World Factbook — Country Profiles", organization: "CIA", accessedAt: "2026-07-12" },
+    { label: "United Nations — Member States", organization: "Nações Unidas", accessedAt: "2026-07-12" },
+  ],
+  lastReviewedAt: "2026-07-12",
+  introText: "Você conhece as capitais dos países? Teste sua geografia em 15 perguntas.",
   questions: [
     {
       id: "q1",
@@ -132,6 +140,7 @@ export const capitaisDoMundo: Quiz = {
         { id: "c", text: "Stavanger", isCorrect: false },
         { id: "d", text: "Tromso", isCorrect: false },
       ],
+      explanation: "Oslo e a capital e maior cidade da Noruega, localizada no sul do pais.",
     },
     {
       id: "q12",
@@ -153,6 +162,7 @@ export const capitaisDoMundo: Quiz = {
         { id: "c", text: "Luxor", isCorrect: false },
         { id: "d", text: "Gize", isCorrect: false },
       ],
+      explanation: "Cairo e a maior cidade da Africa e do mundo arabe, com mais de 20 milhoes de habitantes na regiao metropolitana.",
     },
     {
       id: "q14",

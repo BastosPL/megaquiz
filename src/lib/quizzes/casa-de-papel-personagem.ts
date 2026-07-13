@@ -12,6 +12,13 @@ export const casaDePapelPersonagem: Quiz = {
   tags: ["la casa de papel", "series", "netflix", "personalidade", "viral"],
   createdAt: "2026-06-11",
   featured: true,
+  author: "Equipe Editorial MegaQuiz",
+  authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
+  sources: [
+    { label: "IMDb — La Casa de Papel", url: "https://www.imdb.com/title/tt6468322/", organization: "IMDb", accessedAt: "2026-07-12" },
+  ],
+  lastReviewedAt: "2026-07-12",
+  introText: "Descubra se você seria o Professor, Tokyo, Berlin ou Nairobi no maior assalto da história da TV.",
   profiles: [
     {
       id: "professor",

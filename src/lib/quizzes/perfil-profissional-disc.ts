@@ -13,34 +13,44 @@ export const perfilProfissionalDisc: Quiz = {
   tags: ["carreira", "profissional", "DISC", "lideranca", "personalidade", "trabalho"],
   createdAt: "2026-06-08",
   featured: true,
+  author: "Equipe Editorial MegaQuiz",
+  authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
+  sources: [
+    { label: "Marston, W. M. (1928). Emotions of Normal People", organization: "Kegan Paul", accessedAt: "2026-07-12" },
+  ],
+  lastReviewedAt: "2026-07-12",
+  introText: "Inspirado no modelo DISC, este quiz recreativo explora seu estilo de comunicação e trabalho em equipe.",
+  disclaimer: "Este quiz é uma versão simplificada e recreativa inspirada no modelo DISC. Não substitui uma avaliação DISC profissional certificada. Empresas mencionadas nos resultados são exemplos ilustrativos, sem qualquer endosso real. Resultado para entretenimento e autoconhecimento.",
+  disclaimerResult: "Resultado recreativo inspirado no modelo DISC. Não constitui avaliação profissional certificada.",
+  methodologyNote: "Entenda seu resultado\n\nO modelo DISC identifica quatro dimensões comportamentais:\n• D (Dominância): Foco em resultados e decisões rápidas\n• I (Influência): Foco em comunicação e motivação de pessoas\n• S (Estabilidade): Foco em consistência e apoio à equipe\n• C (Conformidade): Foco em precisão, dados e qualidade\n\nSeu perfil predominante indica uma tendência comportamental, não uma limitação. Pessoas combinam traços de múltiplas dimensões em diferentes contextos.\n\nEste resultado é recreativo e não substitui uma avaliação DISC profissional.",
   profiles: [
     {
       id: "dominante",
       title: "Dominante (D) — O Lider Nato",
       emoji: "🦁",
       description:
-        "Voce e movido por resultados e desafios! Seu perfil e de lideranca natural — voce toma decisoes rapidas, nao tem medo de riscos e sabe colocar ordem no caos. Profissoes ideais: CEO, empreendedor, gerente de projetos, diretor comercial. Empresas como Amazon, Tesla e XP valorizam muito esse perfil. Seu lema: 'Me da o problema que eu resolvo.'",
+        "Voce e movido por resultados e desafios! Seu perfil e de lideranca natural — voce toma decisoes rapidas, nao tem medo de riscos e sabe colocar ordem no caos. Profissoes ideais: CEO, empreendedor, gerente de projetos, diretor comercial. Comum entre lideres focados em resultados e ambientes competitivos. Seu lema: 'Me da o problema que eu resolvo.'",
     },
     {
       id: "influente",
       title: "Influente (I) — O Comunicador",
       emoji: "🌟",
       description:
-        "Voce e pura energia social! Seu carisma e poder de persuasao sao suas maiores armas. Voce motiva equipes, cria conexoes e vende qualquer ideia. Profissoes ideais: marketing, vendas, RH, palestrante, influencer, relacoes publicas. Empresas como Google, Nubank e Magazine Luiza adoram esse perfil. Seu lema: 'Pessoas primeiro, resultados sempre.'",
+        "Voce e pura energia social! Seu carisma e poder de persuasao sao suas maiores armas. Voce motiva equipes, cria conexoes e vende qualquer ideia. Profissoes ideais: marketing, vendas, RH, palestrante, influencer, relacoes publicas. Frequente em ambientes colaborativos e criativos. Seu lema: 'Pessoas primeiro, resultados sempre.'",
     },
     {
       id: "estavel",
       title: "Estavel (S) — O Estrategista Confiavel",
       emoji: "🛡️",
       description:
-        "Voce e a rocha da equipe! Leal, paciente e consistente — voce e quem mantem tudo funcionando quando o caos aparece. Excelente ouvinte e mediador de conflitos. Profissoes ideais: analista, suporte, gestao de processos, professor, enfermeiro, contador. Empresas como Itau, Boticario e hospitais valorizam demais esse perfil. Seu lema: 'Passo firme, resultado solido.'",
+        "Voce e a rocha da equipe! Leal, paciente e consistente — voce e quem mantem tudo funcionando quando o caos aparece. Excelente ouvinte e mediador de conflitos. Profissoes ideais: analista, suporte, gestao de processos, professor, enfermeiro, contador. Valorizado em ambientes que exigem consistencia e trabalho em equipe. Seu lema: 'Passo firme, resultado solido.'",
     },
     {
       id: "analitico",
       title: "Analitico (C) — O Perfeccionista Estrategico",
       emoji: "🔬",
       description:
-        "Voce e movido por dados e precisao! Detalhista, logico e criterioso — nada passa despercebido por voce. Voce e quem encontra o erro que ninguem viu e cria sistemas perfeitos. Profissoes ideais: engenheiro, programador, cientista de dados, auditor, pesquisador, medico. Empresas como Apple, Embraer e institutos de pesquisa precisam de voce. Seu lema: 'Se nao tem dados, e achismo.'",
+        "Voce e movido por dados e precisao! Detalhista, logico e criterioso — nada passa despercebido por voce. Voce e quem encontra o erro que ninguem viu e cria sistemas perfeitos. Profissoes ideais: engenheiro, programador, cientista de dados, auditor, pesquisador, medico. Essencial em areas que exigem precisao, qualidade e pensamento critico. Seu lema: 'Se nao tem dados, e achismo.'",
     },
   ],
   questions: [

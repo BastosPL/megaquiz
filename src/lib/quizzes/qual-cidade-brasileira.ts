@@ -13,6 +13,13 @@ export const qualCidadeBrasileira: Quiz = {
   tags: ["personalidade", "brasil", "cidades", "teste"],
   createdAt: "2026-06-08",
   featured: true,
+  author: "Equipe Editorial MegaQuiz",
+  authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
+  sources: [
+    { label: "IBGE Cidades — Informações municipais", url: "https://cidades.ibge.gov.br/", organization: "IBGE", accessedAt: "2026-07-12" },
+  ],
+  lastReviewedAt: "2026-07-12",
+  introText: "Responda 10 perguntas sobre seus gostos e descubra qual cidade do Brasil tem mais a ver com você.",
   profiles: [
     {
       id: "rio",

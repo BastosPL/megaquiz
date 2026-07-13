@@ -83,12 +83,37 @@ export default function SobrePage() {
           </ul>
         </div>
 
+        <div className="bg-bg-card rounded-2xl border border-border p-6">
+          <h2 className="text-lg font-bold text-text mb-3">Transparência e qualidade</h2>
+          <p className="mb-3">Conheça como trabalhamos:</p>
+          <ul className="space-y-2">
+            <li>
+              <Link href="/politica-editorial" className="text-primary hover:underline font-medium">
+                Política Editorial
+              </Link>
+              {" "}— como pesquisamos, verificamos e corrigimos nosso conteúdo
+            </li>
+            <li>
+              <Link href="/metodologia" className="text-primary hover:underline font-medium">
+                Metodologia dos Quizzes
+              </Link>
+              {" "}— como funcionam nossos quizzes, pontuação e limitações
+            </li>
+            <li>
+              <Link href="/contato" className="text-primary hover:underline font-medium">
+                Contato
+              </Link>
+              {" "}— reporte erros ou envie sugestões
+            </li>
+          </ul>
+        </div>
+
         <div className="text-center mt-8">
           <Link
             href="/"
             className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors"
           >
-            🧩 Jogar agora
+            Jogar agora
           </Link>
         </div>
       </div>

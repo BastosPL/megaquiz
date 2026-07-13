@@ -10,9 +10,17 @@ export const qiTeste: Quiz = {
   category: "conhecimentos-gerais",
   emoji: "🧠",
   color: "#3B82F6",
-  tags: ["qi", "inteligencia", "conhecimentos gerais", "desafio"],
+  tags: ["conhecimentos gerais", "desafio", "cultura geral", "trivia"],
   createdAt: "2026-06-08",
   featured: true,
+  author: "Equipe Editorial MegaQuiz",
+  authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
+  sources: [
+    { label: "Britannica — General Knowledge", organization: "Encyclopædia Britannica", accessedAt: "2026-07-12" },
+  ],
+  lastReviewedAt: "2026-07-12",
+  introText: "Um desafio rápido de conhecimentos gerais com 10 perguntas sobre os mais variados temas.",
+  disclaimer: "Este quiz é um desafio de conhecimentos gerais para diversão. Não mede QI, inteligência ou capacidade cognitiva.",
   questions: [
     {
       id: "q1",
@@ -45,6 +53,7 @@ export const qiTeste: Quiz = {
         { id: "c", text: "216", isCorrect: false },
         { id: "d", text: "186", isCorrect: false },
       ],
+      explanation: "O corpo humano adulto tem 206 ossos. Os bebes nascem com cerca de 270, que se fundem com o crescimento.",
     },
     {
       id: "q4",
@@ -55,6 +64,7 @@ export const qiTeste: Quiz = {
         { id: "c", text: "Venus", isCorrect: true },
         { id: "d", text: "Mercurio", isCorrect: false },
       ],
+      explanation: "Venus e visivel a olho nu como a estrela mais brilhante ao amanhecer ou anoitecer, por isso o apelido 'Estrela D'Alva'.",
     },
     {
       id: "q5",
@@ -87,6 +97,7 @@ export const qiTeste: Quiz = {
         { id: "c", text: "1971", isCorrect: false },
         { id: "d", text: "1965", isCorrect: false },
       ],
+      explanation: "Neil Armstrong pisou na Lua em 20 de julho de 1969, durante a missao Apollo 11 da NASA.",
     },
     {
       id: "q8",
@@ -97,6 +108,7 @@ export const qiTeste: Quiz = {
         { id: "c", text: "Polvo", isCorrect: false },
         { id: "d", text: "Tartaruga", isCorrect: false },
       ],
+      explanation: "Golfinhos sao mamiferos que respiram ar, amamentam seus filhotes e sao de sangue quente.",
     },
     {
       id: "q9",
@@ -107,6 +119,7 @@ export const qiTeste: Quiz = {
         { id: "c", text: "Italia", isCorrect: true },
         { id: "d", text: "Espanha", isCorrect: false },
       ],
+      explanation: "A peninsula italiana tem formato de bota, sendo uma das silhuetas mais reconheciveis no mapa-mundi.",
     },
     {
       id: "q10",
@@ -117,6 +130,7 @@ export const qiTeste: Quiz = {
         { id: "c", text: "Web World Wide", isCorrect: false },
         { id: "d", text: "Wide World Web", isCorrect: false },
       ],
+      explanation: "World Wide Web foi inventada por Tim Berners-Lee em 1989 no CERN, na Suica.",
     },
   ],
 };

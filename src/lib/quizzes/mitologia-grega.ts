@@ -12,6 +12,14 @@ export const mitologiaGrega: Quiz = {
   tags: ["mitologia", "grecia", "deuses", "educacao", "historia"],
   createdAt: "2026-06-11",
   featured: false,
+  author: "Equipe Editorial MegaQuiz",
+  authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
+  sources: [
+    { label: "Theoi Greek Mythology — Encyclopaedia", url: "https://www.theoi.com/", organization: "Theoi Project", accessedAt: "2026-07-12" },
+    { label: "Britannica — Greek Mythology", organization: "Encyclopædia Britannica", accessedAt: "2026-07-12" },
+  ],
+  lastReviewedAt: "2026-07-12",
+  introText: "De Zeus a Hércules, de Atena ao Minotauro — teste o que você sabe sobre os deuses e heróis do Olimpo.",
   questions: [
     {
       id: "q1",
@@ -22,6 +30,7 @@ export const mitologiaGrega: Quiz = {
         { id: "c", text: "Hades", isCorrect: false },
         { id: "d", text: "Ares", isCorrect: false },
       ],
+      explanation: "Zeus era o deus do trovao e governava os deuses do Monte Olimpo. Seus irmaos Poseidon e Hades governavam os mares e o submundo.",
     },
     {
       id: "q2",
@@ -32,6 +41,7 @@ export const mitologiaGrega: Quiz = {
         { id: "c", text: "Poseidon", isCorrect: true },
         { id: "d", text: "Dionisio", isCorrect: false },
       ],
+      explanation: "Poseidon era irmao de Zeus e Hades. Alem dos mares, era o deus dos terremotos e dos cavalos.",
     },
     {
       id: "q3",
@@ -42,6 +52,7 @@ export const mitologiaGrega: Quiz = {
         { id: "c", text: "Artemis", isCorrect: false },
         { id: "d", text: "Hera", isCorrect: false },
       ],
+      explanation: "Afrodite nasceu da espuma do mar, segundo a Teogonia de Hesiodo. Seu equivalente romano e Venus.",
     },
     {
       id: "q4",
@@ -63,6 +74,7 @@ export const mitologiaGrega: Quiz = {
         { id: "c", text: "Os olhos", isCorrect: false },
         { id: "d", text: "A mao direita", isCorrect: false },
       ],
+      explanation: "Aquiles foi mergulhado no rio Estige por sua mae Tetis, que o segurou pelo calcanhar — o unico ponto vulneravel.",
     },
     {
       id: "q6",
@@ -84,6 +96,7 @@ export const mitologiaGrega: Quiz = {
         { id: "c", text: "Tantalo", isCorrect: false },
         { id: "d", text: "Atlas", isCorrect: false },
       ],
+      explanation: "Sisifo foi punido por enganar a morte duas vezes. Sua pedra sempre rolava de volta antes de chegar ao topo.",
     },
     {
       id: "q8",
@@ -116,6 +129,7 @@ export const mitologiaGrega: Quiz = {
         { id: "c", text: "Thanatos", isCorrect: false },
         { id: "d", text: "Cronos", isCorrect: false },
       ],
+      explanation: "Hades nao era considerado um deus malvado, mas era temido. Thanatos era a personificacao da morte em si.",
     },
     {
       id: "q11",
@@ -126,6 +140,7 @@ export const mitologiaGrega: Quiz = {
         { id: "c", text: "Ajax", isCorrect: false },
         { id: "d", text: "Agamemnon", isCorrect: false },
       ],
+      explanation: "Odisseu (Ulisses) planejou o estratagema do Cavalo de Troia para encerrar a guerra de 10 anos contra Troia.",
     },
     {
       id: "q12",
@@ -136,6 +151,7 @@ export const mitologiaGrega: Quiz = {
         { id: "c", text: "12", isCorrect: true },
         { id: "d", text: "15", isCorrect: false },
       ],
+      explanation: "Os 12 Trabalhos de Hercules foram impostos como penitencia por Euristeu, rei de Micenas, a mando de Hera.",
     },
     {
       id: "q13",
@@ -146,6 +162,7 @@ export const mitologiaGrega: Quiz = {
         { id: "c", text: "Artemis", isCorrect: false },
         { id: "d", text: "Deméter", isCorrect: false },
       ],
+      explanation: "Atena nasceu diretamente da cabeca de Zeus, ja adulta e com armadura completa.",
     },
     {
       id: "q14",
@@ -156,6 +173,7 @@ export const mitologiaGrega: Quiz = {
         { id: "c", text: "Centauro", isCorrect: false },
         { id: "d", text: "Hidra", isCorrect: false },
       ],
+      explanation: "A Esfinge ficava na entrada de Tebas e devorava quem nao resolvia seu enigma. Edipo foi o unico que acertou.",
     },
     {
       id: "q15",
@@ -166,6 +184,7 @@ export const mitologiaGrega: Quiz = {
         { id: "c", text: "Cobra", isCorrect: false },
         { id: "d", text: "Cinzas", isCorrect: false },
       ],
+      explanation: "A Medusa era uma das tres Gorgonas. Originalmente era uma bela mortal, transformada em monstro por Atena.",
     },
   ],
 };

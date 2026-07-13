@@ -12,6 +12,14 @@ export const filmesClassicos: Quiz = {
   tags: ["filmes", "cinema", "hollywood", "classicos", "oscar"],
   createdAt: "2026-06-09",
   featured: false,
+  author: "Equipe Editorial MegaQuiz",
+  authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
+  sources: [
+    { label: "IMDb — Top Rated Movies", url: "https://www.imdb.com/chart/top/", organization: "IMDb", accessedAt: "2026-07-12" },
+    { label: "Academy Awards Database", organization: "Academy of Motion Picture Arts and Sciences", accessedAt: "2026-07-12" },
+  ],
+  lastReviewedAt: "2026-07-12",
+  introText: "De Titanic a Matrix, de Star Wars a O Poderoso Chefão — teste o que você sabe sobre os maiores filmes da história.",
   questions: [
     {
       id: "q1",
@@ -33,6 +41,7 @@ export const filmesClassicos: Quiz = {
         { id: "c", text: "Vermelha", isCorrect: true },
         { id: "d", text: "Branca", isCorrect: false },
       ],
+      explanation: "Neo escolhe a pilula vermelha oferecida por Morpheus para conhecer a verdade sobre a Matrix.",
     },
     {
       id: "q3",
@@ -43,6 +52,7 @@ export const filmesClassicos: Quiz = {
         { id: "c", text: "Johnny Depp", isCorrect: false },
         { id: "d", text: "Matt Damon", isCorrect: false },
       ],
+      explanation: "Leonardo DiCaprio interpretou Jack Dawson ao lado de Kate Winslet (Rose) no filme de James Cameron (1997).",
     },
     {
       id: "q4",
@@ -53,6 +63,7 @@ export const filmesClassicos: Quiz = {
         { id: "c", text: "Que a Forca esteja com voce", isCorrect: false },
         { id: "d", text: "Eu voltarei", isCorrect: false },
       ],
+      explanation: "A frase 'Vou fazer uma oferta irrecusavel' (em ingles, 'I'm gonna make him an offer he can't refuse') e dita por Don Vito Corleone (Marlon Brando).",
     },
     {
       id: "q5",
@@ -63,6 +74,7 @@ export const filmesClassicos: Quiz = {
         { id: "c", text: "Endor", isCorrect: false },
         { id: "d", text: "Krypton", isCorrect: false },
       ],
+      explanation: "Pandora e a lua ficticia do sistema Alpha Centauri, lar dos Na'vi no filme de James Cameron.",
     },
     {
       id: "q6",
@@ -73,6 +85,7 @@ export const filmesClassicos: Quiz = {
         { id: "c", text: "George Lucas", isCorrect: false },
         { id: "d", text: "Ridley Scott", isCorrect: false },
       ],
+      explanation: "Steven Spielberg tambem dirigiu E.T., A Lista de Schindler e O Resgate do Soldado Ryan.",
     },
     {
       id: "q7",
@@ -94,6 +107,7 @@ export const filmesClassicos: Quiz = {
         { id: "c", text: "Tropa de Elite", isCorrect: false },
         { id: "d", text: "O Auto da Compadecida", isCorrect: false },
       ],
+      explanation: "Central do Brasil, dirigido por Walter Salles e estrelado por Fernanda Montenegro, foi indicado ao Oscar de Melhor Filme Estrangeiro em 1999.",
     },
     {
       id: "q9",
@@ -115,6 +129,7 @@ export const filmesClassicos: Quiz = {
         { id: "c", text: "Titanic", isCorrect: false },
         { id: "d", text: "Star Wars: O Despertar da Forca", isCorrect: false },
       ],
+      explanation: "Avatar (2009) arrecadou mais de US$ 2,9 bilhoes mundialmente, superando Vingadores: Ultimato.",
     },
     {
       id: "q11",
@@ -125,6 +140,7 @@ export const filmesClassicos: Quiz = {
         { id: "c", text: "Gotham City", isCorrect: true },
         { id: "d", text: "Star City", isCorrect: false },
       ],
+      explanation: "Gotham City e a cidade ficticia criada pela DC Comics como lar do Batman desde 1939.",
     },
     {
       id: "q12",
@@ -135,6 +151,7 @@ export const filmesClassicos: Quiz = {
         { id: "c", text: "Dave Bautista", isCorrect: false },
         { id: "d", text: "Bradley Cooper", isCorrect: false },
       ],
+      explanation: "Vin Diesel fez a voz de Groot em todos os filmes dos Guardioes da Galaxia e nos Vingadores.",
     },
     {
       id: "q13",
@@ -156,6 +173,7 @@ export const filmesClassicos: Quiz = {
         { id: "c", text: "Frodo", isCorrect: true },
         { id: "d", text: "Legolas", isCorrect: false },
       ],
+      explanation: "Frodo Bolseiro carrega o Um Anel acompanhado de Sam, seu fiel amigo, na trilogia de Peter Jackson.",
     },
     {
       id: "q15",
@@ -166,6 +184,7 @@ export const filmesClassicos: Quiz = {
         { id: "c", text: "Scar e as Hienas", isCorrect: false },
         { id: "d", text: "Mufasa e Rafiki", isCorrect: false },
       ],
+      explanation: "Timao (suricato) e Pumba (javali) cantam 'Hakuna Matata', que significa 'sem preocupacoes' em suaili.",
     },
   ],
 };

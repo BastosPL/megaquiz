@@ -72,6 +72,11 @@ export default async function QuizPage({ params }: Props) {
           {quiz.title}
         </h1>
         <p className="text-text-light max-w-md mx-auto">{quiz.description}</p>
+        {quiz.introText && (
+          <p className="text-text-light text-sm mt-3 max-w-lg mx-auto italic">
+            {quiz.introText}
+          </p>
+        )}
         <div className="flex items-center justify-center gap-4 mt-3 text-sm text-text-light">
           <span>
             {quiz.type === "trivia" ? "🎯 Trivia" : "🧠 Personalidade"}
@@ -79,6 +84,14 @@ export default async function QuizPage({ params }: Props) {
           <span>📝 {quiz.questions.length} perguntas</span>
         </div>
       </div>
+
+      {quiz.disclaimer && (
+        <div className="max-w-2xl mx-auto mb-6 p-4 rounded-xl bg-blue-50 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-800" role="note" aria-label="Aviso">
+          <p className="text-sm text-blue-800 dark:text-blue-200">
+            {quiz.disclaimer}
+          </p>
+        </div>
+      )}
 
       {/* Quiz engine */}
       <QuizEngine quiz={quiz} />
@@ -130,6 +143,35 @@ export default async function QuizPage({ params }: Props) {
               : "Escolha a opção que mais combina com você em cada pergunta. No final, descubra seu perfil!"}
           </p>
         </div>
+
+        {quiz.sources && quiz.sources.length > 0 && (
+          <div className="mt-8">
+            <h3 className="text-lg font-semibold text-text mb-3">Fontes</h3>
+            <ul className="space-y-1 text-sm text-text-light">
+              {quiz.sources.map((source, i) => (
+                <li key={i}>
+                  {source.url ? (
+                    <a href={source.url} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                      {source.label}
+                    </a>
+                  ) : (
+                    source.label
+                  )}
+                  {source.organization && <span className="text-text-light/70"> — {source.organization}</span>}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {(quiz.author || quiz.lastReviewedAt) && (
+          <div className="mt-6 pt-4 border-t border-border text-xs text-text-light">
+            {quiz.author && <p>{quiz.author}{quiz.authorBio ? ` — ${quiz.authorBio}` : ''}</p>}
+            {quiz.lastReviewedAt && (
+              <p className="mt-1">Ultima revisao: {new Date(quiz.lastReviewedAt).toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })}</p>
+            )}
+          </div>
+        )}
       </section>
     </div>
   );
