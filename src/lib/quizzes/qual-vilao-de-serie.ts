@@ -15,7 +15,7 @@ export const qualVilaoDeSerie: Quiz = {
   author: "Equipe Editorial MegaQuiz",
   authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
   sources: [
-    { label: "IMDb — Iconic TV Villains", url: "https://www.imdb.com/", organization: "IMDb", accessedAt: "2026-07-12" },
+    { label: "IMDb — Most Popular TV Shows", url: "https://www.imdb.com/chart/tvmeter/", organization: "IMDb", accessedAt: "2026-07-12" },
   ],
   lastReviewedAt: "2026-07-12",
   introText: "Todo mundo tem um lado sombrio. Descubra qual vilão de série mais combina com você.",

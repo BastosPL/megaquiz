@@ -16,7 +16,7 @@ export const seriesNetflix: Quiz = {
   authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
   sources: [
     { label: "Netflix — Séries Originais", organization: "Netflix", accessedAt: "2026-07-12" },
-    { label: "IMDb — TV Series", url: "https://www.imdb.com/", organization: "IMDb", accessedAt: "2026-07-12" },
+    { label: "IMDb — Most Popular TV Shows", url: "https://www.imdb.com/chart/tvmeter/", organization: "IMDb", accessedAt: "2026-07-12" },
   ],
   lastReviewedAt: "2026-07-12",
   introText: "Quanto você sabe sobre as séries mais assistidas da Netflix? De Stranger Things a Round 6, teste seus conhecimentos.",

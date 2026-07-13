@@ -15,7 +15,9 @@ export const areaTiIdeal: Quiz = {
   featured: true,
   author: "Equipe Editorial MegaQuiz",
   authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
-  sources: [],
+  sources: [
+    { label: "Guia Salarial Robert Half 2026 — Tecnologia", organization: "Robert Half", accessedAt: "2026-07-12" },
+  ],
   lastReviewedAt: "2026-07-12",
   introText: "Front-end, back-end, dados, cibersegurança ou IA? Descubra qual área de tecnologia combina com seu perfil.",
   disclaimer: "Este quiz é para entretenimento e exploração de interesses na área de tecnologia. Não substitui orientação profissional. Faixas salariais são estimativas aproximadas do mercado brasileiro e podem variar significativamente.",

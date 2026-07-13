@@ -30,6 +30,7 @@ export const round6Sobreviveria: Quiz = {
         { id: "c", text: "Jogo de bolinhas de gude", isCorrect: false },
         { id: "d", text: "Jogo da lula", isCorrect: false },
       ],
+      explanation: "Batatinha frita 1, 2, 3 (Red Light, Green Light) e o primeiro e mais icônico jogo da série.",
     },
     {
       id: "q2",
@@ -51,6 +52,7 @@ export const round6Sobreviveria: Quiz = {
         { id: "c", text: "456", isCorrect: true },
         { id: "d", text: "218", isCorrect: false },
       ],
+      explanation: "456 e o ultimo numero de inscricao, indicando que Gi-hun foi o ultimo a entrar nos jogos.",
     },
     {
       id: "q4",
@@ -72,6 +74,7 @@ export const round6Sobreviveria: Quiz = {
         { id: "c", text: "Um ex-policial infiltrado", isCorrect: false },
         { id: "d", text: "Um empresario disfarçado", isCorrect: false },
       ],
+      explanation: "O jogador 001, Oh Il-nam, e revelado no final como o criador dos jogos — um dos maiores plot twists da serie.",
     },
     {
       id: "q6",
@@ -82,6 +85,7 @@ export const round6Sobreviveria: Quiz = {
         { id: "c", text: "456", isCorrect: true },
         { id: "d", text: "500", isCorrect: false },
       ],
+      explanation: "456 jogadores comecam os jogos na temporada 1, e cada eliminacao adiciona 100 milhoes de wons ao premio.",
     },
     {
       id: "q7",
@@ -92,6 +96,7 @@ export const round6Sobreviveria: Quiz = {
         { id: "c", text: "18 pares", isCorrect: true },
         { id: "d", text: "20 pares", isCorrect: false },
       ],
+      explanation: "Os jogadores devem escolher entre vidro temperado e vidro comum em 18 pares de paineis sobre um abismo.",
     },
     {
       id: "q8",
@@ -102,6 +107,7 @@ export const round6Sobreviveria: Quiz = {
         { id: "c", text: "Branco", isCorrect: false },
         { id: "d", text: "Azul", isCorrect: false },
       ],
+      explanation: "Os guardas usam macacao rosa/vermelho com mascaras pretas. Os jogadores vestem verde-agua.",
     },
     {
       id: "q9",
@@ -112,6 +118,7 @@ export const round6Sobreviveria: Quiz = {
         { id: "c", text: "Terra, agua e fogo", isCorrect: false },
         { id: "d", text: "Sao apenas decoracao", isCorrect: false },
       ],
+      explanation: "Circulo = trabalhadores (nivel mais baixo), triangulo = soldados armados, quadrado = gerentes que supervisionam.",
     },
     {
       id: "q10",
@@ -122,6 +129,7 @@ export const round6Sobreviveria: Quiz = {
         { id: "c", text: "Criar seus proprios jogos", isCorrect: false },
         { id: "d", text: "Esquecer tudo e seguir em frente", isCorrect: false },
       ],
+      explanation: "Na temporada 2, Gi-hun retorna aos jogos com o objetivo de acabar com eles por dentro e salvar os participantes.",
     },
     {
       id: "q11",
@@ -143,6 +151,7 @@ export const round6Sobreviveria: Quiz = {
         { id: "c", text: "Professor", isCorrect: false },
         { id: "d", text: "Policial", isCorrect: false },
       ],
+      explanation: "Cho Sang-woo se formou na Universidade Nacional de Seoul e era analista financeiro, mas acumulou dividas com apostas ilegais.",
     },
     {
       id: "q13",
@@ -153,6 +162,7 @@ export const round6Sobreviveria: Quiz = {
         { id: "c", text: "Todos sao libertados sem o premio", isCorrect: true },
         { id: "d", text: "So metade sai", isCorrect: false },
       ],
+      explanation: "Na regra democratica dos jogos, se a maioria votar para encerrar, todos sao libertados — mas podem ser convidados a voltar.",
     },
     {
       id: "q14",
@@ -163,6 +173,7 @@ export const round6Sobreviveria: Quiz = {
         { id: "c", text: "China", isCorrect: false },
         { id: "d", text: "Tailandia", isCorrect: false },
       ],
+      explanation: "Round 6 e uma producao sul-coreana criada por Hwang Dong-hyuk e se tornou a serie mais assistida da Netflix.",
     },
     {
       id: "q15",
@@ -173,6 +184,7 @@ export const round6Sobreviveria: Quiz = {
         { id: "c", text: "3", isCorrect: false },
         { id: "d", text: "4", isCorrect: false },
       ],
+      explanation: "Ate 2026, Round 6 tem 2 temporadas: a primeira lancada em 2021 e a segunda em 2024.",
     },
   ],
 };

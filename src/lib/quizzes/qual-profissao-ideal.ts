@@ -14,7 +14,9 @@ export const qualProfissaoIdeal: Quiz = {
   featured: false,
   author: "Equipe Editorial MegaQuiz",
   authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
-  sources: [],
+  sources: [
+    { label: "Guia Salarial Robert Half 2026 — Diversas áreas", organization: "Robert Half", accessedAt: "2026-07-12" },
+  ],
   lastReviewedAt: "2026-07-12",
   introText: "Descubra qual área profissional combina com seus interesses e habilidades — um quiz recreativo para explorar possibilidades.",
   disclaimer: "Este quiz é para entretenimento e exploração de interesses. Não substitui orientação vocacional profissional. Faixas salariais nos resultados são estimativas aproximadas do mercado brasileiro e variam conforme região, experiência e momento econômico.",
