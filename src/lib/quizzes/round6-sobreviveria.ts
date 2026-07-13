@@ -12,6 +12,14 @@ export const round6Sobreviveria: Quiz = {
   tags: ["round 6", "squid game", "netflix", "series", "survival"],
   createdAt: "2026-06-11",
   featured: false,
+  author: "Equipe Editorial MegaQuiz",
+  authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
+  sources: [
+    { label: "Netflix — Squid Game", organization: "Netflix", accessedAt: "2026-07-12" },
+    { label: "IMDb — Squid Game", url: "https://www.imdb.com/title/tt10919420/", organization: "IMDb", accessedAt: "2026-07-12" },
+  ],
+  lastReviewedAt: "2026-07-12",
+  introText: "Teste seus conhecimentos sobre Squid Game e descubra se você sobreviveria aos jogos mortais.",
   questions: [
     {
       id: "q1",

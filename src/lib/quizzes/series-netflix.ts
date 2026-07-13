@@ -12,6 +12,14 @@ export const seriesNetflix: Quiz = {
   tags: ["netflix", "series", "filmes", "streaming", "entretenimento"],
   createdAt: "2026-06-08",
   featured: true,
+  author: "Equipe Editorial MegaQuiz",
+  authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
+  sources: [
+    { label: "Netflix — Séries Originais", organization: "Netflix", accessedAt: "2026-07-12" },
+    { label: "IMDb — TV Series", url: "https://www.imdb.com/", organization: "IMDb", accessedAt: "2026-07-12" },
+  ],
+  lastReviewedAt: "2026-07-12",
+  introText: "Quanto você sabe sobre as séries mais assistidas da Netflix? De Stranger Things a Round 6, teste seus conhecimentos.",
   questions: [
     {
       id: "q1",
@@ -33,6 +41,7 @@ export const seriesNetflix: Quiz = {
         { id: "c", text: "Alberto Vicuna", isCorrect: false },
         { id: "d", text: "Martin Berrote", isCorrect: false },
       ],
+      explanation: "Sergio Marquina, o Professor, e o mentor dos assaltos na serie. Andres de Fonollosa e o verdadeiro nome de Berlin, seu irmao.",
     },
     {
       id: "q3",
@@ -43,6 +52,7 @@ export const seriesNetflix: Quiz = {
         { id: "c", text: "Mundo Invertido (Upside Down)", isCorrect: true },
         { id: "d", text: "Mundo Obscuro", isCorrect: false },
       ],
+      explanation: "O Mundo Invertido (Upside Down) e uma dimensao sombria e paralela habitada por criaturas como o Demogorgon.",
     },
     {
       id: "q4",
@@ -64,6 +74,7 @@ export const seriesNetflix: Quiz = {
         { id: "c", text: "Livreiro / Gerente de livraria", isCorrect: true },
         { id: "d", text: "Jornalista", isCorrect: false },
       ],
+      explanation: "Joe Goldberg trabalha como gerente de livraria em Nova York na primeira temporada, o que facilita sua obsessao por livros e suas vitimas.",
     },
     {
       id: "q6",
@@ -85,6 +96,7 @@ export const seriesNetflix: Quiz = {
         { id: "c", text: "Idade Media", isCorrect: false },
         { id: "d", text: "Seculo 20", isCorrect: false },
       ],
+      explanation: "Bridgerton se passa na Regencia do Principe George (futuro George IV) e e baseada nos livros de Julia Quinn.",
     },
     {
       id: "q8",
@@ -95,6 +107,7 @@ export const seriesNetflix: Quiz = {
         { id: "c", text: "5", isCorrect: true },
         { id: "d", text: "6", isCorrect: false },
       ],
+      explanation: "Breaking Bad tem 5 temporadas (2008-2013) e e considerada uma das melhores series da historia da TV.",
     },
     {
       id: "q9",
@@ -105,6 +118,7 @@ export const seriesNetflix: Quiz = {
         { id: "c", text: "Jaskier", isCorrect: false },
         { id: "d", text: "Emhyr", isCorrect: false },
       ],
+      explanation: "Geralt de Rivia e um bruxo (witcher) caca-monstros. Henry Cavill interpretou o personagem nas 3 primeiras temporadas.",
     },
     {
       id: "q10",
@@ -126,6 +140,7 @@ export const seriesNetflix: Quiz = {
         { id: "c", text: "Familia Soprano", isCorrect: false },
         { id: "d", text: "Familia Byrne", isCorrect: false },
       ],
+      explanation: "A familia Shelby lidera uma gangue em Birmingham, Inglaterra, pos-Primeira Guerra Mundial. Cillian Murphy interpreta Tommy Shelby.",
     },
     {
       id: "q12",
@@ -136,6 +151,7 @@ export const seriesNetflix: Quiz = {
         { id: "c", text: "Game of Thrones", isCorrect: true },
         { id: "d", text: "Vikings", isCorrect: false },
       ],
+      explanation: "Game of Thrones (HBO, 2011-2019) e baseada nos livros 'As Cronicas de Gelo e Fogo' de George R.R. Martin.",
     },
     {
       id: "q13",
@@ -146,6 +162,7 @@ export const seriesNetflix: Quiz = {
         { id: "c", text: "Academia Umbrella", isCorrect: false },
         { id: "d", text: "Escola Xavier", isCorrect: false },
       ],
+      explanation: "A Academia Nevermore e uma escola para outcasts (rejeitados) na serie Wednesday, dirigida por Tim Burton.",
     },
     {
       id: "q14",
@@ -156,6 +173,7 @@ export const seriesNetflix: Quiz = {
         { id: "c", text: "Natalia Dyer", isCorrect: false },
         { id: "d", text: "Maya Hawke", isCorrect: false },
       ],
+      explanation: "Millie Bobby Brown interpretou Eleven (Onze) desde os 12 anos de idade, estreando na primeira temporada em 2016.",
     },
     {
       id: "q15",
