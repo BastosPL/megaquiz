@@ -20,6 +20,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `Quizzes de ${category.name}`,
     description: category.description,
+    alternates: {
+      canonical: `/categoria/${id}`,
+    },
   };
 }
 

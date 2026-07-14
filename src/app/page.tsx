@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import QuizCard from "@/components/QuizCard";
 import CategoryBadge from "@/components/CategoryBadge";
 import { allQuizzes, getFeaturedQuizzes } from "@/lib/quizzes";
 import { CATEGORIES } from "@/lib/types";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/",
+  },
+};
 
 export default function Home() {
   const featured = getFeaturedQuizzes();

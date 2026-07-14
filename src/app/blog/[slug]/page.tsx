@@ -17,8 +17,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!article) return {};
 
   return {
-    title: `${article.title} | MegaQuiz`,
+    title: article.title,
     description: article.excerpt,
+    alternates: {
+      canonical: `/blog/${slug}`,
+    },
     openGraph: {
       title: article.title,
       description: article.excerpt,

@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Política Editorial",
   description:
     "Como o MegaQuiz pesquisa, verifica e mantém a qualidade do seu conteúdo.",
+  alternates: {
+    canonical: "/politica-editorial",
+  },
 };
 
 export default function PoliticaEditorialPage() {

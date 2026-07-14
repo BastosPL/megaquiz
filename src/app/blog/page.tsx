@@ -3,9 +3,12 @@ import Link from "next/link";
 import { allArticles } from "@/lib/articles";
 
 export const metadata: Metadata = {
-  title: "Blog | MegaQuiz",
+  title: "Blog",
   description:
     "Artigos sobre curiosidades, esportes, psicologia, saúde e cultura. Leia e descubra fatos surpreendentes no blog do MegaQuiz.",
+  alternates: {
+    canonical: "/blog",
+  },
   openGraph: {
     title: "Blog | MegaQuiz",
     description:

@@ -4,6 +4,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Sobre o MegaQuiz",
   description: "Conheça o MegaQuiz - a plataforma de quizzes mais divertida do Brasil",
+  alternates: {
+    canonical: "/sobre",
+  },
 };
 
 export default function SobrePage() {

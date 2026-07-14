@@ -3,6 +3,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contato",
   description: "Entre em contato com o MegaQuiz — envie sugestões, dúvidas ou ideias de quizzes",
+  alternates: {
+    canonical: "/contato",
+  },
 };
 
 export default function ContatoPage() {

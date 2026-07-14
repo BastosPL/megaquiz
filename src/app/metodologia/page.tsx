@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Metodologia dos Quizzes",
   description:
     "Como funcionam os quizzes do MegaQuiz: tipos, pontuação, fontes e limitações.",
+  alternates: {
+    canonical: "/metodologia",
+  },
 };
 
 export default function MetodologiaPage() {

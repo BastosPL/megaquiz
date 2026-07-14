@@ -6,6 +6,9 @@ import { getQuizzesByCategory } from "@/lib/quizzes";
 export const metadata: Metadata = {
   title: "Todas as Categorias",
   description: "Explore todas as categorias de quizzes do MegaQuiz",
+  alternates: {
+    canonical: "/categorias",
+  },
 };
 
 export default function CategoriasPage() {
