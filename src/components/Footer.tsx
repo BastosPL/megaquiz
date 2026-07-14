@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { CATEGORIES } from "@/lib/types";
 
@@ -61,6 +63,14 @@ export default function Footer() {
               <Link href="/termos" className="text-sm text-gray-300 hover:text-white transition-colors">
                 Termos de Uso
               </Link>
+              <button
+                onClick={() =>
+                  window.dispatchEvent(new Event("cookie-consent-reopen"))
+                }
+                className="text-sm text-gray-300 hover:text-white transition-colors text-left cursor-pointer"
+              >
+                Gerenciar cookies
+              </button>
             </nav>
           </div>
         </div>

@@ -11,6 +11,14 @@ export default function CookieConsent() {
     if (!consent) {
       setVisible(true);
     }
+
+    function handleReopen() {
+      setVisible(true);
+    }
+
+    window.addEventListener("cookie-consent-reopen", handleReopen);
+    return () =>
+      window.removeEventListener("cookie-consent-reopen", handleReopen);
   }, []);
 
   function handleAccept() {
