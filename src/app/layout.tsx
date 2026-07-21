@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     template: "%s | MegaQuiz",
   },
   description:
-    "Descubra, desafie e compartilhe! Quizzes de personalidade, trivia, Copa do Mundo, series, filmes e muito mais.",
+    "Descubra, desafie e compartilhe! Quizzes de personalidade, trivia, Copa do Mundo, séries, filmes e muito mais.",
   keywords: [
     "quiz",
     "quiz online",

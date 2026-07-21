@@ -158,7 +158,7 @@ export default function QuizEngine({ quiz }: QuizEngineProps) {
         <div className="bg-bg-card rounded-2xl border border-border p-8 shadow-lg">
           <span className="text-6xl block mb-4">💀</span>
           <h2 className="text-2xl font-extrabold text-text mb-2">
-            Voce perdeu!
+            Você perdeu!
           </h2>
           <p className="text-text-light mb-2">
             Acertou <span className="font-bold text-primary">{score}</span> de{" "}
@@ -173,7 +173,7 @@ export default function QuizEngine({ quiz }: QuizEngineProps) {
             <span className="text-3xl block mb-2">🎬</span>
             <h3 className="font-bold text-text mb-1">Ganhe +1 Vida!</h3>
             <p className="text-sm text-text-light mb-3">
-              Assista um video curto e continue jogando
+              Assista um vídeo curto e continue jogando
             </p>
             <button
               onClick={handleExtraLife}
@@ -194,7 +194,7 @@ export default function QuizEngine({ quiz }: QuizEngineProps) {
               onClick={handleRestart}
               className="text-sm text-primary hover:underline font-medium"
             >
-              🔄 Tentar novamente (do inicio)
+              🔄 Tentar novamente (do início)
             </button>
           </div>
         </div>

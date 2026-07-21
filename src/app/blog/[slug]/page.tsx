@@ -117,7 +117,7 @@ export default async function ArticlePage({ params }: Props) {
           <div className="mt-4 text-xs text-text-light">
             {article.author && article.authorBio && <p>{article.author} — {article.authorBio}</p>}
             {article.lastReviewedAt && (
-              <p className="mt-1">Ultima revisao: {new Date(article.lastReviewedAt).toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })}</p>
+              <p className="mt-1">Última revisão: {new Date(article.lastReviewedAt).toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })}</p>
             )}
           </div>
         )}

@@ -57,7 +57,7 @@ export default async function CategoryPage({ params }: Props) {
           <span className="text-5xl mb-4 block">🔜</span>
           <h2 className="text-xl font-bold text-text mb-2">Em breve!</h2>
           <p className="text-text-light">
-            Estamos preparando quizzes incriveis para esta categoria.
+            Estamos preparando quizzes incríveis para esta categoria.
           </p>
           <a
             href="/"

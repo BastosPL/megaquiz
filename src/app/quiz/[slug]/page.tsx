@@ -171,7 +171,7 @@ export default async function QuizPage({ params }: Props) {
           <div className="mt-6 pt-4 border-t border-border text-xs text-text-light">
             {quiz.author && <p>{quiz.author}{quiz.authorBio ? ` — ${quiz.authorBio}` : ''}</p>}
             {quiz.lastReviewedAt && (
-              <p className="mt-1">Ultima revisao: {new Date(quiz.lastReviewedAt).toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })}</p>
+              <p className="mt-1">Última revisão: {new Date(quiz.lastReviewedAt).toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })}</p>
             )}
           </div>
         )}

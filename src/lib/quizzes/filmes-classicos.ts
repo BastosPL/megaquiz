@@ -3,8 +3,8 @@ import type { Quiz } from "@/lib/types";
 export const filmesClassicos: Quiz = {
   id: "filmes-classicos",
   slug: "quiz-filmes-classicos",
-  title: "Quiz Filmes Classicos de Hollywood",
-  description: "De Titanic a Matrix — quanto voce sabe sobre os maiores filmes da historia?",
+  title: "Quiz Filmes Clássicos de Hollywood",
+  description: "De Titanic a Matrix — quanto você sabe sobre os maiores filmes da história?",
   type: "trivia",
   category: "series-filmes",
   emoji: "🎬",
@@ -34,14 +34,14 @@ export const filmesClassicos: Quiz = {
     },
     {
       id: "q2",
-      text: "Em Matrix, qual pilula Neo escolhe?",
+      text: "Em Matrix, qual pílula Neo escolhe?",
       options: [
         { id: "a", text: "Azul", isCorrect: false },
         { id: "b", text: "Verde", isCorrect: false },
         { id: "c", text: "Vermelha", isCorrect: true },
         { id: "d", text: "Branca", isCorrect: false },
       ],
-      explanation: "Neo escolhe a pilula vermelha oferecida por Morpheus para conhecer a verdade sobre a Matrix.",
+      explanation: "Neo escolhe a pílula vermelha oferecida por Morpheus para conhecer a verdade sobre a Matrix.",
     },
     {
       id: "q3",
@@ -56,14 +56,14 @@ export const filmesClassicos: Quiz = {
     },
     {
       id: "q4",
-      text: "Qual e a frase iconica de 'O Poderoso Chefao'?",
+      text: "Qual é a frase icônica de 'O Poderoso Chefão'?",
       options: [
-        { id: "a", text: "Eu sou inevitavel", isCorrect: false },
-        { id: "b", text: "Vou fazer uma oferta irrecusavel", isCorrect: true },
-        { id: "c", text: "Que a Forca esteja com voce", isCorrect: false },
+        { id: "a", text: "Eu sou inevitável", isCorrect: false },
+        { id: "b", text: "Vou fazer uma oferta irrecusável", isCorrect: true },
+        { id: "c", text: "Que a Força esteja com você", isCorrect: false },
         { id: "d", text: "Eu voltarei", isCorrect: false },
       ],
-      explanation: "A frase 'Vou fazer uma oferta irrecusavel' (em ingles, 'I'm gonna make him an offer he can't refuse') e dita por Don Vito Corleone (Marlon Brando).",
+      explanation: "A frase 'Vou fazer uma oferta irrecusável' (em inglês, 'I'm gonna make him an offer he can't refuse') é dita por Don Vito Corleone (Marlon Brando).",
     },
     {
       id: "q5",
@@ -74,7 +74,7 @@ export const filmesClassicos: Quiz = {
         { id: "c", text: "Endor", isCorrect: false },
         { id: "d", text: "Krypton", isCorrect: false },
       ],
-      explanation: "Pandora e a lua ficticia do sistema Alpha Centauri, lar dos Na'vi no filme de James Cameron.",
+      explanation: "Pandora é a lua fictícia do sistema Alpha Centauri, lar dos Na'vi no filme de James Cameron.",
     },
     {
       id: "q6",
@@ -85,7 +85,7 @@ export const filmesClassicos: Quiz = {
         { id: "c", text: "George Lucas", isCorrect: false },
         { id: "d", text: "Ridley Scott", isCorrect: false },
       ],
-      explanation: "Steven Spielberg tambem dirigiu E.T., A Lista de Schindler e O Resgate do Soldado Ryan.",
+      explanation: "Steven Spielberg também dirigiu E.T., A Lista de Schindler e O Resgate do Soldado Ryan.",
     },
     {
       id: "q7",
@@ -100,7 +100,7 @@ export const filmesClassicos: Quiz = {
     },
     {
       id: "q8",
-      text: "Qual filme brasileiro ganhou indicacao ao Oscar de Melhor Filme Estrangeiro em 1999?",
+      text: "Qual filme brasileiro ganhou indicação ao Oscar de Melhor Filme Estrangeiro em 1999?",
       options: [
         { id: "a", text: "Cidade de Deus", isCorrect: false },
         { id: "b", text: "Central do Brasil", isCorrect: true },
@@ -122,25 +122,25 @@ export const filmesClassicos: Quiz = {
     },
     {
       id: "q10",
-      text: "Qual e o filme de maior bilheteria de todos os tempos (ate 2026)?",
+      text: "Qual é o filme de maior bilheteria de todos os tempos (até 2026)?",
       options: [
         { id: "a", text: "Vingadores: Ultimato", isCorrect: false },
         { id: "b", text: "Avatar", isCorrect: true },
         { id: "c", text: "Titanic", isCorrect: false },
-        { id: "d", text: "Star Wars: O Despertar da Forca", isCorrect: false },
+        { id: "d", text: "Star Wars: O Despertar da Força", isCorrect: false },
       ],
-      explanation: "Avatar (2009) arrecadou mais de US$ 2,9 bilhoes mundialmente, superando Vingadores: Ultimato.",
+      explanation: "Avatar (2009) arrecadou mais de US$ 2,9 bilhões mundialmente, superando Vingadores: Ultimato.",
     },
     {
       id: "q11",
       text: "Em qual cidade se passa Batman: O Cavaleiro das Trevas?",
       options: [
-        { id: "a", text: "Metropolis", isCorrect: false },
+        { id: "a", text: "Metrópolis", isCorrect: false },
         { id: "b", text: "Nova York", isCorrect: false },
         { id: "c", text: "Gotham City", isCorrect: true },
         { id: "d", text: "Star City", isCorrect: false },
       ],
-      explanation: "Gotham City e a cidade ficticia criada pela DC Comics como lar do Batman desde 1939.",
+      explanation: "Gotham City é a cidade fictícia criada pela DC Comics como lar do Batman desde 1939.",
     },
     {
       id: "q12",
@@ -151,22 +151,22 @@ export const filmesClassicos: Quiz = {
         { id: "c", text: "Dave Bautista", isCorrect: false },
         { id: "d", text: "Bradley Cooper", isCorrect: false },
       ],
-      explanation: "Vin Diesel fez a voz de Groot em todos os filmes dos Guardioes da Galaxia e nos Vingadores.",
+      explanation: "Vin Diesel fez a voz de Groot em todos os filmes dos Guardiões da Galáxia e nos Vingadores.",
     },
     {
       id: "q13",
-      text: "Qual desses filmes NAO e da Pixar?",
+      text: "Qual desses filmes NÃO é da Pixar?",
       options: [
         { id: "a", text: "Toy Story", isCorrect: false },
         { id: "b", text: "Shrek", isCorrect: true },
         { id: "c", text: "Procurando Nemo", isCorrect: false },
         { id: "d", text: "Divertida Mente", isCorrect: false },
       ],
-      explanation: "Shrek e da DreamWorks Animation, nao da Pixar!",
+      explanation: "Shrek é da DreamWorks Animation, não da Pixar!",
     },
     {
       id: "q14",
-      text: "Em 'O Senhor dos Aneis', quem carrega o Um Anel ate a Montanha da Perdicao?",
+      text: "Em 'O Senhor dos Anéis', quem carrega o Um Anel até a Montanha da Perdição?",
       options: [
         { id: "a", text: "Aragorn", isCorrect: false },
         { id: "b", text: "Gandalf", isCorrect: false },
@@ -177,14 +177,14 @@ export const filmesClassicos: Quiz = {
     },
     {
       id: "q15",
-      text: "Qual personagem diz 'Hakuna Matata' no Rei Leao?",
+      text: "Qual personagem diz 'Hakuna Matata' no Rei Leão?",
       options: [
         { id: "a", text: "Simba e Nala", isCorrect: false },
-        { id: "b", text: "Timao e Pumba", isCorrect: true },
+        { id: "b", text: "Timão e Pumba", isCorrect: true },
         { id: "c", text: "Scar e as Hienas", isCorrect: false },
         { id: "d", text: "Mufasa e Rafiki", isCorrect: false },
       ],
-      explanation: "Timao (suricato) e Pumba (javali) cantam 'Hakuna Matata', que significa 'sem preocupacoes' em suaili.",
+      explanation: "Timão (suricato) e Pumba (javali) cantam 'Hakuna Matata', que significa 'sem preocupações' em suaíli.",
     },
   ],
 };

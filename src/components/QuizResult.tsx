@@ -54,12 +54,12 @@ export default function QuizResultView({
   const getScoreMessage = () => {
     if (!result.percentage) return "";
     if (result.percentage >= 90)
-      return "Incrivel! Voce e um genio!";
+      return "Incrível! Você é um gênio!";
     if (result.percentage >= 70)
-      return "Muito bom! Voce manda bem!";
+      return "Muito bom! Você manda bem!";
     if (result.percentage >= 50)
       return "Nada mal! Tem potencial!";
-    return "Tente novamente, voce consegue!";
+    return "Tente novamente, você consegue!";
   };
 
   return (
