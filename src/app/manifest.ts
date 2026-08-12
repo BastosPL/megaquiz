@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "MegaQuiz - Os Melhores Quizzes da Internet",
+    name: "MegaQuiz - Quizzes de Trivia e Personalidade em Português",
     short_name: "MegaQuiz",
     description:
       "Quizzes de personalidade, trivia, Copa do Mundo e muito mais!",

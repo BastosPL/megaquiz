@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "MegaQuiz - Os Melhores Quizzes do Brasil";
+export const alt = "MegaQuiz - Quizzes de Trivia e Personalidade em Português";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -41,7 +41,7 @@ export default function OGImage() {
             display: "flex",
           }}
         >
-          Os melhores quizzes e testes online do Brasil!
+          Quizzes gratuitos em português — trivia e personalidade
         </div>
         <div
           style={{
