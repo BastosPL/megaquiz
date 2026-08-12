@@ -155,14 +155,14 @@ export const golsHistoricosCopa: Quiz = {
     },
     {
       id: "q13",
-      text: "Roberto Carlos fez um gol de falta histórico contra a França em 1997. Como foi?",
+      text: "Quem marcou o gol que fechou a goleada de 4 a 1 do Brasil sobre a Itália na final da Copa de 1970?",
       options: [
-        { id: "a", text: "A bola fez uma curva impossível", isCorrect: true },
-        { id: "b", text: "Chute de 40 metros no ângulo", isCorrect: false },
-        { id: "c", text: "Cobrança por baixo da barreira", isCorrect: false },
-        { id: "d", text: "Falta batida com a perna direita", isCorrect: false },
+        { id: "a", text: "Carlos Alberto Torres", isCorrect: true },
+        { id: "b", text: "Pelé", isCorrect: false },
+        { id: "c", text: "Jairzinho", isCorrect: false },
+        { id: "d", text: "Tostão", isCorrect: false },
       ],
-      explanation: "A bola desviou tanto que os físicos até hoje estudam aquela curva! Não foi em Copa, mas é icônica.",
+      explanation: "Carlos Alberto Torres fechou a goleada com um chute cruzado após uma jogada coletiva que é considerada um dos gols mais bonitos da história das Copas.",
     },
     {
       id: "q14",

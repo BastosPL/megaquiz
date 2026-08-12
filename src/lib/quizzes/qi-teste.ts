@@ -72,10 +72,10 @@ export const qiTeste: Quiz = {
       options: [
         { id: "a", text: "Sydney", isCorrect: false },
         { id: "b", text: "Melbourne", isCorrect: false },
-        { id: "c", text: "Camberra", isCorrect: true },
+        { id: "c", text: "Canberra", isCorrect: true },
         { id: "d", text: "Brisbane", isCorrect: false },
       ],
-      explanation: "Muita gente pensa que é Sydney, mas a capital é Camberra!",
+      explanation: "Muita gente pensa que é Sydney, mas a capital é Canberra!",
     },
     {
       id: "q6",

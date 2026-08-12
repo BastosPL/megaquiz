@@ -75,8 +75,6 @@ export default function QuizEngine({ quiz }: QuizEngineProps) {
   );
 
   const handleExtraLife = () => {
-    // Futuro: aqui entra a propaganda (rewarded ad)
-    // Por enquanto, simula assistir propaganda
     setLives(1);
     setShowExtraLifeOffer(false);
     setGameOver(false);
@@ -168,18 +166,18 @@ export default function QuizEngine({ quiz }: QuizEngineProps) {
             Suas 3 vidas acabaram...
           </p>
 
-          {/* Oferta de vida extra */}
-          <div className="bg-secondary/10 border-2 border-secondary rounded-xl p-5 mb-6 animate-pulse-glow">
-            <span className="text-3xl block mb-2">🎬</span>
-            <h3 className="font-bold text-text mb-1">Ganhe +1 Vida!</h3>
+          {/* Oferta de segunda chance */}
+          <div className="bg-secondary/10 border-2 border-secondary rounded-xl p-5 mb-6">
+            <span className="text-3xl block mb-2">🔋</span>
+            <h3 className="font-bold text-text mb-1">Segunda chance!</h3>
             <p className="text-sm text-text-light mb-3">
-              Assista um vídeo curto e continue jogando
+              Você pode ganhar +1 vida e continuar de onde parou.
             </p>
             <button
               onClick={handleExtraLife}
               className="w-full py-3 bg-secondary text-white font-bold rounded-xl hover:bg-secondary-light transition-colors"
             >
-              ▶ Assistir e Continuar
+              Continuar jogando
             </button>
           </div>
 

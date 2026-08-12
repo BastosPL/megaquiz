@@ -106,8 +106,8 @@ export default async function QuizPage({ params }: Props) {
         </h2>
         <p className="text-text-light mb-6">
           {quiz.type === "trivia"
-            ? `Teste seus conhecimentos com ${quiz.questions.length} perguntas sobre ${quiz.tags.slice(0, 3).join(", ")}. Cada pergunta tem uma resposta correta — quantas você consegue acertar?`
-            : `Responda ${quiz.questions.length} perguntas e descubra qual perfil combina mais com você. Um quiz de personalidade sobre ${quiz.tags.slice(0, 3).join(", ")}.`}
+            ? `Este quiz de trivia reúne ${quiz.questions.length} perguntas sobre ${quiz.tags.slice(0, 3).join(", ")}. Você começa com 3 vidas e perde uma a cada erro — se zerar, é game over. Depois de cada resposta, uma explicação revela o contexto por trás da alternativa correta.`
+            : `Neste quiz de personalidade, você responde ${quiz.questions.length} perguntas sobre ${quiz.tags.slice(0, 3).join(", ")}. Cada resposta acumula pontos para perfis diferentes, e no final o quiz indica qual deles mais combina com você.`}
         </p>
 
         <h3 className="text-lg font-semibold text-text mb-3">

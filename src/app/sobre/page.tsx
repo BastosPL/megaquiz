@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Sobre o MegaQuiz",
-  description: "Conheça o MegaQuiz - a plataforma de quizzes mais divertida do Brasil",
+  description: "Conheça o MegaQuiz - quizzes de trivia e personalidade em português, com perguntas originais e fontes verificadas",
   alternates: {
     canonical: "/sobre",
   },
@@ -18,7 +18,7 @@ export default function SobrePage() {
           Sobre o MegaQuiz
         </h1>
         <p className="text-text-light text-lg">
-          A plataforma de quizzes mais divertida do Brasil!
+          Quizzes de trivia e personalidade em português, com perguntas originais e fontes verificadas.
         </p>
       </div>
 
@@ -41,12 +41,9 @@ export default function SobrePage() {
         <div className="bg-bg-card rounded-2xl border border-border p-6">
           <h2 className="text-lg font-bold text-text mb-3">🎯 Nossa missão</h2>
           <p>
-            O MegaQuiz nasceu com um objetivo simples: criar os melhores quizzes
-            da internet em português. Queremos que você se divirta, aprenda coisas
-            novas e desafie seus amigos — tudo de graça!
-          </p>
-          <p className="mt-3">
-            MegaQuiz é um projeto brasileiro criado para oferecer entretenimento educativo e diversão para todos.
+            O MegaQuiz nasceu para oferecer quizzes em português com conteúdo bem
+            pesquisado. Cada quiz é criado com perguntas originais, explicações que
+            ensinam algo novo e fontes verificáveis — tudo gratuito e sem cadastro.
           </p>
         </div>
 
@@ -71,7 +68,7 @@ export default function SobrePage() {
               <span className="text-xs text-text-light">Categorias</span>
             </div>
             <div className="text-center">
-              <span className="text-2xl font-extrabold text-primary block">150+</span>
+              <span className="text-2xl font-extrabold text-primary block">400+</span>
               <span className="text-xs text-text-light">Perguntas</span>
             </div>
           </div>

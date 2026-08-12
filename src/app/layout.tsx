@@ -13,11 +13,11 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "MegaQuiz - Os Melhores Quizzes da Internet",
+    default: "MegaQuiz - Quizzes de Trivia e Personalidade em Português",
     template: "%s | MegaQuiz",
   },
   description:
-    "Descubra, desafie e compartilhe! Quizzes de personalidade, trivia, Copa do Mundo, séries, filmes e muito mais.",
+    "Quizzes gratuitos de trivia e personalidade em português. Copa do Mundo 2026, séries, filmes, conhecimentos gerais, esportes e carreira — com explicações e fontes verificadas.",
   keywords: [
     "quiz",
     "quiz online",
@@ -35,14 +35,14 @@ export const metadata: Metadata = {
     type: "website",
     locale: "pt_BR",
     siteName: "MegaQuiz",
-    title: "MegaQuiz - Os Melhores Quizzes da Internet",
-    description: "Descubra, desafie e compartilhe! Quizzes de personalidade, trivia e muito mais.",
+    title: "MegaQuiz - Quizzes de Trivia e Personalidade em Português",
+    description: "Quizzes gratuitos em português — trivia com explicações e personalidade com perfis detalhados.",
     url: "https://megaquiz.app.br",
   },
   twitter: {
     card: "summary_large_image",
-    title: "MegaQuiz - Os Melhores Quizzes da Internet",
-    description: "Descubra, desafie e compartilhe! Quizzes de personalidade, trivia e muito mais.",
+    title: "MegaQuiz - Quizzes de Trivia e Personalidade em Português",
+    description: "Quizzes gratuitos em português — trivia com explicações e personalidade com perfis detalhados.",
   },
   robots: {
     index: true,

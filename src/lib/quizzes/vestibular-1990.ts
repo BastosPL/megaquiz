@@ -154,14 +154,14 @@ export const vestibular1990: Quiz = {
     },
     {
       id: "q13",
-      text: "Quem foi o líder da Revolução Francesa que foi guilhotinado?",
+      text: "Qual líder revolucionário francês conduziu o Regime do Terror e acabou guilhotinado em 1794?",
       options: [
         { id: "a", text: "Napoleão Bonaparte", isCorrect: false },
         { id: "b", text: "Robespierre", isCorrect: true },
         { id: "c", text: "Voltaire", isCorrect: false },
         { id: "d", text: "Luís XVI", isCorrect: false },
       ],
-      explanation: "Tanto Luís XVI quanto Robespierre foram guilhotinados, mas Robespierre foi o líder revolucionário que acabou vítima do próprio Terror.",
+      explanation: "Maximilien de Robespierre liderou o Comitê de Salvação Pública e instaurou o Regime do Terror (1793–1794). Foi derrubado e guilhotinado no golpe de 9 do Termidor. Luís XVI também foi guilhotinado, mas como rei deposto, não como líder revolucionário.",
     },
     {
       id: "q14",

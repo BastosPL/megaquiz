@@ -14,7 +14,6 @@ export const qualGeracaoSuaAlma: Quiz = {
   featured: true,
   author: "Equipe Editorial MegaQuiz",
   authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
-  sources: [],
   lastReviewedAt: "2026-07-12",
   introText: "Boomer, Gen X, Millennial, Gen Z ou Alpha? Descubra de qual geração você realmente tem a alma.",
   profiles: [

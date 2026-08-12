@@ -14,7 +14,6 @@ export const jeitoDeComerPersonalidade: Quiz = {
   featured: true,
   author: "Equipe Editorial MegaQuiz",
   authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
-  sources: [],
   lastReviewedAt: "2026-07-12",
   introText: "Descubra o que seus hábitos alimentares revelam sobre sua personalidade — um quiz recreativo e divertido.",
   profiles: [

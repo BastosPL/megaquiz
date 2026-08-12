@@ -3,8 +3,8 @@ import type { Quiz } from "@/lib/types";
 export const round6Sobreviveria: Quiz = {
   id: "round6-sobreviveria",
   slug: "quiz-round-6-voce-sobreviveria",
-  title: "Quiz Round 6 — Você Sobreviveria?",
-  description: "Teste seus conhecimentos sobre Squid Game e descubra se você escaparia com vida!",
+  title: "Quanto Você Sabe Sobre Round 6 (Squid Game)?",
+  description: "15 perguntas sobre a série que virou fenômeno mundial na Netflix.",
   type: "trivia",
   category: "series-filmes",
   emoji: "🦑",
@@ -19,7 +19,7 @@ export const round6Sobreviveria: Quiz = {
     { label: "IMDb — Squid Game", url: "https://www.imdb.com/title/tt10919420/", organization: "IMDb", accessedAt: "2026-07-12" },
   ],
   lastReviewedAt: "2026-07-12",
-  introText: "Teste seus conhecimentos sobre Squid Game e descubra se você sobreviveria aos jogos mortais.",
+  introText: "De Batatinha Fatatinha ao jogo final — o quanto você prestou atenção na série?",
   questions: [
     {
       id: "q1",

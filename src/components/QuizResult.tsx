@@ -53,13 +53,17 @@ export default function QuizResultView({
 
   const getScoreMessage = () => {
     if (!result.percentage) return "";
+    if (result.percentage === 100)
+      return "Perfeito! Você acertou todas as perguntas — conhecimento impressionante!";
     if (result.percentage >= 90)
-      return "Incrível! Você é um gênio!";
+      return "Excelente! Você domina esse assunto de verdade.";
     if (result.percentage >= 70)
-      return "Muito bom! Você manda bem!";
+      return "Muito bem! Você sabe bastante, mas ainda tem espaço para aprender mais.";
     if (result.percentage >= 50)
-      return "Nada mal! Tem potencial!";
-    return "Tente novamente, você consegue!";
+      return "Resultado razoável — vale a pena revisar o que errou e tentar de novo.";
+    if (result.percentage >= 30)
+      return "Deu para perceber que o tema é desafiador. Que tal pesquisar um pouco e voltar?";
+    return "Não desanime! Releia as explicações e tente novamente.";
   };
 
   return (

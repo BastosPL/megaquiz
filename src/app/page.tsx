@@ -22,15 +22,14 @@ export default function Home() {
           <span className="text-primary">Compartilhe!</span>
         </h1>
         <p className="text-text-light text-lg max-w-xl mx-auto mb-4">
-          Os melhores quizzes da internet em português. Teste seus
-          conhecimentos, descubra sua personalidade e desafie seus amigos!
+          Quizzes de trivia e personalidade em português. Teste seus
+          conhecimentos, descubra seu perfil e desafie seus amigos!
         </p>
         <p className="text-text-light text-sm max-w-2xl mx-auto">
-          O MegaQuiz oferece mais de 30 quizzes gratuitos em diversas
-          categorias: Copa do Mundo 2026, personalidade, séries e filmes,
-          conhecimentos gerais, esportes e carreira. Cada quiz foi criado com
-          perguntas originais para garantir diversão e aprendizado. Jogue,
-          compartilhe no WhatsApp e desafie quem você conhece!
+          Mais de 30 quizzes gratuitos em 6 categorias: Copa do Mundo 2026,
+          personalidade, séries e filmes, conhecimentos gerais, esportes e
+          carreira. Perguntas originais com explicações e fontes — jogue,
+          aprenda e compartilhe com seus amigos.
         </p>
       </section>
 

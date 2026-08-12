@@ -31,7 +31,7 @@ export const timesBrasileiros: Quiz = {
         { id: "c", text: "Flamengo", isCorrect: false },
         { id: "d", text: "Corinthians", isCorrect: false },
       ],
-      explanation: "O Palmeiras tem 12 títulos do Brasileirão, sendo o maior campeão.",
+      explanation: "O Palmeiras é o maior campeão brasileiro, com mais de dez títulos do Campeonato Brasileiro na contagem oficial da CBF.",
     },
     {
       id: "q2",
