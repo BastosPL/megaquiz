@@ -16,7 +16,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-sm text-gray-400">
-              Os melhores quizzes e testes da internet. Descubra, desafie e compartilhe!
+              Quizzes de trivia e personalidade em português, com perguntas originais e fontes verificadas.
             </p>
           </div>
 
