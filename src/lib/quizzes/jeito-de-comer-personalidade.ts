@@ -15,42 +15,42 @@ export const jeitoDeComerPersonalidade: Quiz = {
   author: "Equipe Editorial MegaQuiz",
   authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
   lastReviewedAt: "2026-07-12",
-  introText: "Descubra o que seus hábitos alimentares revelam sobre sua personalidade — um quiz recreativo e divertido.",
+  introText: "Como você monta o prato, por onde começa a comer e o que faz com a sobremesa podem dizer coisas curiosas sobre seu jeito de ser — pelo menos de forma divertida.",
   profiles: [
     {
       id: "aventureiro",
       title: "Aventureiro Gastronômico",
       emoji: "🌍",
       description:
-        "Você come de tudo e adora experimentar! Comida japonesa, indiana, tailandesa — quanto mais exótica melhor. Você é curioso, aberto a novas experiências e acha que comer bem é a melhor forma de conhecer o mundo!",
+        "Você é do tipo que pede o prato que não consegue pronunciar no menu. Sabe a diferença entre sashimi e sushi nigiri, já experimentou pad thai na rua e acha que o melhor tempero do mundo é o curiosidade. A tradição gastronômica mais antiga registrada tem quase 4 mil anos, em tábuas cuneiformes da Mesopotâmia, e se existisse máquina do tempo, você iria lá só pra provar. Pra você, cada refeição é passaporte carimbado.",
     },
     {
       id: "comfort",
       title: "Rei/Rainha do Comfort Food",
       emoji: "🍝",
       description:
-        "Você é emocional e nostálgico com comida! Macarrão da avó, bolo de chocolate, feijão tropeiro — você come com o coração. Comida pra você é afeto, memória e abraço. Provavelmente cozinha bem!",
+        "Pra você, o macarrão da avó é patrimônio imaterial e o arroz com feijão bem feito cura qualquer dia ruim. O conceito de comfort food vem da psicologia: alimentos associados a memórias afetivas ativam circuitos de recompensa no cérebro e reduzem estresse. Seu prato favorito provavelmente tem história familiar por trás, e você julga todo restaurante pelo critério 'parece comida de casa'. Bolo de cenoura com cobertura de chocolate é seu remédio.",
     },
     {
       id: "fitness",
       title: "Fitness Disciplinado",
       emoji: "🥗",
       description:
-        "Você é focado e disciplinado! Sabe os macros de cada alimento e tem marmita pronta pra semana toda. Frango, batata doce e brócolis são seus melhores amigos. Mas no cheat day... aí vale tudo!",
+        "Você sabe que 100g de peito de frango tem cerca de 31g de proteína e acha batata doce um superalimento injustiçado. Seu domingo é dedicado ao meal prep da semana, com potinhos numerados e balança de cozinha como peça obrigatória. O conceito de 'cheat meal' é a única anarquia que você permite na vida. Seu app de contagem de macros tem mais horas de uso que o Instagram.",
     },
     {
       id: "social",
       title: "Comilão Social",
       emoji: "🍻",
       description:
-        "Pra você, comer é sobre a companhia! Churrasco com amigos, pizza no rodízio, happy hour no bar — o sabor é bom mas a risada é melhor. Você é a pessoa que organiza os encontros e pede 'mais uma porção'!",
+        "Você é a pessoa que cria o grupo do WhatsApp 'Churras sábado' toda semana e já sabe de cor a fórmula: 400g de carne por pessoa, gelo nunca é demais e alguém sempre esquece o carvão. Pra você, comida sem conversa é só nutrição, e o melhor tempero é uma mesa cheia de gente.",
     },
     {
       id: "rapido",
       title: "Fast Food & Praticidade",
       emoji: "🍔",
       description:
-        "Você é prático e não perde tempo na cozinha! Delivery, fast food, miojo gourmet — o que importa é ser rápido e gostoso. Você é eficiente em tudo na vida e acha que comida é combustível, não cerimônia!",
+        "Você domina o iFood com a maestria de um trader na bolsa: cupom de desconto, tempo estimado de entrega e avaliação do restaurante são analisados em menos de 60 segundos. O miojo instantâneo foi inventado por Momofuku Ando em 1958 no Japão e desde então alimenta pessoas como você que acham que 3 minutos já é tempo demais pra esperar uma refeição. Praticidade é filosofia de vida, não preguiça.",
     },
   ],
   questions: [

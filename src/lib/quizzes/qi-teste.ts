@@ -19,7 +19,7 @@ export const qiTeste: Quiz = {
     { label: "Britannica — General Knowledge", organization: "Encyclopædia Britannica", accessedAt: "2026-07-12" },
   ],
   lastReviewedAt: "2026-07-12",
-  introText: "Um desafio rápido de conhecimentos gerais com 10 perguntas sobre os mais variados temas.",
+  introText: "Dez perguntas que misturam lógica, cultura geral, ciência e atualidades — um desafio curto, mas que pega muita gente de surpresa.",
   disclaimer: "Este quiz é um desafio de conhecimentos gerais para diversão. Não mede QI, inteligência ou capacidade cognitiva.",
   questions: [
     {
@@ -68,14 +68,14 @@ export const qiTeste: Quiz = {
     },
     {
       id: "q5",
-      text: "Qual a capital da Austrália?",
+      text: "Qual cientista formulou a teoria da relatividade?",
       options: [
-        { id: "a", text: "Sydney", isCorrect: false },
-        { id: "b", text: "Melbourne", isCorrect: false },
-        { id: "c", text: "Canberra", isCorrect: true },
-        { id: "d", text: "Brisbane", isCorrect: false },
+        { id: "a", text: "Isaac Newton", isCorrect: false },
+        { id: "b", text: "Albert Einstein", isCorrect: true },
+        { id: "c", text: "Nikola Tesla", isCorrect: false },
+        { id: "d", text: "Niels Bohr", isCorrect: false },
       ],
-      explanation: "Muita gente pensa que é Sydney, mas a capital é Canberra!",
+      explanation: "Albert Einstein publicou a teoria da relatividade especial em 1905 e a geral em 1915, revolucionando a física moderna.",
     },
     {
       id: "q6",

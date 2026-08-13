@@ -18,7 +18,7 @@ export const vestibular1990: Quiz = {
     { label: "Questões de vestibulares brasileiros (anos 1990)", organization: "Universidades brasileiras", accessedAt: "2026-07-12" },
   ],
   lastReviewedAt: "2026-07-12",
-  introText: "Perguntas reais de vestibulares dos anos 90. Será que você passaria naquela época?",
+  introText: "Questões inspiradas nos vestibulares dos anos 90 — época sem Google, sem calculadora e com muito conteúdo decorado. Será que você passaria?",
   questions: [
     {
       id: "q1",
@@ -88,14 +88,14 @@ export const vestibular1990: Quiz = {
     },
     {
       id: "q7",
-      text: "Qual é a capital da Austrália?",
+      text: "Qual é a unidade de medida da corrente elétrica no Sistema Internacional?",
       options: [
-        { id: "a", text: "Sydney", isCorrect: false },
-        { id: "b", text: "Melbourne", isCorrect: false },
-        { id: "c", text: "Canberra", isCorrect: true },
-        { id: "d", text: "Brisbane", isCorrect: false },
+        { id: "a", text: "Volt", isCorrect: false },
+        { id: "b", text: "Watt", isCorrect: false },
+        { id: "c", text: "Ampère", isCorrect: true },
+        { id: "d", text: "Ohm", isCorrect: false },
       ],
-      explanation: "A maioria erra essa! Canberra foi construída como capital de compromisso entre Sydney e Melbourne.",
+      explanation: "O ampère (A) mede corrente elétrica. O volt mede tensão, o watt mede potência e o ohm mede resistência.",
     },
     {
       id: "q8",

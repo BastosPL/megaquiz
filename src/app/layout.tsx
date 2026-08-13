@@ -61,6 +61,15 @@ export const metadata: Metadata = {
   },
 };
 
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "MegaQuiz",
+  url: "https://megaquiz.app.br",
+  description:
+    "Quizzes gratuitos de trivia e personalidade em português, com perguntas originais e fontes verificadas.",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -69,6 +78,12 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className={`${inter.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col font-sans">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationJsonLd),
+          }}
+        />
         <ConditionalScripts />
         <Header />
         <main className="flex-1">{children}</main>

@@ -19,7 +19,7 @@ export const geografiaDoBrasil: Quiz = {
     { label: "ICMBio — Biomas brasileiros", organization: "ICMBio/MMA", accessedAt: "2026-07-12" },
   ],
   lastReviewedAt: "2026-07-12",
-  introText: "Biomas, rios, estados e regiões — teste o que você sabe sobre a geografia do Brasil.",
+  introText: "O Brasil tem 26 estados, 6 biomas e o maior rio do mundo em volume — este quiz explora rios, relevo, clima e divisões regionais do país.",
   questions: [
     {
       id: "q1",

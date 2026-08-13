@@ -18,42 +18,42 @@ export const qualPersonagemVoceSeria: Quiz = {
     { label: "IMDb — Most Popular TV Shows", url: "https://www.imdb.com/chart/tvmeter/", organization: "IMDb", accessedAt: "2026-07-12" },
   ],
   lastReviewedAt: "2026-07-12",
-  introText: "De Eleven a Walter White, descubra qual personagem icônico de série combina com sua personalidade.",
+  introText: "O Professor resolve com lógica, Eleven enfrenta monstros de frente, Tommy Shelby joga sujo quando precisa e Wednesday prefere resolver tudo sozinha. Quem faria o que você faria?",
   profiles: [
     {
       id: "professor",
       title: "O Professor (La Casa de Papel)",
       emoji: "🧠",
       description:
-        "Você é o estrategista! Calmo, calculista e sempre 10 passos à frente. Você planeja tudo nos mínimos detalhes e odeia improvisar. Sua mente brilhante compensa sua timidez social. As pessoas confiam em você porque você sempre tem um plano B, C e D.",
+        "Você é Sergio Marquina, o homem que passou meses numa casa isolada ensinando criminosos a resistir psicologicamente enquanto planejava cada minuto do assalto à Casa da Moeda da Espanha. Seu trunfo não é a força: é fazer origami sob pressão e ter previsto cada jogada da polícia antes dela acontecer. A relação improvável com a inspetora Raquel Murillo provou que até o planejador mais meticuloso pode ser pego de surpresa pelo coração.",
     },
     {
       id: "eleven",
       title: "Eleven (Stranger Things)",
       emoji: "🔮",
       description:
-        "Você é forte, corajoso(a) e leal até o fim! Pode parecer quieto(a) por fora, mas tem um poder interior incrível. Você faria qualquer coisa para proteger quem ama. Waffles são a sua comfort food e você detesta injustiças.",
+        "Você é Jane 'Eleven' Ives, a garota criada em laboratório pelo Dr. Brenner no Hawkins National Laboratory, que escapou com a cabeça raspada, poderes telecinéticos e zero conhecimento do mundo real. Eleven aprendeu sobre amizade com Mike, Lucas e Dustin, descobriu que Eggos congelados são o melhor alimento do planeta, e enfrentou o Demogorgon, o Mind Flayer e Vecna para proteger quem ama. Seu poder vem do trauma, mas sua força vem da lealdade.",
     },
     {
       id: "tommy",
       title: "Tommy Shelby (Peaky Blinders)",
       emoji: "🎩",
       description:
-        "Você é o líder nato! Ambicioso, determinado e com uma presença que impõe respeito. Você não tem medo de tomar decisões difíceis e sempre coloca o sucesso em primeiro lugar. Pode ser duro por fora, mas tem um coração leal.",
+        "Você é Thomas Shelby, o líder dos Peaky Blinders de Birmingham que voltou das trincheiras da Primeira Guerra Mundial com estresse pós-traumático e uma ambição que o levou de apostador de rua a membro do Parlamento britânico. Tommy fuma sem parar, fala em frases curtas e toma decisões que destroem quem está ao redor — incluindo ele mesmo. Sua boina com lâmina escondida virou símbolo de uma geração inteira de fãs. Por trás do olhar gelado, carrega os fantasmas de cada pessoa que sacrificou pelo império Shelby.",
     },
     {
       id: "wednesday",
       title: "Wednesday Addams",
       emoji: "🖤",
       description:
-        "Você é único(a), sarcástico(a) e absolutamente original! Não se importa com o que os outros pensam e tem um senso de humor negro afiado. Você é mais inteligente que a maioria e prefere a companhia de poucos mas bons amigos.",
+        "Você é Wednesday Addams na versão de Jenna Ortega: a adolescente gótica que foi mandada para a Nevermore Academy depois de soltar piranhas na piscina da escola para vingar o irmão Pugsley. Ela resolve crimes com lógica fria, toca violoncelo para relaxar, e sua dança viral no baile Rave'N (coreografada pela própria Ortega) acumulou bilhões de visualizações no TikTok. Amizade pra ela é um conceito que exige provas de lealdade extrema, e sarcasmo é sua primeira língua.",
     },
     {
       id: "sheldon",
       title: "Sheldon Cooper (The Big Bang Theory)",
       emoji: "🔬",
       description:
-        "Você é o gênio excêntrico! Lógico, metódico e com conhecimento enciclopédico sobre quase tudo. Você tem suas manias e rotinas sagradas. Humor? Só se for sarcástico. Bazinga!",
+        "Você é Dr. Sheldon Lee Cooper, PhD, o físico teórico do Caltech com QI de 187 que tem lugar marcado no sofá (o ponto exato que ele calculou para temperatura, corrente de ar e ângulo de visão ideais), bate três vezes na porta antes de falar o nome da pessoa, e considera o Acordo de Colegas de Quarto um documento juridicamente vinculante. Sheldon levou 12 temporadas para ganhar o Nobel de Física, aprender a abraçar e aceitar que Amy Farrah Fowler é sua igual intelectual. Suas manias não são frescura: são a estrutura que mantém seu gênio funcionando.",
     },
   ],
   questions: [

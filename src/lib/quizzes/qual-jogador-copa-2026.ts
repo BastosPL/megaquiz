@@ -19,7 +19,7 @@ export const qualJogadorCopa2026: Quiz = {
     { label: "FIFA.com — FIFA World Cup 26 Players", organization: "FIFA", accessedAt: "2026-07-12" },
   ],
   lastReviewedAt: "2026-07-12",
-  introText: "Descubra qual craque da Copa 2026 tem o estilo de jogo mais parecido com o seu.",
+  introText: "Vini Jr. decide no drible, Messi pensa três passes à frente, Mbappé resolve na velocidade e CR7 aparece quando o jogo pesa. Se a Copa 2026 precisasse de você, em qual posição você entraria?",
   profiles: [
     {
       id: "vini",

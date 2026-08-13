@@ -19,7 +19,7 @@ export const historiaDoBrasil: Quiz = {
     { label: "Britannica — History of Brazil", organization: "Encyclopædia Britannica", accessedAt: "2026-07-12" },
   ],
   lastReviewedAt: "2026-07-12",
-  introText: "Do descobrimento à república — reviva os momentos que moldaram o Brasil.",
+  introText: "Colonização, independência, escravidão, república, ditadura e redemocratização — perguntas que cobrem os eventos mais importantes da história brasileira.",
   questions: [
     {
       id: "q1",

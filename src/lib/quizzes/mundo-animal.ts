@@ -19,7 +19,7 @@ export const mundoAnimal: Quiz = {
     { label: "National Geographic — Animals", organization: "National Geographic", accessedAt: "2026-07-12" },
   ],
   lastReviewedAt: "2026-07-12",
-  introText: "Do guepardo ao ornitorrinco — teste o que você sabe sobre o fascinante mundo animal.",
+  introText: "Velocidade, camuflagem, veneno, migração — o reino animal está cheio de fatos surpreendentes. Veja quantos deles você já conhece.",
   questions: [
     {
       id: "q1",

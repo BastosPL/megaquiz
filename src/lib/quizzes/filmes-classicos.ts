@@ -19,7 +19,7 @@ export const filmesClassicos: Quiz = {
     { label: "Academy Awards Database", organization: "Academy of Motion Picture Arts and Sciences", accessedAt: "2026-07-12" },
   ],
   lastReviewedAt: "2026-07-12",
-  introText: "De Titanic a Matrix, de Star Wars a O Poderoso Chefão — teste o que você sabe sobre os maiores filmes da história.",
+  introText: "Cenas icônicas, diretores lendários e frases que marcaram gerações — este quiz cobre os grandes clássicos do cinema, dos anos 70 até os anos 2000.",
   questions: [
     {
       id: "q1",

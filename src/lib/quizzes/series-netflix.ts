@@ -19,7 +19,7 @@ export const seriesNetflix: Quiz = {
     { label: "IMDb — Most Popular TV Shows", url: "https://www.imdb.com/chart/tvmeter/", organization: "IMDb", accessedAt: "2026-07-12" },
   ],
   lastReviewedAt: "2026-07-12",
-  introText: "Quanto você sabe sobre as séries mais assistidas da Netflix? De Stranger Things a Round 6, teste seus conhecimentos.",
+  introText: "Stranger Things, Round 6, La Casa de Papel, The Witcher — se você maratonou as séries mais populares da Netflix, essas perguntas vão ser moleza. Ou não.",
   questions: [
     {
       id: "q1",

@@ -19,7 +19,7 @@ export const bandeirasCopa2026: Quiz = {
     { label: "CIA World Factbook — Country Flags", organization: "CIA", accessedAt: "2026-07-12" },
   ],
   lastReviewedAt: "2026-07-12",
-  introText: "Reconheça as bandeiras das seleções que disputam a Copa do Mundo de 2026. Cada bandeira conta uma história.",
+  introText: "Cores, brasões e símbolos nacionais se misturam — aqui você precisa identificar corretamente as bandeiras das seleções classificadas para a Copa 2026.",
   questions: [
     {
       id: "q1",

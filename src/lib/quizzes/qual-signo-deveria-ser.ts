@@ -15,49 +15,49 @@ export const qualSignoDeveriaSer: Quiz = {
   author: "Equipe Editorial MegaQuiz",
   authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
   lastReviewedAt: "2026-07-12",
-  introText: "Será que seu signo do zodíaco combina com sua personalidade? Descubra qual signo deveria ser o seu.",
+  introText: "Nem todo mundo se reconhece no signo em que nasceu. Fogo, Terra, Ar ou Água — responda sobre temperamento, rotina e valores para ver se o zodíaco erraria ou acertaria no seu caso.",
   profiles: [
     {
       id: "aries",
       title: "Áries ♈ (Fogo)",
       emoji: "🔥",
       description:
-        "Você deveria ser ariano(a)! Corajoso, impulsivo e cheio de energia. Você não espera as coisas acontecerem — faz acontecer! Líder nato, competitivo e com uma paixão que contagia. Pode ser cabeça dura, mas ninguém duvida da sua determinação!",
+        "Você deveria ser ariano(a)! Áries é o primeiro signo do zodíaco e marca o equinócio de primavera no hemisfério norte, simbolizando começo e iniciativa. Na mitologia grega, sua constelação representa o carneiro do velocino de ouro que salvou Frixo e Hele. Sua estrela mais brilhante, Hamal, fica a 66 anos-luz da Terra e já foi usada como referência de navegação por marinheiros da Antiguidade. Você é puro impulso, ação e coragem de quem abre caminhos.",
     },
     {
       id: "leao",
       title: "Leão ♌ (Fogo)",
       emoji: "👑",
       description:
-        "Você deveria ser leonino(a)! Dramático, carismático e adora ser o centro das atenções. Generoso com quem ama e leal até o fim. Seu ego é grande, mas seu coração é maior! Nasceu pra brilhar!",
+        "Você deveria ser leonino(a)! A constelação de Leão abriga Regulus, uma estrela quase 4 vezes maior que o Sol e uma das mais brilhantes do céu noturno, perfeitamente condizente com a personalidade do signo. Na mitologia, representa o Leão de Nemeia, cuja pele era impenetrável e que Hércules derrotou no primeiro de seus 12 trabalhos. Você carrega esse brilho e essa resistência: generoso com quem ama, imponente por natureza e absolutamente incapaz de passar despercebido.",
     },
     {
       id: "escorpiao",
       title: "Escorpião ♏ (Água)",
       emoji: "🦂",
       description:
-        "Você deveria ser escorpiano(a)! Intenso, misterioso e com uma presença magnética. Você sente tudo profundamente e não perdoa facilmente. Sua intuição é afiada e você enxerga o que os outros escondem!",
+        "Você deveria ser escorpiano(a)! A constelação de Escorpião contém Antares, uma supergigante vermelha cujo nome significa 'rival de Marte' por sua cor avermelhada intensa. Na mitologia grega, é o escorpião enviado por Gaia (a deusa Terra) para derrotar o caçador Órion, e por isso as duas constelações nunca aparecem juntas no céu. Você tem essa intensidade que transforma e essa profundidade emocional que poucos conseguem acompanhar.",
     },
     {
       id: "aquario",
       title: "Aquário ♒ (Ar)",
       emoji: "💫",
       description:
-        "Você deveria ser aquariano(a)! Único, rebelde e à frente do seu tempo. Você pensa diferente de todo mundo e não se importa em ser 'estranho'. Humanitário, inventivo e com ideias que as pessoas só entendem 10 anos depois!",
+        "Você deveria ser aquariano(a)! Apesar do nome sugerir água, Aquário é um signo de Ar, e sua constelação representa Ganimedes, o jovem troiano tão belo que Zeus o levou ao Olimpo para servir de copeiro dos deuses. A estrela Sadalsuud, a mais brilhante da constelação, tem nome árabe que significa 'a sorte das sortes'. Você pensa fora de qualquer caixa, valoriza causas coletivas acima de interesses pessoais e carrega ideias que o mundo ainda vai levar um tempo pra alcançar.",
     },
     {
       id: "touro",
       title: "Touro ♉ (Terra)",
       emoji: "🌿",
       description:
-        "Você deveria ser taurino(a)! Estável, sensorial e gourmet. Você ama conforto, boa comida e as coisas boas da vida. Leal e paciente, mas quando perde a paciência... corre! Pés no chão e coração no lugar certo.",
+        "Você deveria ser taurino(a)! A constelação de Touro abriga as Plêiades, o aglomerado estelar mais famoso do céu, visível a olho nu e celebrado por civilizações desde os sumérios. Na mitologia grega, representa Zeus disfarçado de touro branco para conquistar Europa. Aldebaran, a estrela principal, é uma gigante laranja cujo nome árabe significa 'a seguidora', pois parece seguir as Plêiades pelo céu. Você tem essa solidez: leal, sensorial, paciente, e com um apreço pelas coisas boas da vida que beira a arte.",
     },
     {
       id: "gemeos",
       title: "Gêmeos ♊ (Ar)",
       emoji: "🎭",
       description:
-        "Você deveria ser geminiano(a)! Comunicativo, curioso e nunca entediado. Tem duas (ou mais) personalidades e consegue conversar sobre qualquer assunto. Versátil e sociável — o melhor papo de qualquer festa!",
+        "Você deveria ser geminiano(a)! A constelação de Gêmeos é marcada por Castor e Pollux, duas estrelas brilhantes que representam os gêmeos da mitologia grega: Castor, mortal, e Pólux, imortal. Quando Castor morreu, Pólux pediu a Zeus para dividir sua imortalidade, e foram colocados juntos no céu para sempre. Essa dualidade é sua essência: versátil, curioso, capaz de conversar sobre filosofia e memes no mesmo fôlego, e com uma adaptabilidade que os outros signos invejam.",
     },
   ],
   questions: [

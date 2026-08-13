@@ -18,7 +18,7 @@ export const musicaBrasileira: Quiz = {
     { label: "Dicionário Cravo Albin da Música Popular Brasileira", url: "https://dicionariompb.com.br/", organization: "Instituto Cultural Cravo Albin", accessedAt: "2026-07-12" },
   ],
   lastReviewedAt: "2026-07-12",
-  introText: "Do sertanejo ao funk, do axé ao rap — prove que você conhece a música brasileira.",
+  introText: "MPB, sertanejo, funk, axé, rap, bossa nova — a música brasileira é enorme e diversa. Aqui entram perguntas sobre artistas, letras, álbuns e momentos históricos.",
   questions: [
     {
       id: "q1",

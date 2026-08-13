@@ -19,7 +19,7 @@ export const capitaisDoMundo: Quiz = {
     { label: "United Nations — Member States", organization: "Nações Unidas", accessedAt: "2026-07-12" },
   ],
   lastReviewedAt: "2026-07-12",
-  introText: "Você conhece as capitais dos países? Teste sua geografia em 15 perguntas.",
+  introText: "Nem toda capital é a maior cidade do país, e algumas vão pegar você de surpresa. São 15 perguntas cobrindo todos os continentes.",
   questions: [
     {
       id: "q1",

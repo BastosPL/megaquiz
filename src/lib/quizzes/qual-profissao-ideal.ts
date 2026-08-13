@@ -18,7 +18,7 @@ export const qualProfissaoIdeal: Quiz = {
     { label: "Guia Salarial Robert Half 2026 — Diversas áreas", organization: "Robert Half", accessedAt: "2026-07-12" },
   ],
   lastReviewedAt: "2026-07-12",
-  introText: "Descubra qual área profissional combina com seus interesses e habilidades — um quiz recreativo para explorar possibilidades.",
+  introText: "Tem gente que nasceu pra cuidar de pessoas, gente que pensa em código e gente que só funciona criando. Dez perguntas sobre rotina, motivação e habilidades para explorar caminhos profissionais.",
   disclaimer: "Este quiz é para entretenimento e exploração de interesses. Não substitui orientação vocacional profissional. Faixas salariais nos resultados são estimativas aproximadas do mercado brasileiro e variam conforme região, experiência e momento econômico.",
   disclaimerResult: "Resultado recreativo. Faixas salariais são estimativas e não constituem orientação profissional.",
   profiles: [

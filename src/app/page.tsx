@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import QuizCard from "@/components/QuizCard";
 import CategoryBadge from "@/components/CategoryBadge";
 import { allQuizzes, getFeaturedQuizzes } from "@/lib/quizzes";
 import { CATEGORIES } from "@/lib/types";
+import { allArticles } from "@/lib/articles";
 
 export const metadata: Metadata = {
   alternates: {
@@ -58,7 +60,7 @@ export default function Home() {
       </section>
 
       {/* Todos os Quizzes */}
-      <section>
+      <section className="mb-10">
         <div className="flex items-center justify-between mb-4">
           <h2 className="text-lg font-bold text-text">Todos os Quizzes</h2>
           <span className="text-sm text-text-light">
@@ -68,6 +70,38 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {allQuizzes.map((quiz) => (
             <QuizCard key={quiz.id} quiz={quiz} />
+          ))}
+        </div>
+      </section>
+
+      {/* Blog / Artigos */}
+      <section>
+        <div className="flex items-center justify-between mb-4">
+          <h2 className="text-lg font-bold text-text">Artigos</h2>
+          <Link href="/blog" className="text-sm text-primary font-semibold hover:underline">
+            Ver todos →
+          </Link>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {allArticles.slice(0, 3).map((article) => (
+            <Link
+              key={article.slug}
+              href={`/blog/${article.slug}`}
+              className="bg-bg-card rounded-2xl border border-border p-5 hover:border-primary hover:shadow-md transition-all"
+            >
+              <span className="text-xs font-semibold text-primary">
+                {article.category}
+              </span>
+              <h3 className="text-sm font-bold text-text mt-2 mb-2 leading-snug">
+                {article.title}
+              </h3>
+              <p className="text-xs text-text-light line-clamp-2">
+                {article.excerpt}
+              </p>
+              <span className="text-xs text-text-light mt-2 block">
+                {article.readTime} min de leitura
+              </span>
+            </Link>
           ))}
         </div>
       </section>

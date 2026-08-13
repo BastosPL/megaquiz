@@ -19,7 +19,7 @@ export const golsHistoricosCopa: Quiz = {
     { label: "FIFA.com — Awards & Records", organization: "FIFA", accessedAt: "2026-07-12" },
   ],
   lastReviewedAt: "2026-07-12",
-  introText: "Reviva os gols mais marcantes da história das Copas do Mundo, de Pelé a Messi.",
+  introText: "Gols de bicicleta, viradas épicas e finais decididas nos acréscimos — quanto você lembra dos momentos mais marcantes das Copas?",
   questions: [
     {
       id: "q1",

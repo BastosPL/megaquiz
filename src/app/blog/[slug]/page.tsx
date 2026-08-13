@@ -44,8 +44,40 @@ export default async function ArticlePage({ params }: Props) {
 
   if (!article) notFound();
 
+  const articleText = article.content.map((s) => s.text).join(" ");
+  const wordCount = articleText.split(/\s+/).length;
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: article.title,
+    description: article.excerpt,
+    datePublished: article.date,
+    dateModified: article.lastReviewedAt || article.date,
+    wordCount,
+    author: {
+      "@type": "Organization",
+      name: article.author || "Equipe Editorial MegaQuiz",
+      url: "https://megaquiz.app.br/sobre",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "MegaQuiz",
+      url: "https://megaquiz.app.br",
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://megaquiz.app.br/blog/${slug}`,
+    },
+  };
+
   return (
     <div className="max-w-3xl mx-auto px-4 py-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       <nav className="mb-6">
         <Link
           href="/blog"

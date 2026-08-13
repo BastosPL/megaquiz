@@ -19,7 +19,7 @@ export const curiosidadesCiencia: Quiz = {
     { label: "Britannica — Science", organization: "Encyclopædia Britannica", accessedAt: "2026-07-12" },
   ],
   lastReviewedAt: "2026-07-12",
-  introText: "Do espaço ao corpo humano, da física à biologia — teste seus conhecimentos científicos com curiosidades surpreendentes.",
+  introText: "Fatos sobre o espaço, o corpo humano, reações químicas e fenômenos naturais que parecem mentira mas são reais — e alguns que parecem reais mas não são.",
   questions: [
     {
       id: "q1",

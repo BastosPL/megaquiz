@@ -20,7 +20,7 @@ export const copa2026Trivia: Quiz = {
     { label: "FIFA.com — FIFA World Cup 26", url: "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026", organization: "FIFA", accessedAt: "2026-07-12" },
   ],
   lastReviewedAt: "2026-07-12",
-  introText: "Teste seus conhecimentos sobre a história e as curiosidades da Copa do Mundo, do primeiro torneio em 1930 até a edição de 2026.",
+  introText: "De 1930 até 2026, a Copa do Mundo acumulou histórias incríveis — este quiz cobre sedes, recordes, polêmicas e momentos que todo fã deveria conhecer.",
   questions: [
     {
       id: "q1",

@@ -18,35 +18,35 @@ export const qualArtilheiroHistorico: Quiz = {
     { label: "FIFA.com — All-time World Cup Top Scorers", organization: "FIFA", accessedAt: "2026-07-12" },
   ],
   lastReviewedAt: "2026-07-12",
-  introText: "Descubra qual lenda da artilharia do futebol mundial mais combina com seu perfil.",
+  introText: "Pelé encantava, Romário resolvia na pequena área, Ronaldo arrancava do meio de campo e Marta abriu portas num esporte que insistia em fechá-las. Qual desses estilos de gol é o seu?",
   profiles: [
     {
       id: "pele",
       title: "Pelé — O Rei do Futebol",
       emoji: "👑",
       description:
-        "Você é completo e carismático! Assim como Pelé, você une talento, simpatia e liderança. Você é versátil, se adapta a qualquer situação e tem um brilho natural que inspira todos ao redor. O Rei!",
+        "Você é o Rei. Edson Arantes do Nascimento marcou mais de 1.200 gols na carreira (incluindo jogos não oficiais e amistosos), conquistou 3 Copas do Mundo (1958, 1962, 1970) e é o único jogador a conseguir esse feito. Estreou na Seleção aos 16 anos e marcou dois gols na final da Copa de 58 contra a Suécia, tornando-se o mais jovem a marcar numa decisão de Mundial. Pelo Santos, fez o milésimo gol de pênalti contra o Vasco em 1969, parando o Maracanã. Versatilidade, carisma e grandeza em campo e fora dele.",
     },
     {
       id: "romario",
       title: "Romário — O Baixinho Genial",
       emoji: "🎯",
       description:
-        "Você é oportunista e decisivo! Como Romário, você não precisa de muito espaço — basta uma chance e você resolve. Esperto, malandro (no bom sentido) e com faro de gol inigualável. Dentro da área, ninguém te para!",
+        "Você é o Baixinho que decidiu a Copa de 94 nos EUA praticamente sozinho, com 5 gols no torneio e o título de melhor jogador. Romário alcançou a marca de mil gols segundo contagem própria (incluindo amistosos e jogos não documentados oficialmente) e era especialista em resolver tudo dentro da pequena área: sem arrancadas épicas, sem dribles longos, apenas posicionamento perfeito e finalização letal. Sua frase 'o melhor sou eu' não era arrogância — era estatística.",
     },
     {
       id: "ronaldo",
       title: "Ronaldo — O Fenômeno",
       emoji: "⚡",
       description:
-        "Você é explosivo e imparável! Velocidade, força e técnica — você tem tudo. Como o Fenômeno, você supera qualquer adversidade (inclusive lesões da vida) e volta ainda mais forte. Quando você liga o turbo, ninguém segura!",
+        "Você é o Fenômeno. Ronaldo Nazário ganhou o prêmio de melhor do mundo pela FIFA 3 vezes (1996, 1997, 2002) e marcou 15 gols em Copas do Mundo, incluindo os dois na final de 2002 contra a Alemanha que exorcizaram o fantasma da convulsão de 1998. Sofreu duas lesões gravíssimas no joelho que quase encerraram sua carreira, mas voltou cada vez mais forte. O gol contra o Compostela pelo Barcelona em 1996, driblando quase o time inteiro numa arrancada de meio de campo, é considerado um dos maiores da história. Explosão, superação e talento sobrenatural.",
     },
     {
       id: "marta",
       title: "Marta — A Rainha do Futebol",
       emoji: "🌟",
       description:
-        "Você é guerreira e pioneira! Assim como Marta, você abre caminhos e prova que talento não tem gênero. Persistente, habilidosa e com coração enorme. Você inspira gerações e nunca desiste, mesmo quando as condições são desfavoráveis.",
+        "Você é Marta Vieira da Silva, eleita 6 vezes a melhor jogadora do mundo pela FIFA e maior artilheira da história das Copas do Mundo femininas com 17 gols. Saiu de Dois Riachos, Alagoas, um dos municípios mais pobres do Brasil, e precisou jogar com os meninos porque não havia time feminino na cidade. Seu gol de placa contra os EUA na Copa de 2007, driblando 4 defensoras, é um dos mais bonitos já marcados. Pioneira que abriu portas num esporte que por décadas fechou as portas pra mulheres.",
     },
   ],
   questions: [

@@ -19,7 +19,7 @@ export const verdadeOuMitoSaude: Quiz = {
     { label: "PubMed — National Library of Medicine", url: "https://pubmed.ncbi.nlm.nih.gov/", organization: "NIH/NLM", accessedAt: "2026-07-12" },
   ],
   lastReviewedAt: "2026-07-12",
-  introText: "Separe fatos de ficção sobre saúde. Muitas crenças populares já foram desmentidas pela ciência — mas algumas são surpreendentemente verdadeiras.",
+  introText: "Estalar os dedos causa artrite? Ler no escuro estraga a visão? Algumas crenças de saúde são mito puro, outras têm base científica — veja se você sabe separar.",
   disclaimer: "Este quiz tem finalidade educativa e de entretenimento. As informações apresentadas são baseadas em fontes científicas, mas não substituem orientação médica profissional. Consulte um profissional de saúde para decisões sobre sua saúde.",
   disclaimerResult: "Resultado recreativo. Não constitui orientação médica.",
   questions: [

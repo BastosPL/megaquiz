@@ -19,7 +19,7 @@ export const futebolMundial: Quiz = {
     { label: "UEFA.com — Champions League History", organization: "UEFA", accessedAt: "2026-07-12" },
   ],
   lastReviewedAt: "2026-07-12",
-  introText: "Teste o que você sabe sobre o futebol jogado ao redor do mundo, dos grandes clubes aos torneios internacionais.",
+  introText: "Champions League, Premier League, La Liga, transferências bilionárias e jogadores lendários — perguntas sobre o futebol fora do Brasil.",
   questions: [
     {
       id: "q1",

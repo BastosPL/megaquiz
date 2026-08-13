@@ -19,7 +19,7 @@ export const perfilProfissionalDisc: Quiz = {
     { label: "Marston, W. M. (1928). Emotions of Normal People", organization: "Kegan Paul", accessedAt: "2026-07-12" },
   ],
   lastReviewedAt: "2026-07-12",
-  introText: "Inspirado no modelo DISC, este quiz recreativo explora seu estilo de comunicação e trabalho em equipe.",
+  introText: "Baseado nos quatro perfis comportamentais do modelo DISC — Dominância, Influência, Estabilidade e Conformidade — este quiz analisa como você se comunica e trabalha em grupo.",
   disclaimer: "Este quiz é uma versão simplificada e recreativa inspirada no modelo DISC. Não substitui uma avaliação DISC profissional certificada. Empresas mencionadas nos resultados são exemplos ilustrativos, sem qualquer endosso real. Resultado para entretenimento e autoconhecimento.",
   disclaimerResult: "Resultado recreativo inspirado no modelo DISC. Não constitui avaliação profissional certificada.",
   methodologyNote: "Entenda seu resultado\n\nO modelo DISC identifica quatro dimensões comportamentais:\n• D (Dominância): Foco em resultados e decisões rápidas\n• I (Influência): Foco em comunicação e motivação de pessoas\n• S (Estabilidade): Foco em consistência e apoio à equipe\n• C (Conformidade): Foco em precisão, dados e qualidade\n\nSeu perfil predominante indica uma tendência comportamental, não uma limitação. Pessoas combinam traços de múltiplas dimensões em diferentes contextos.\n\nEste resultado é recreativo e não substitui uma avaliação DISC profissional.",

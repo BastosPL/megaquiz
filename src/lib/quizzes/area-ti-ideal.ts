@@ -19,7 +19,7 @@ export const areaTiIdeal: Quiz = {
     { label: "Guia Salarial Robert Half 2026 — Tecnologia", organization: "Robert Half", accessedAt: "2026-07-12" },
   ],
   lastReviewedAt: "2026-07-12",
-  introText: "Front-end, back-end, dados, cibersegurança ou IA? Descubra qual área de tecnologia combina com seu perfil.",
+  introText: "A área de TI certa depende do que te motiva: resolver problemas lógicos, criar interfaces, proteger sistemas ou analisar dados. Veja qual caminho faz mais sentido para você.",
   disclaimer: "Este quiz é para entretenimento e exploração de interesses na área de tecnologia. Não substitui orientação profissional. Faixas salariais são estimativas aproximadas do mercado brasileiro e podem variar significativamente.",
   disclaimerResult: "Resultado recreativo. Faixas salariais são estimativas e não constituem orientação de carreira.",
   profiles: [

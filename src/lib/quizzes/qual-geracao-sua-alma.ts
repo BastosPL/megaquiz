@@ -15,42 +15,42 @@ export const qualGeracaoSuaAlma: Quiz = {
   author: "Equipe Editorial MegaQuiz",
   authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
   lastReviewedAt: "2026-07-12",
-  introText: "Boomer, Gen X, Millennial, Gen Z ou Alpha? Descubra de qual geração você realmente tem a alma.",
+  introText: "Nem sempre a geração em que nascemos define nossos hábitos e valores. Responda sobre tecnologia, cultura e rotina para ver qual geração realmente representa você.",
   profiles: [
     {
       id: "boomer",
       title: "Baby Boomer (1946-1964)",
       emoji: "📻",
       description:
-        "Sua alma é clássica e tradicionalista! Você valoriza trabalho duro, estabilidade e respeito. Acha que as coisas eram melhores antes e tem opinião forte sobre tudo. Provavelmente manda áudio de 5 minutos no WhatsApp!",
+        "Sua alma é da geração que viveu Woodstock, a chegada do homem à Lua em 1969 e a contracultura que mudou o mundo. Você cresceu ouvindo Roberto Carlos na Jovem Guarda, assistiu o Brasil conquistar a Copa de 70 ao vivo na TV recém-chegada, e aprendeu que um emprego com carteira assinada era sinônimo de vida feita. Estabilidade, respeito e família vêm antes de qualquer modinha.",
     },
     {
       id: "genx",
       title: "Geração X (1965-1980)",
       emoji: "📼",
       description:
-        "Você é o equilíbrio perfeito entre analógico e digital! Independente, prático e com um humor sarcástico incrível. Cresceu com MTV, locadora de vídeo e aprendeu a se virar sozinho. A geração mais subestimada!",
+        "Sua alma é da geração que gravava músicas da rádio em fita K7, rebobinava VHS com uma caneta Bic e viveu a MTV quando ela ainda passava clipes. Você cresceu com Nirvana, Legião Urbana e o som de conexão discada do modem 56k. É a geração que viu o muro de Berlim cair pela TV e aprendeu a se virar sozinha enquanto os pais trabalhavam. Independência não é virtude pra você, é DNA.",
     },
     {
       id: "millennial",
       title: "Millennial (1981-1996)",
       emoji: "📱",
       description:
-        "Você é nostálgico e adaptável! Lembra do Orkut, MSN e sabe o valor de um plano de dados. Idealista, gosta de experiências mais que coisas e provavelmente tem burnout. Mas ainda acredita que vai mudar o mundo!",
+        "Sua alma é da geração que viveu a transição: do Orkut pro Facebook, do MSN Messenger pro WhatsApp, do discman pro iPod e do iPod pro Spotify. Você viu o 11 de setembro ao vivo, cresceu com Harry Potter e seus planos de aposentadoria foram arruinados por pelo menos duas crises econômicas. Sabe o que é pagar aluguel caro demais enquanto tenta achar propósito no trabalho. Resiliência com ansiedade é sua marca registrada.",
     },
     {
       id: "genz",
       title: "Gen Z (1997-2012)",
       emoji: "🤳",
       description:
-        "Você é nativo digital e socialmente consciente! Humor afiado, domina memes e não tem paciência pra enrolação. Defende causas, questiona tudo e se comunica mais por vídeo do que por texto. Slay!",
+        "Sua alma é da geração que nunca conheceu um mundo sem internet. Você cresceu com YouTube desde criança, viralizou no TikTok e usa o humor de memes como linguagem nativa. É a geração que levantou debates sobre saúde mental nas redes, transformou 'cringe' em adjetivo universal e prefere um vídeo de 30 segundos a um e-mail de 3 parágrafos. Pra você, autenticidade vale mais que perfeição.",
     },
     {
       id: "alpha",
       title: "Geração Alpha (2013+)",
       emoji: "🤖",
       description:
-        "Você é do futuro! Pensa em tecnologia como extensão do corpo, não tem medo de IA e acha tudo que veio antes 'vintage'. Multitarefa desde que nasceu e já sabe mais de internet que seus pais!",
+        "Sua alma é da primeira geração que já nasceu num mundo onde smartphones e tablets existiam antes deles, e que cresceu desbloqueando tela antes de aprender a amarrar o sapato. Assistentes de voz como Alexa e Google são tão normais quanto a geladeira, e IA generativa é ferramenta escolar, não ficção científica. É a geração mais conectada e mais diversa da história segundo dados demográficos globais, e pra eles, o conceito de 'ficar offline' simplesmente não faz sentido.",
     },
   ],
   questions: [

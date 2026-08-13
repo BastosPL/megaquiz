@@ -18,35 +18,35 @@ export const qualVilaoDeSerie: Quiz = {
     { label: "IMDb — Most Popular TV Shows", url: "https://www.imdb.com/chart/tvmeter/", organization: "IMDb", accessedAt: "2026-07-12" },
   ],
   lastReviewedAt: "2026-07-12",
-  introText: "Todo mundo tem um lado sombrio. Descubra qual vilão de série mais combina com você.",
+  introText: "Walter White começou pela família e terminou pelo ego. Cersei queimou um templo inteiro por vingança. O Coringa só queria que o mundo visse a piada. Todo vilão tem uma lógica — qual seria a sua?",
   profiles: [
     {
       id: "walter",
       title: "Walter White (Breaking Bad)",
       emoji: "🧪",
       description:
-        "Você é o gênio que virou vilão por necessidade! Começou com boas intenções mas o poder te consumiu. Inteligente, meticuloso e com ego escondido atrás de humildade falsa. Você diz que faz por outros, mas no fundo... é pelo poder.",
+        "Você é o professor de química de Albuquerque que, ao receber um diagnóstico de câncer de pulmão, decidiu fabricar metanfetamina para 'deixar dinheiro para a família'. Mas como ele mesmo confessou a Skyler no episódio final: 'Eu fiz por mim. Eu gostava. E eu era bom nisso.' Walter White construiu um império sob o codinome Heisenberg, envenenou uma criança para manipular Jesse, e deixou um rastro de destruição que atingiu todos que amava. Seu vilão é o ego disfarçado de necessidade.",
     },
     {
       id: "cersei",
       title: "Cersei Lannister (Game of Thrones)",
       emoji: "🦁",
       description:
-        "Você é ambição pura e proteção feroz! Faria qualquer coisa pela sua família (e pelo seu poder). Implacável, vingativa e com uma frase de impacto sempre pronta. Você bebe vinho enquanto seus inimigos caem!",
+        "Você é a Rainha que explodiu o Grande Septo de Baelor com fogo selvagem, matando centenas de pessoas — incluindo os Tyrell e o próprio Alto Pardal — enquanto bebia vinho calmamente da janela da Fortaleza Vermelha. Cersei fez tudo em nome dos filhos, mas quando Tommen se jogou da janela, ela simplesmente sentou no Trono de Ferro. Sua motivação real sempre foi poder, e sua frase resume tudo: 'Quando se joga o jogo dos tronos, ou você vence ou você morre.'",
     },
     {
       id: "joker",
       title: "Coringa (Joker)",
       emoji: "🃏",
       description:
-        "Você é o caos encarnado! Questiona tudo, não segue regras e acha a sociedade uma piada. Seu humor negro é desconcertante e você enxerga a hipocrisia que todo mundo ignora. Agente do caos com alma de artista!",
+        "Você é Arthur Fleck, o comediante fracassado de Gotham que foi ignorado pelo sistema de saúde mental, humilhado em rede nacional no programa de Murray Franklin, e empurrado até o ponto de ruptura. O Coringa de Joaquin Phoenix (que rendeu o Oscar de 2020) não é um vilão com plano: é o reflexo de uma sociedade que descartou seus mais vulneráveis. Sua dança na escadaria do Bronx virou símbolo pop. Você enxerga as contradições que todo mundo finge não ver.",
     },
     {
       id: "kilgrave",
       title: "Kilgrave (Jessica Jones)",
       emoji: "🎭",
       description:
-        "Você é charmoso e manipulador! Sabe exatamente o que dizer pra conseguir o que quer. Persuasivo, narcisista e com um senso de entitlement enorme. As pessoas fazem o que você quer — e você acha que é pro bem delas!",
+        "Você é Kevin Thompson, o homem com poder de controle mental que manteve Jessica Jones sob seu domínio por meses, forçando-a a fazer tudo que ele queria com um simples comando verbal. O mais perturbador de Kilgrave, interpretado por David Tennant, é que ele genuinamente não entende por que suas vítimas sofrem: 'Eu nunca soube se alguém fazia algo porque queria ou porque eu mandei.' Criado como cobaia de laboratório pelos próprios pais, ele é o vilão que te faz sentir desconforto porque seu charme funciona até em quem assiste.",
     },
   ],
   questions: [

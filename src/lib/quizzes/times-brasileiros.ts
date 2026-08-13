@@ -20,7 +20,7 @@ export const timesBrasileiros: Quiz = {
     { label: "CONMEBOL — Libertadores", organization: "CONMEBOL", accessedAt: "2026-07-12" },
   ],
   lastReviewedAt: "2026-07-12",
-  introText: "Do Flamengo ao Grêmio, do Corinthians ao Bahia — prove que você conhece o futebol brasileiro.",
+  introText: "Títulos, rivalidades, ídolos e estádios — perguntas sobre os grandes clubes do futebol brasileiro, da Série A aos clássicos regionais.",
   questions: [
     {
       id: "q1",

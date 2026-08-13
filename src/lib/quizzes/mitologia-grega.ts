@@ -19,7 +19,7 @@ export const mitologiaGrega: Quiz = {
     { label: "Britannica — Greek Mythology", organization: "Encyclopædia Britannica", accessedAt: "2026-07-12" },
   ],
   lastReviewedAt: "2026-07-12",
-  introText: "De Zeus a Hércules, de Atena ao Minotauro — teste o que você sabe sobre os deuses e heróis do Olimpo.",
+  introText: "Deuses do Olimpo, heróis mortais, criaturas impossíveis e guerras épicas — a mitologia grega é rica em histórias e este quiz cobre as principais.",
   questions: [
     {
       id: "q1",

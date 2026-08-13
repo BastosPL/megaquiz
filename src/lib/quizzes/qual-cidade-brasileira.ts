@@ -19,7 +19,7 @@ export const qualCidadeBrasileira: Quiz = {
     { label: "IBGE Cidades — Informações municipais", url: "https://cidades.ibge.gov.br/", organization: "IBGE", accessedAt: "2026-07-12" },
   ],
   lastReviewedAt: "2026-07-12",
-  introText: "Responda 10 perguntas sobre seus gostos e descubra qual cidade do Brasil tem mais a ver com você.",
+  introText: "O Brasil tem cidade para todo temperamento: tem quem precise do mar todo dia, quem funcione melhor no frio da serra e quem só renda em metrópole barulhenta. Qual delas é a sua?",
   profiles: [
     {
       id: "rio",

@@ -19,7 +19,7 @@ export const round6Sobreviveria: Quiz = {
     { label: "IMDb — Squid Game", url: "https://www.imdb.com/title/tt10919420/", organization: "IMDb", accessedAt: "2026-07-12" },
   ],
   lastReviewedAt: "2026-07-12",
-  introText: "De Batatinha Fatatinha ao jogo final — o quanto você prestou atenção na série?",
+  introText: "Regras dos jogos, estratégias dos participantes e detalhes que passaram despercebidos — este quiz vai mostrar se você realmente prestou atenção em Round 6.",
   questions: [
     {
       id: "q1",

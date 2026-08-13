@@ -15,42 +15,42 @@ export const qualRedeSocial: Quiz = {
   author: "Equipe Editorial MegaQuiz",
   authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
   lastReviewedAt: "2026-07-12",
-  introText: "TikTok, Instagram, X ou Reddit? Descubra qual rede social combina com seu jeito de usar a internet.",
+  introText: "TikTok premia criatividade, Instagram valoriza estética, X vive de opinião rápida e Reddit recompensa profundidade. Cada plataforma tem uma cultura própria — qual delas combina com o seu jeito de estar online?",
   profiles: [
     {
       id: "tiktok",
       title: "TikTok",
       emoji: "🎵",
       description:
-        "Você é pura energia e criatividade! Adora tendências, danças e humor rápido. Tem atenção curta mas consegue entreter qualquer um em 15 segundos. Você é a pessoa que faz todo mundo rir no grupo!",
+        "Seu habitat natural é o algoritmo da For You Page, onde um vídeo de 15 segundos pode transformar um desconhecido em celebridade da noite pro dia. Você domina trends como a 'corn kid' e sons virais antes deles estourarem, e entende que o TikTok é a única rede onde o número de seguidores importa menos que a criatividade do conteúdo. Sua linguagem é o dueto, o stitch e a transição certeira.",
     },
     {
       id: "instagram",
       title: "Instagram",
       emoji: "📸",
       description:
-        "Você é estético e curador da própria vida! Gosta de mostrar o melhor lado de tudo, valoriza visual bonito e tem um feed impecável. Você é social, gosta de likes e sabe posar pra foto como ninguém!",
+        "Você pensa em grid, paleta de cores e golden hour. No Instagram, a cultura dos Stories criou uma segunda camada de comunicação onde o efêmero vale mais que o permanente, e você domina isso. Dos Reels ao Close Friends, você sabe que essa é a plataforma onde marcas, criadores e até restaurantes vivem ou morrem pelo visual. Seu feed conta uma história curada que o TikTok jamais contaria.",
     },
     {
       id: "twitter",
       title: "X (Twitter)",
       emoji: "🐦",
       description:
-        "Você é opinião forte e humor afiado! Adora debater, comentar sobre tudo e soltar aquela frase que viraliza. Informado, irônico e com timing perfeito pra memes. Você é a voz da internet!",
+        "Você vive na timeline onde jornalistas, políticos e comediantes disputam o mesmo espaço em 280 caracteres. O X (ex-Twitter) é a praça pública da internet: threads quilométricas viram reportagem, ratio é verbo, e trending topics ditam o que o resto da web vai discutir amanhã. Você tem opinião formada, timing de meme afiado e sabe que a Community Notes é o verdadeiro tribunal popular.",
     },
     {
       id: "reddit",
       title: "Reddit",
       emoji: "🤓",
       description:
-        "Você é curioso e vai fundo nos assuntos! Prefere conteúdo de qualidade a selfies. Gosta de comunidades nichadas, debates longos e aprender coisas novas. Você é o intelectual da internet!",
+        "Seu mundo é feito de subreddits com regras próprias, AMAs com especialistas e upvotes que separam conteúdo bom de lixo. No Reddit, o anonimato é a norma e o que importa é a qualidade do argumento, não quantos seguidores você tem. De r/explainlikeimfive a r/brasil, você prefere uma thread com fontes e debate longo a qualquer vídeo de 30 segundos.",
     },
     {
       id: "youtube",
       title: "YouTube",
       emoji: "▶️",
       description:
-        "Você é contador de histórias! Gosta de conteúdo aprofundado, tutoriais e vídeos longos. Tem paciência, curiosidade e adora ensinar ou aprender. Você é o tipo que assiste vídeos de 2 horas sobre qualquer coisa!",
+        "Você é da geração que aprendeu a trocar chuveiro, cozinhar e programar assistindo tutoriais. O YouTube é a segunda maior ferramenta de busca do mundo e o único lugar onde um vídeo-ensaio de 3 horas sobre a história do Tetris consegue milhões de views. Você entende que conteúdo longo constrói autoridade, e que o subscribe é um pacto de confiança entre criador e audiência.",
     },
   ],
   questions: [
