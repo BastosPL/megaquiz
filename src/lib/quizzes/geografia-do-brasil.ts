@@ -12,8 +12,8 @@ export const geografiaDoBrasil: Quiz = {
   tags: ["geografia", "brasil", "estados", "enem", "educacao"],
   createdAt: "2026-06-09",
   featured: false,
-  author: "Equipe Editorial MegaQuiz",
-  authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
+  author: "Patrick Bastos",
+  authorBio: "Diretor executivo, autor e empreendedor digital, Patrick Bastos atua na criação de projetos que unem conteúdo, tecnologia e experiência do usuário. No MegaQuiz, é responsável pela direção editorial e revisão dos conteúdos.",
   sources: [
     { label: "IBGE — Informações sobre estados e municípios", url: "https://www.ibge.gov.br/", organization: "IBGE", accessedAt: "2026-07-12" },
     { label: "ICMBio — Biomas brasileiros", organization: "ICMBio/MMA", accessedAt: "2026-07-12" },

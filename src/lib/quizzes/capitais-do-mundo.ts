@@ -12,8 +12,8 @@ export const capitaisDoMundo: Quiz = {
   tags: ["geografia", "capitais", "paises", "conhecimentos-gerais"],
   createdAt: "2026-06-08",
   featured: false,
-  author: "Equipe Editorial MegaQuiz",
-  authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
+  author: "Patrick Bastos",
+  authorBio: "Diretor executivo, autor e empreendedor digital, Patrick Bastos atua na criação de projetos que unem conteúdo, tecnologia e experiência do usuário. No MegaQuiz, é responsável pela direção editorial e revisão dos conteúdos.",
   sources: [
     { label: "CIA World Factbook — Country Profiles", organization: "CIA", accessedAt: "2026-07-12" },
     { label: "United Nations — Member States", organization: "Nações Unidas", accessedAt: "2026-07-12" },

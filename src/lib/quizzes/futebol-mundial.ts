@@ -12,8 +12,8 @@ export const futebolMundial: Quiz = {
   tags: ["futebol", "esportes", "copa", "champions", "selecao"],
   createdAt: "2026-06-09",
   featured: false,
-  author: "Equipe Editorial MegaQuiz",
-  authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
+  author: "Patrick Bastos",
+  authorBio: "Diretor executivo, autor e empreendedor digital, Patrick Bastos atua na criação de projetos que unem conteúdo, tecnologia e experiência do usuário. No MegaQuiz, é responsável pela direção editorial e revisão dos conteúdos.",
   sources: [
     { label: "FIFA.com — Tournaments", url: "https://www.fifa.com/en/tournaments/mens/worldcup", organization: "FIFA", accessedAt: "2026-07-12" },
     { label: "UEFA.com — Champions League History", organization: "UEFA", accessedAt: "2026-07-12" },

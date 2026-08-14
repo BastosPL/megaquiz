@@ -12,8 +12,8 @@ export const mundoAnimal: Quiz = {
   tags: ["animais", "natureza", "conhecimentos-gerais", "biologia"],
   createdAt: "2026-06-08",
   featured: false,
-  author: "Equipe Editorial MegaQuiz",
-  authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
+  author: "Patrick Bastos",
+  authorBio: "Diretor executivo, autor e empreendedor digital, Patrick Bastos atua na criação de projetos que unem conteúdo, tecnologia e experiência do usuário. No MegaQuiz, é responsável pela direção editorial e revisão dos conteúdos.",
   sources: [
     { label: "IUCN Red List — Leontopithecus rosalia", url: "https://www.iucnredlist.org/species/11506/17935340", organization: "IUCN", accessedAt: "2026-07-12" },
     { label: "National Geographic — Animals", organization: "National Geographic", accessedAt: "2026-07-12" },

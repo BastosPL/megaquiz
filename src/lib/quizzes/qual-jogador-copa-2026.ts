@@ -13,8 +13,8 @@ export const qualJogadorCopa2026: Quiz = {
   tags: ["copa", "futebol", "2026", "jogadores", "personalidade", "selecoes"],
   createdAt: "2026-06-11",
   featured: true,
-  author: "Equipe Editorial MegaQuiz",
-  authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
+  author: "Patrick Bastos",
+  authorBio: "Diretor executivo, autor e empreendedor digital, Patrick Bastos atua na criação de projetos que unem conteúdo, tecnologia e experiência do usuário. No MegaQuiz, é responsável pela direção editorial e revisão dos conteúdos.",
   sources: [
     { label: "FIFA.com — FIFA World Cup 26 Players", organization: "FIFA", accessedAt: "2026-07-12" },
   ],

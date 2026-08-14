@@ -13,8 +13,8 @@ export const timesBrasileiros: Quiz = {
   tags: ["futebol brasileiro", "times", "brasileirao", "esportes"],
   createdAt: "2026-06-08",
   featured: true,
-  author: "Equipe Editorial MegaQuiz",
-  authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
+  author: "Patrick Bastos",
+  authorBio: "Diretor executivo, autor e empreendedor digital, Patrick Bastos atua na criação de projetos que unem conteúdo, tecnologia e experiência do usuário. No MegaQuiz, é responsável pela direção editorial e revisão dos conteúdos.",
   sources: [
     { label: "CBF — Campeonato Brasileiro Série A", url: "https://www.cbf.com.br/", organization: "CBF", accessedAt: "2026-07-12" },
     { label: "CONMEBOL — Libertadores", organization: "CONMEBOL", accessedAt: "2026-07-12" },

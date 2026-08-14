@@ -13,8 +13,8 @@ export const areaTiIdeal: Quiz = {
   tags: ["carreira", "tecnologia", "programacao", "TI", "personalidade"],
   createdAt: "2026-06-08",
   featured: true,
-  author: "Equipe Editorial MegaQuiz",
-  authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
+  author: "Patrick Bastos",
+  authorBio: "Diretor executivo, autor e empreendedor digital, Patrick Bastos atua na criação de projetos que unem conteúdo, tecnologia e experiência do usuário. No MegaQuiz, é responsável pela direção editorial e revisão dos conteúdos.",
   sources: [
     { label: "Guia Salarial Robert Half 2026 — Tecnologia", organization: "Robert Half", accessedAt: "2026-07-12" },
   ],

@@ -12,8 +12,8 @@ export const verdadeOuMitoSaude: Quiz = {
   tags: ["saude", "mitos", "verdade", "corpo humano", "curiosidades"],
   createdAt: "2026-06-11",
   featured: true,
-  author: "Equipe Editorial MegaQuiz",
-  authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
+  author: "Patrick Bastos",
+  authorBio: "Diretor executivo, autor e empreendedor digital, Patrick Bastos atua na criação de projetos que unem conteúdo, tecnologia e experiência do usuário. No MegaQuiz, é responsável pela direção editorial e revisão dos conteúdos.",
   sources: [
     { label: "OMS — Fact Sheets", url: "https://www.who.int/news-room/fact-sheets", organization: "OMS/WHO", accessedAt: "2026-07-12" },
     { label: "PubMed — National Library of Medicine", url: "https://pubmed.ncbi.nlm.nih.gov/", organization: "NIH/NLM", accessedAt: "2026-07-12" },

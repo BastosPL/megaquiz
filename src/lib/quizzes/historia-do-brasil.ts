@@ -12,8 +12,8 @@ export const historiaDoBrasil: Quiz = {
   tags: ["historia", "brasil", "educacao", "enem", "vestibular"],
   createdAt: "2026-06-09",
   featured: true,
-  author: "Equipe Editorial MegaQuiz",
-  authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
+  author: "Patrick Bastos",
+  authorBio: "Diretor executivo, autor e empreendedor digital, Patrick Bastos atua na criação de projetos que unem conteúdo, tecnologia e experiência do usuário. No MegaQuiz, é responsável pela direção editorial e revisão dos conteúdos.",
   sources: [
     { label: "Governo Federal — Portal da História do Brasil", organization: "Governo Federal do Brasil", accessedAt: "2026-07-12" },
     { label: "Britannica — History of Brazil", organization: "Encyclopædia Britannica", accessedAt: "2026-07-12" },

@@ -12,8 +12,8 @@ export const qualRedeSocial: Quiz = {
   tags: ["redes sociais", "personalidade", "internet", "viral", "divertido"],
   createdAt: "2026-06-11",
   featured: true,
-  author: "Equipe Editorial MegaQuiz",
-  authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
+  author: "Patrick Bastos",
+  authorBio: "Diretor executivo, autor e empreendedor digital, Patrick Bastos atua na criação de projetos que unem conteúdo, tecnologia e experiência do usuário. No MegaQuiz, é responsável pela direção editorial e revisão dos conteúdos.",
   lastReviewedAt: "2026-07-12",
   introText: "TikTok premia criatividade, Instagram valoriza estética, X vive de opinião rápida e Reddit recompensa profundidade. Cada plataforma tem uma cultura própria — qual delas combina com o seu jeito de estar online?",
   profiles: [

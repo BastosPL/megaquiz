@@ -12,8 +12,8 @@ export const mitologiaGrega: Quiz = {
   tags: ["mitologia", "grecia", "deuses", "educacao", "historia"],
   createdAt: "2026-06-11",
   featured: false,
-  author: "Equipe Editorial MegaQuiz",
-  authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
+  author: "Patrick Bastos",
+  authorBio: "Diretor executivo, autor e empreendedor digital, Patrick Bastos atua na criação de projetos que unem conteúdo, tecnologia e experiência do usuário. No MegaQuiz, é responsável pela direção editorial e revisão dos conteúdos.",
   sources: [
     { label: "Theoi Greek Mythology — Encyclopaedia", url: "https://www.theoi.com/", organization: "Theoi Project", accessedAt: "2026-07-12" },
     { label: "Britannica — Greek Mythology", organization: "Encyclopædia Britannica", accessedAt: "2026-07-12" },

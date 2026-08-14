@@ -13,8 +13,8 @@ export const qiTeste: Quiz = {
   tags: ["conhecimentos gerais", "desafio", "cultura geral", "trivia"],
   createdAt: "2026-06-08",
   featured: true,
-  author: "Equipe Editorial MegaQuiz",
-  authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
+  author: "Patrick Bastos",
+  authorBio: "Diretor executivo, autor e empreendedor digital, Patrick Bastos atua na criação de projetos que unem conteúdo, tecnologia e experiência do usuário. No MegaQuiz, é responsável pela direção editorial e revisão dos conteúdos.",
   sources: [
     { label: "Britannica — General Knowledge", organization: "Encyclopædia Britannica", accessedAt: "2026-07-12" },
   ],

@@ -12,8 +12,8 @@ export const musicaBrasileira: Quiz = {
   tags: ["musica", "brasil", "sertanejo", "funk", "conhecimentos-gerais"],
   createdAt: "2026-06-08",
   featured: true,
-  author: "Equipe Editorial MegaQuiz",
-  authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
+  author: "Patrick Bastos",
+  authorBio: "Diretor executivo, autor e empreendedor digital, Patrick Bastos atua na criação de projetos que unem conteúdo, tecnologia e experiência do usuário. No MegaQuiz, é responsável pela direção editorial e revisão dos conteúdos.",
   sources: [
     { label: "Dicionário Cravo Albin da Música Popular Brasileira", url: "https://dicionariompb.com.br/", organization: "Instituto Cultural Cravo Albin", accessedAt: "2026-07-12" },
   ],

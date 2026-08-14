@@ -12,8 +12,8 @@ export const qualSignoDeveriaSer: Quiz = {
   tags: ["signo", "zodiaco", "personalidade", "astrologia", "viral"],
   createdAt: "2026-06-11",
   featured: true,
-  author: "Equipe Editorial MegaQuiz",
-  authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
+  author: "Patrick Bastos",
+  authorBio: "Diretor executivo, autor e empreendedor digital, Patrick Bastos atua na criação de projetos que unem conteúdo, tecnologia e experiência do usuário. No MegaQuiz, é responsável pela direção editorial e revisão dos conteúdos.",
   lastReviewedAt: "2026-07-12",
   introText: "Nem todo mundo se reconhece no signo em que nasceu. Fogo, Terra, Ar ou Água — responda sobre temperamento, rotina e valores para ver se o zodíaco erraria ou acertaria no seu caso.",
   profiles: [

@@ -12,8 +12,8 @@ export const round6Sobreviveria: Quiz = {
   tags: ["round 6", "squid game", "netflix", "series", "survival"],
   createdAt: "2026-06-11",
   featured: false,
-  author: "Equipe Editorial MegaQuiz",
-  authorBio: "Conteúdo produzido e revisado pela equipe responsável pelo MegaQuiz, com consulta às fontes indicadas em cada publicação.",
+  author: "Patrick Bastos",
+  authorBio: "Diretor executivo, autor e empreendedor digital, Patrick Bastos atua na criação de projetos que unem conteúdo, tecnologia e experiência do usuário. No MegaQuiz, é responsável pela direção editorial e revisão dos conteúdos.",
   sources: [
     { label: "Netflix — Squid Game", organization: "Netflix", accessedAt: "2026-07-12" },
     { label: "IMDb — Squid Game", url: "https://www.imdb.com/title/tt10919420/", organization: "IMDb", accessedAt: "2026-07-12" },
