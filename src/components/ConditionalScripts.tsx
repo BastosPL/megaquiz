@@ -4,8 +4,8 @@ import { useEffect } from "react";
 
 declare global {
   interface Window {
-    dataLayer: any[];
-    gtag: (...args: any[]) => void;
+    dataLayer: unknown[];
+    gtag: (...args: unknown[]) => void;
     __consent_initialized?: boolean;
     __ga4_loaded?: boolean;
     __adsense_loaded?: boolean;
@@ -17,8 +17,8 @@ function ensureGtagBase() {
   window.__consent_initialized = true;
 
   window.dataLayer = window.dataLayer || [];
-  window.gtag = function gtag() {
-    window.dataLayer.push(arguments);
+  window.gtag = function gtag(...args: unknown[]) {
+    window.dataLayer.push(args);
   };
 
   window.gtag("consent", "default", {

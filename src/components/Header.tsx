@@ -56,7 +56,7 @@ export default function Header() {
 
         <button
           onClick={() => setMenuOpen((v) => !v)}
-          className="rounded-lg p-2 text-text-secondary hover:bg-brand-soft/50 hover:text-brand-dark lg:hidden"
+          className="flex h-11 w-11 items-center justify-center rounded-lg text-text-secondary hover:bg-brand-soft/50 hover:text-brand-dark lg:hidden"
           aria-label={menuOpen ? "Fechar menu" : "Abrir menu"}
           aria-expanded={menuOpen}
         >

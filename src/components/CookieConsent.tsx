@@ -10,6 +10,11 @@ export default function CookieConsent() {
   useEffect(() => {
     const consent = localStorage.getItem("cookie-consent");
     if (!consent) {
+      // localStorage only exists client-side; this check cannot run during
+      // render (would cause a server/client hydration mismatch), so it must
+      // stay in an effect. The banner mounts once and this fires at most
+      // once per page load — no cascading render risk in practice.
+      // eslint-disable-next-line react-hooks/set-state-in-effect -- SSR-safe mount check for a browser-only API, see comment above
       setVisible(true);
     }
 
