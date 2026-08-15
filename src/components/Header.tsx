@@ -21,12 +21,12 @@ export default function Header() {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-0.5 lg:flex" aria-label="Categorias principais">
+        <nav className="hidden items-center gap-px lg:flex" aria-label="Categorias principais">
           {CATEGORIES.slice(0, 4).map((cat) => (
             <Link
               key={cat.id}
               href={`/categoria/${cat.id}`}
-              className="inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap rounded-lg px-2.5 py-2 text-small font-medium text-text-secondary transition-colors hover:bg-brand-soft/50 hover:text-brand-dark"
+              className="inline-flex shrink-0 items-center gap-1 whitespace-nowrap rounded-lg px-2 py-2 text-small font-medium text-text-secondary transition-colors hover:bg-brand-soft/50 hover:text-brand-dark"
             >
               <CategoryIcon category={cat.id} className="h-4 w-4 shrink-0" aria-hidden="true" />
               {cat.name}
@@ -34,21 +34,21 @@ export default function Header() {
           ))}
           <Link
             href="/categorias"
-            className="inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap rounded-lg px-2.5 py-2 text-small font-medium text-text-secondary transition-colors hover:bg-brand-soft/50 hover:text-brand-dark"
+            className="inline-flex shrink-0 items-center gap-1 whitespace-nowrap rounded-lg px-2 py-2 text-small font-medium text-text-secondary transition-colors hover:bg-brand-soft/50 hover:text-brand-dark"
           >
             <LayoutGrid className="h-4 w-4 shrink-0" aria-hidden="true" />
             Ver todas
           </Link>
           <Link
             href="/blog"
-            className="inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap rounded-lg px-2.5 py-2 text-small font-medium text-text-secondary transition-colors hover:bg-brand-soft/50 hover:text-brand-dark"
+            className="inline-flex shrink-0 items-center gap-1 whitespace-nowrap rounded-lg px-2 py-2 text-small font-medium text-text-secondary transition-colors hover:bg-brand-soft/50 hover:text-brand-dark"
           >
             <Newspaper className="h-4 w-4 shrink-0" aria-hidden="true" />
             Blog
           </Link>
           <Link
             href="/sobre"
-            className="shrink-0 whitespace-nowrap rounded-lg px-2.5 py-2 text-small font-medium text-text-secondary transition-colors hover:bg-brand-soft/50 hover:text-brand-dark"
+            className="shrink-0 whitespace-nowrap rounded-lg px-2 py-2 text-small font-medium text-text-secondary transition-colors hover:bg-brand-soft/50 hover:text-brand-dark"
           >
             Sobre
           </Link>
