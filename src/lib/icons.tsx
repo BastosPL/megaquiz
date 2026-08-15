@@ -7,6 +7,9 @@ import {
   Dumbbell,
   Briefcase,
   Target,
+  HeartPulse,
+  Landmark,
+  Sparkles,
 } from "lucide-react";
 import type { Category, QuizType } from "@/lib/types";
 
@@ -51,4 +54,27 @@ export function QuizTypeIcon({ type, ...props }: IconProps & { type: QuizType })
 
 export function getQuizTypeLabel(type: QuizType): string {
   return type === "trivia" ? "Trivia" : "Personalidade";
+}
+
+/**
+ * Icone de tema de artigo (não é a mesma taxonomia de Category dos quizzes —
+ * os artigos usam um rótulo de texto livre, ex: "Esportes", "Psicologia").
+ * Usado no ArticleCard e no cabeçalho do artigo para diferenciar
+ * visualmente do bloco de ícone colorido dos QuizCards (SPEC Fase 2, secao 2).
+ */
+export function ArticleTopicIcon({ topic, ...props }: IconProps & { topic: string }) {
+  switch (topic) {
+    case "Esportes":
+      return <Dumbbell {...props} />;
+    case "Psicologia":
+      return <Brain {...props} />;
+    case "Cultura":
+      return <Landmark {...props} />;
+    case "Saúde":
+      return <HeartPulse {...props} />;
+    case "Curiosidades":
+      return <Sparkles {...props} />;
+    default:
+      return <BookOpen {...props} />;
+  }
 }

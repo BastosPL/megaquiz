@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { Newspaper } from "lucide-react";
 import { allArticles } from "@/lib/articles";
+import ArticleCard from "@/components/ArticleCard";
 
 export const metadata: Metadata = {
   title: "Blog",
@@ -20,47 +21,34 @@ export const metadata: Metadata = {
 };
 
 export default function BlogPage() {
+  const [firstArticle, ...restArticles] = allArticles;
+
   return (
-    <div className="max-w-5xl mx-auto px-4 py-8">
-      <section className="text-center mb-10">
-        <h1 className="text-3xl sm:text-4xl font-extrabold text-text mb-3">
-          📝 Blog do MegaQuiz
-        </h1>
-        <p className="text-text-light text-lg max-w-xl mx-auto">
+    <div className="mx-auto max-w-5xl px-4 py-10 sm:py-14">
+      <section className="mx-auto mb-10 max-w-2xl text-center">
+        <span className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-brand-soft">
+          <Newspaper className="h-6 w-6 text-brand-dark" strokeWidth={1.75} aria-hidden="true" />
+        </span>
+        <h1 className="text-h1 font-bold text-ink">Blog do MegaQuiz</h1>
+        <p className="mx-auto mt-3 max-w-lg text-body-lg text-text-secondary">
           Curiosidades, cultura, esportes e ciência — leia nossos artigos e
-          depois teste seus conhecimentos nos quizzes!
+          depois teste seus conhecimentos nos quizzes.
         </p>
       </section>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        {allArticles.map((article) => (
-          <Link
-            key={article.slug}
-            href={`/blog/${article.slug}`}
-            className="bg-bg-card rounded-2xl border border-border p-5 hover:border-primary transition-colors flex flex-col"
-          >
-            <span className="text-xs font-semibold text-primary mb-2">
-              {article.category}
-            </span>
-            <h2 className="text-lg font-bold text-text mb-2 leading-snug">
-              {article.title}
-            </h2>
-            <p className="text-text-light text-sm flex-1 mb-3">
-              {article.excerpt}
-            </p>
-            <div className="flex items-center justify-between text-xs text-text-light">
-              <span>{article.readTime} min de leitura</span>
-              <span>
-                {new Date(article.date).toLocaleDateString("pt-BR", {
-                  day: "2-digit",
-                  month: "short",
-                  year: "numeric",
-                })}
-              </span>
-            </div>
-          </Link>
-        ))}
-      </div>
+      {firstArticle && (
+        <section className="mb-10">
+          <ArticleCard article={firstArticle} featured />
+        </section>
+      )}
+
+      {restArticles.length > 0 && (
+        <section className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {restArticles.map((article) => (
+            <ArticleCard key={article.slug} article={article} />
+          ))}
+        </section>
+      )}
     </div>
   );
 }

@@ -1,7 +1,20 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
+import {
+  ArrowLeft,
+  ArrowRight,
+  CalendarDays,
+  ChevronDown,
+  Clock,
+  ExternalLink,
+  Info,
+  Puzzle,
+  UserRound,
+} from "lucide-react";
 import { allArticles, getArticleBySlug } from "@/lib/articles";
+import { ArticleTopicIcon } from "@/lib/icons";
+import ArticleCard from "@/components/ArticleCard";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -71,8 +84,12 @@ export default async function ArticlePage({ params }: Props) {
     },
   };
 
+  const otherArticles = allArticles
+    .filter((a) => a.slug !== article.slug)
+    .slice(0, 4);
+
   return (
-    <div className="max-w-3xl mx-auto px-4 py-8">
+    <div className="mx-auto max-w-2xl px-4 py-10 sm:py-14">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -81,124 +98,156 @@ export default async function ArticlePage({ params }: Props) {
       <nav className="mb-6">
         <Link
           href="/blog"
-          className="text-primary text-sm font-semibold hover:underline"
+          className="inline-flex items-center gap-1.5 text-small font-semibold text-brand-dark hover:underline"
         >
-          ← Voltar ao Blog
+          <ArrowLeft className="h-4 w-4" aria-hidden="true" />
+          Voltar ao Blog
         </Link>
       </nav>
 
       <article>
         <header className="mb-8">
-          <span className="text-xs font-semibold text-primary mb-2 block">
+          <span className="inline-flex items-center gap-1.5 text-label font-semibold uppercase tracking-wide text-brand-dark">
+            <ArticleTopicIcon topic={article.category} className="h-4 w-4" aria-hidden="true" />
             {article.category}
           </span>
-          <h1 className="text-2xl sm:text-3xl font-extrabold text-text mb-3 leading-tight">
+          <h1 className="mt-3 text-h1 font-bold leading-tight text-ink">
             {article.title}
           </h1>
-          <div className="flex items-center gap-4 text-sm text-text-light">
-            <span>
+          <p className="mt-3 text-body-lg text-text-secondary">
+            {article.excerpt}
+          </p>
+
+          <div className="mt-5 flex flex-wrap items-center gap-x-4 gap-y-2 border-t border-black/5 pt-4 text-small text-text-secondary">
+            <span className="inline-flex items-center gap-1.5">
+              <CalendarDays className="h-4 w-4" aria-hidden="true" />
               {new Date(article.date).toLocaleDateString("pt-BR", {
                 day: "2-digit",
                 month: "long",
                 year: "numeric",
               })}
             </span>
-            <span>·</span>
-            <span>{article.readTime} min de leitura</span>
+            <span className="inline-flex items-center gap-1.5">
+              <Clock className="h-4 w-4" aria-hidden="true" />
+              {article.readTime} min de leitura
+            </span>
             {article.author && (
-              <>
-                <span>·</span>
-                <span>{article.author}</span>
-              </>
+              <span className="inline-flex items-center gap-1.5">
+                <UserRound className="h-4 w-4" aria-hidden="true" />
+                {article.author}
+              </span>
             )}
           </div>
         </header>
 
-        <div className="space-y-5 text-text-light leading-relaxed text-base">
+        <div className="space-y-5 text-body leading-relaxed text-ink">
           {article.content.map((section, i) => (
             <div key={i}>
               {section.heading && (
-                <h2 className="text-xl font-bold text-text mt-8 mb-3">{section.heading}</h2>
+                <h2 className="mb-3 mt-9 text-h3 font-bold text-ink">
+                  {section.heading}
+                </h2>
               )}
-              <p>{section.text}</p>
+              <p className="text-text-secondary">{section.text}</p>
             </div>
           ))}
         </div>
 
+        {article.disclaimer && (
+          <div className="mt-6 flex gap-3 rounded-xl border border-black/5 bg-brand-soft/40 p-4">
+            <Info className="h-5 w-5 flex-shrink-0 text-brand-dark" aria-hidden="true" />
+            <p className="text-small text-text-secondary">{article.disclaimer}</p>
+          </div>
+        )}
+
         {article.sources && article.sources.length > 0 && (
-          <div className="mt-8 pt-6 border-t border-border">
-            <h2 className="text-lg font-bold text-text mb-3">Fontes</h2>
-            <ul className="space-y-1 text-sm text-text-light">
+          <details className="group mt-8 rounded-xl border border-black/10" open>
+            <summary className="flex cursor-pointer list-none items-center justify-between p-4 text-small font-semibold text-ink">
+              Fontes
+              <ChevronDown className="h-4 w-4 text-text-secondary transition-transform group-open:rotate-180" aria-hidden="true" />
+            </summary>
+            <ul className="flex flex-col gap-2 border-t border-black/10 p-4 pt-3 text-small text-text-secondary">
               {article.sources.map((source, i) => (
-                <li key={i}>
+                <li key={i} className="flex items-start gap-1.5">
                   {source.url ? (
-                    <a href={source.url} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                    <a
+                      href={source.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 font-medium text-brand-dark hover:underline"
+                    >
                       {source.label}
+                      <ExternalLink className="h-3.5 w-3.5 flex-shrink-0" aria-hidden="true" />
                     </a>
                   ) : (
-                    source.label
+                    <span>{source.label}</span>
                   )}
-                  {source.organization && <span className="text-text-light/70"> — {source.organization}</span>}
+                  {source.organization && (
+                    <span className="text-text-secondary/70">— {source.organization}</span>
+                  )}
                 </li>
               ))}
             </ul>
-          </div>
+          </details>
         )}
 
         {(article.author || article.lastReviewedAt) && (
-          <div className="mt-4 text-xs text-text-light">
-            {article.author && article.authorBio && <p>{article.author} — {article.authorBio}</p>}
-            {article.lastReviewedAt && (
-              <p className="mt-1">Última revisão: {new Date(article.lastReviewedAt).toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })}</p>
-            )}
+          <div className="mt-6 flex items-start gap-3 border-t border-black/5 pt-6">
+            <span className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-brand-soft">
+              <UserRound className="h-4 w-4 text-brand-dark" aria-hidden="true" />
+            </span>
+            <div className="text-caption text-text-secondary">
+              {article.author && (
+                <p>
+                  <span className="font-semibold text-ink">{article.author}</span>
+                  {article.authorBio ? ` — ${article.authorBio}` : ""}
+                </p>
+              )}
+              {article.lastReviewedAt && (
+                <p className="mt-1">
+                  Última revisão:{" "}
+                  {new Date(article.lastReviewedAt).toLocaleDateString("pt-BR", {
+                    day: "2-digit",
+                    month: "long",
+                    year: "numeric",
+                  })}
+                </p>
+              )}
+            </div>
           </div>
         )}
 
-        {article.disclaimer && (
-          <div className="mt-4 p-3 rounded-lg bg-blue-50 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-800">
-            <p className="text-xs text-blue-800 dark:text-blue-200">{article.disclaimer}</p>
-          </div>
-        )}
-
-        <div className="mt-10 bg-bg-card rounded-2xl border border-border p-6 text-center">
-          <h2 className="text-lg font-bold text-text mb-2">
-            🧩 Teste seus conhecimentos!
-          </h2>
-          <p className="text-text-light text-sm mb-4">
+        <div className="mt-10 rounded-2xl border border-black/5 bg-surface-v2 p-6 text-center shadow-sm">
+          <span className="mx-auto mb-3 flex h-11 w-11 items-center justify-center rounded-full bg-brand-soft">
+            <Puzzle className="h-5 w-5 text-brand-dark" aria-hidden="true" />
+          </span>
+          <h2 className="text-h3 font-bold text-ink">Teste seus conhecimentos</h2>
+          <p className="mx-auto mt-2 max-w-sm text-small text-text-secondary">
             Gostou do artigo? Faça o quiz relacionado e descubra o quanto você
             sabe sobre o assunto.
           </p>
           <Link
             href={`/quiz/${article.relatedQuizSlug}`}
-            className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors"
+            className="mt-4 inline-flex items-center gap-2 rounded-full bg-brand-dark px-6 py-3 text-small font-semibold text-white transition-[filter] hover:brightness-90"
           >
-            Jogar quiz →
+            Jogar quiz
+            <ArrowRight className="h-4 w-4" aria-hidden="true" />
           </Link>
         </div>
       </article>
 
-      <div className="mt-10 border-t border-border pt-8">
-        <h3 className="text-lg font-bold text-text mb-4">Outros artigos</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {allArticles
-            .filter((a) => a.slug !== article.slug)
-            .slice(0, 4)
-            .map((a) => (
-              <Link
-                key={a.slug}
-                href={`/blog/${a.slug}`}
-                className="bg-bg-card rounded-xl border border-border p-4 hover:border-primary transition-colors"
-              >
-                <span className="text-xs font-semibold text-primary">
-                  {a.category}
-                </span>
-                <h4 className="text-sm font-bold text-text mt-1 leading-snug">
-                  {a.title}
-                </h4>
-              </Link>
+      {otherArticles.length > 0 && (
+        <div className="mt-12 border-t border-black/5 pt-10">
+          <h3 className="mb-5 text-small font-semibold uppercase tracking-wide text-text-secondary">
+            Outros artigos
+          </h3>
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            {otherArticles.map((a) => (
+              <ArticleCard key={a.slug} article={a} />
             ))}
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }

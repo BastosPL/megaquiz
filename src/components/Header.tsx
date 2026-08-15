@@ -21,34 +21,34 @@ export default function Header() {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-1 md:flex" aria-label="Categorias principais">
+        <nav className="hidden items-center gap-0.5 lg:flex" aria-label="Categorias principais">
           {CATEGORIES.slice(0, 4).map((cat) => (
             <Link
               key={cat.id}
               href={`/categoria/${cat.id}`}
-              className="inline-flex items-center gap-1.5 rounded-lg px-3 py-2 text-small font-medium text-text-secondary transition-colors hover:bg-brand-soft/50 hover:text-brand-dark"
+              className="inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap rounded-lg px-2.5 py-2 text-small font-medium text-text-secondary transition-colors hover:bg-brand-soft/50 hover:text-brand-dark"
             >
-              <CategoryIcon category={cat.id} className="h-4 w-4" aria-hidden="true" />
+              <CategoryIcon category={cat.id} className="h-4 w-4 shrink-0" aria-hidden="true" />
               {cat.name}
             </Link>
           ))}
           <Link
             href="/categorias"
-            className="inline-flex items-center gap-1.5 rounded-lg px-3 py-2 text-small font-medium text-text-secondary transition-colors hover:bg-brand-soft/50 hover:text-brand-dark"
+            className="inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap rounded-lg px-2.5 py-2 text-small font-medium text-text-secondary transition-colors hover:bg-brand-soft/50 hover:text-brand-dark"
           >
-            <LayoutGrid className="h-4 w-4" aria-hidden="true" />
+            <LayoutGrid className="h-4 w-4 shrink-0" aria-hidden="true" />
             Ver todas
           </Link>
           <Link
             href="/blog"
-            className="inline-flex items-center gap-1.5 rounded-lg px-3 py-2 text-small font-medium text-text-secondary transition-colors hover:bg-brand-soft/50 hover:text-brand-dark"
+            className="inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap rounded-lg px-2.5 py-2 text-small font-medium text-text-secondary transition-colors hover:bg-brand-soft/50 hover:text-brand-dark"
           >
-            <Newspaper className="h-4 w-4" aria-hidden="true" />
+            <Newspaper className="h-4 w-4 shrink-0" aria-hidden="true" />
             Blog
           </Link>
           <Link
             href="/sobre"
-            className="rounded-lg px-3 py-2 text-small font-medium text-text-secondary transition-colors hover:bg-brand-soft/50 hover:text-brand-dark"
+            className="shrink-0 whitespace-nowrap rounded-lg px-2.5 py-2 text-small font-medium text-text-secondary transition-colors hover:bg-brand-soft/50 hover:text-brand-dark"
           >
             Sobre
           </Link>
@@ -56,7 +56,7 @@ export default function Header() {
 
         <button
           onClick={() => setMenuOpen((v) => !v)}
-          className="rounded-lg p-2 text-text-secondary hover:bg-brand-soft/50 hover:text-brand-dark md:hidden"
+          className="rounded-lg p-2 text-text-secondary hover:bg-brand-soft/50 hover:text-brand-dark lg:hidden"
           aria-label={menuOpen ? "Fechar menu" : "Abrir menu"}
           aria-expanded={menuOpen}
         >
@@ -69,7 +69,7 @@ export default function Header() {
       </div>
 
       {menuOpen && (
-        <div className="border-t border-black/5 bg-surface-v2 md:hidden">
+        <div className="border-t border-black/5 bg-surface-v2 lg:hidden">
           <nav className="mx-auto flex max-w-5xl flex-col gap-1 px-4 py-3" aria-label="Menu principal">
             {CATEGORIES.map((cat) => (
               <Link
