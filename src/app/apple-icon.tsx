@@ -1,4 +1,5 @@
 import { ImageResponse } from "next/og";
+import { PuzzleOgIcon } from "@/lib/og-icons";
 
 export const size = { width: 180, height: 180 };
 export const contentType = "image/png";
@@ -17,7 +18,7 @@ export default function AppleIcon() {
           justifyContent: "center",
         }}
       >
-        <span style={{ fontSize: 110 }}>🧩</span>
+        <PuzzleOgIcon size={110} color="#ffffff" strokeWidth={1.5} />
       </div>
     ),
     { ...size }

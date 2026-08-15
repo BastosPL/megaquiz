@@ -1,5 +1,6 @@
 import { ImageResponse } from "next/og";
 import { getQuizBySlug } from "@/lib/quizzes";
+import { PuzzleOgIcon, CategoryOgIcon } from "@/lib/og-icons";
 
 export const alt = "MegaQuiz - Quiz Online";
 export const size = { width: 1200, height: 630 };
@@ -64,7 +65,7 @@ export default async function OGImage({
           }}
         >
           <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-            <span style={{ fontSize: 36 }}>🧩</span>
+            <PuzzleOgIcon size={36} color="#ffffff" strokeWidth={1.75} />
             <span style={{ fontSize: 28, color: "#fff", fontWeight: 700, display: "flex" }}>
               <span>Mega</span><span style={{ color: "#f59e0b" }}>Quiz</span>
             </span>
@@ -95,7 +96,9 @@ export default async function OGImage({
             gap: 20,
           }}
         >
-          <div style={{ fontSize: 80, display: "flex" }}>{quiz.emoji}</div>
+          <div style={{ display: "flex" }}>
+            <CategoryOgIcon category={quiz.category} size={80} color="#ffffff" strokeWidth={1.5} />
+          </div>
           <div
             style={{
               fontSize: 52,

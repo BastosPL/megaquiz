@@ -1,4 +1,11 @@
 import { ImageResponse } from "next/og";
+import {
+  PuzzleOgIcon,
+  TrophyOgIcon,
+  BrainOgIcon,
+  BriefcaseOgIcon,
+  DumbbellOgIcon,
+} from "@/lib/og-icons";
 
 export const alt = "MegaQuiz - Quizzes de Trivia e Personalidade em Português";
 export const size = { width: 1200, height: 630 };
@@ -20,7 +27,9 @@ export default function OGImage() {
           gap: 24,
         }}
       >
-        <div style={{ fontSize: 100, display: "flex" }}>🧩</div>
+        <div style={{ display: "flex" }}>
+          <PuzzleOgIcon size={100} color="#ffffff" strokeWidth={1.5} />
+        </div>
         <div
           style={{
             display: "flex",
@@ -60,9 +69,11 @@ export default function OGImage() {
               fontSize: 20,
               fontWeight: 600,
               display: "flex",
+              alignItems: "center",
+              gap: 8,
             }}
           >
-            🏆 Trivia
+            <TrophyOgIcon size={20} color="#f59e0b" /> Trivia
           </div>
           <div
             style={{
@@ -74,9 +85,11 @@ export default function OGImage() {
               fontSize: 20,
               fontWeight: 600,
               display: "flex",
+              alignItems: "center",
+              gap: 8,
             }}
           >
-            🧠 Personalidade
+            <BrainOgIcon size={20} color="#f59e0b" /> Personalidade
           </div>
           <div
             style={{
@@ -88,9 +101,11 @@ export default function OGImage() {
               fontSize: 20,
               fontWeight: 600,
               display: "flex",
+              alignItems: "center",
+              gap: 8,
             }}
           >
-            💼 Carreira
+            <BriefcaseOgIcon size={20} color="#f59e0b" /> Carreira
           </div>
           <div
             style={{
@@ -102,9 +117,11 @@ export default function OGImage() {
               fontSize: 20,
               fontWeight: 600,
               display: "flex",
+              alignItems: "center",
+              gap: 8,
             }}
           >
-            ⚽ Esportes
+            <DumbbellOgIcon size={20} color="#f59e0b" /> Esportes
           </div>
         </div>
         <div

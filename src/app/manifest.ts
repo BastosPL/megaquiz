@@ -8,8 +8,8 @@ export default function manifest(): MetadataRoute.Manifest {
       "Quizzes de personalidade, trivia, Copa do Mundo e muito mais!",
     start_url: "/",
     display: "standalone",
-    background_color: "#f8fafc",
-    theme_color: "#0d9488",
+    background_color: "#F8FAF7",
+    theme_color: "#15803D",
     icons: [
       {
         src: "/icon-192.png",

@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       canonical: `/quiz/${slug}`,
     },
     openGraph: {
-      title: `${quiz.emoji} ${quiz.title}`,
+      title: quiz.title,
       description: quiz.description,
       type: "website",
       url: `https://megaquiz.app.br/quiz/${slug}`,
@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     twitter: {
       card: "summary_large_image",
-      title: `${quiz.emoji} ${quiz.title}`,
+      title: quiz.title,
       description: quiz.description,
     },
   };
@@ -149,8 +149,8 @@ export default async function QuizPage({ params }: Props) {
 
         <div className="mt-6 p-4 bg-brand-soft/40 rounded-xl">
           <p className="text-sm text-text-secondary">
-            <strong className="text-ink">Como jogar:</strong> Clique em
-            &quot;Começar Quiz&quot; acima para iniciar.{" "}
+            <strong className="text-ink">Como jogar:</strong> As perguntas
+            começam logo no topo desta página.{" "}
             {quiz.type === "trivia"
               ? "Selecione a resposta que você acredita ser a correta. Você tem 3 vidas — a cada erro, perde uma."
               : "Escolha a opção que mais combina com você em cada pergunta. No final, descubra seu perfil!"}
@@ -170,7 +170,7 @@ export default async function QuizPage({ params }: Props) {
                   ) : (
                     source.label
                   )}
-                  {source.organization && <span className="text-text-secondary/70"> — {source.organization}</span>}
+                  {source.organization && <span className="text-text-secondary"> — {source.organization}</span>}
                 </li>
               ))}
             </ul>
