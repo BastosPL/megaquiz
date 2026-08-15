@@ -64,9 +64,33 @@
 }
 
 body {
-  background: var(--color-bg);
-  color: var(--color-text);
+  /* Fase 2 conclui a migracao para os tokens v2 em todas as paginas —
+     ver docs/REDESIGN-SPEC-fase2-restante.md. */
+  background: var(--color-bg-v2);
+  color: var(--color-ink);
   font-family: var(--font-sans);
+}
+
+/* Acessibilidade (SPEC Fase 2, secao 5): foco sempre visivel, com contraste
+   suficiente, em qualquer elemento interativo tocado nesta fase — nunca
+   depende só da cor de fundo/hover. */
+:focus-visible {
+  outline: 2px solid var(--color-brand-bright);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Acessibilidade: respeita a preferencia de movimento reduzido do usuario,
+   removendo animacoes decorativas sem remover a mudanca de estado em si. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 @keyframes fade-in {
@@ -79,25 +103,12 @@ body {
   to { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(109, 40, 217, 0.3); }
-  50% { box-shadow: 0 0 0 8px rgba(109, 40, 217, 0); }
-}
-
-@keyframes progress-fill {
-  from { width: 0%; }
-}
-
 .animate-fade-in {
   animation: fade-in 0.3s ease-out;
 }
 
 .animate-slide-up {
   animation: slide-up 0.4s ease-out;
-}
-
-.animate-pulse-glow {
-  animation: pulse-glow 2s ease-in-out infinite;
 }
 
 @keyframes shake {
