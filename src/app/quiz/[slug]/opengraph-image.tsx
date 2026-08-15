@@ -6,6 +6,13 @@ export const alt = "MegaQuiz - Quiz Online";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
+// Design System v2 (Editorial Game Premium) — ver docs/REDESIGN-SPEC-editorial-game-premium.md
+const BRAND_DARK = "#15803D";
+const BRAND_SOFT = "#DCFCE7";
+const BG = "#F8FAF7";
+const INK = "#18181B";
+const TEXT_SECONDARY = "#5F6872";
+
 export default async function OGImage({
   params,
 }: {
@@ -24,9 +31,10 @@ export default async function OGImage({
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            background: "#1a1a2e",
-            color: "white",
+            background: BG,
+            color: INK,
             fontSize: 48,
+            fontWeight: 700,
           }}
         >
           MegaQuiz
@@ -50,32 +58,58 @@ export default async function OGImage({
           height: "100%",
           display: "flex",
           flexDirection: "column",
-          background: "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)",
-          padding: 60,
+          background: BG,
+          padding: "48px 64px 36px",
           position: "relative",
         }}
       >
-        {/* Top bar with logo and type */}
+        {/* Faixa de destaque no topo */}
+        <div
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            right: 0,
+            height: 10,
+            background: BRAND_DARK,
+            display: "flex",
+          }}
+        />
+
+        {/* Marca + tipo */}
         <div
           style={{
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
-            marginBottom: 40,
+            marginBottom: 36,
           }}
         >
           <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-            <PuzzleOgIcon size={36} color="#ffffff" strokeWidth={1.75} />
-            <span style={{ fontSize: 28, color: "#fff", fontWeight: 700, display: "flex" }}>
-              <span>Mega</span><span style={{ color: "#f59e0b" }}>Quiz</span>
+            <div
+              style={{
+                width: 44,
+                height: 44,
+                borderRadius: 12,
+                background: BRAND_DARK,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <PuzzleOgIcon size={24} color="#ffffff" strokeWidth={1.75} />
+            </div>
+            <span style={{ fontSize: 26, color: INK, fontWeight: 700, display: "flex" }}>
+              <span>Mega</span>
+              <span style={{ color: BRAND_DARK }}>Quiz</span>
             </span>
           </div>
           <div
             style={{
-              background: quiz.color || "#f59e0b",
+              background: quiz.color || BRAND_DARK,
               color: "#fff",
-              padding: "8px 20px",
-              borderRadius: 20,
+              padding: "9px 22px",
+              borderRadius: 10,
               fontSize: 18,
               fontWeight: 700,
               letterSpacing: 1,
@@ -86,7 +120,7 @@ export default async function OGImage({
           </div>
         </div>
 
-        {/* Main content */}
+        {/* Conteúdo principal */}
         <div
           style={{
             display: "flex",
@@ -96,16 +130,31 @@ export default async function OGImage({
             gap: 20,
           }}
         >
-          <div style={{ display: "flex" }}>
-            <CategoryOgIcon category={quiz.category} size={80} color="#ffffff" strokeWidth={1.5} />
+          <div
+            style={{
+              display: "flex",
+              width: 72,
+              height: 72,
+              borderRadius: 18,
+              background: BRAND_SOFT,
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <CategoryOgIcon
+              category={quiz.category}
+              size={38}
+              color={BRAND_DARK}
+              strokeWidth={1.6}
+            />
           </div>
           <div
             style={{
-              fontSize: 52,
+              fontSize: 50,
               fontWeight: 800,
-              color: "#ffffff",
-              lineHeight: 1.2,
-              maxWidth: 900,
+              color: INK,
+              lineHeight: 1.18,
+              maxWidth: 920,
               display: "flex",
             }}
           >
@@ -113,10 +162,10 @@ export default async function OGImage({
           </div>
           <div
             style={{
-              fontSize: 24,
-              color: "#94a3b8",
-              maxWidth: 800,
-              lineHeight: 1.4,
+              fontSize: 23,
+              color: TEXT_SECONDARY,
+              maxWidth: 820,
+              lineHeight: 1.5,
               display: "flex",
             }}
           >
@@ -124,7 +173,7 @@ export default async function OGImage({
           </div>
         </div>
 
-        {/* Bottom bar */}
+        {/* Rodapé */}
         <div
           style={{
             display: "flex",
@@ -132,41 +181,31 @@ export default async function OGImage({
             alignItems: "center",
           }}
         >
-          <div style={{ fontSize: 20, color: "#64748b", display: "flex" }}>
+          <div style={{ fontSize: 19, color: TEXT_SECONDARY, display: "flex" }}>
             {questionCount}
           </div>
           <div
             style={{
+              background: BRAND_DARK,
+              color: "#fff",
+              padding: "12px 30px",
+              borderRadius: 10,
+              fontSize: 20,
+              fontWeight: 700,
               display: "flex",
-              alignItems: "center",
-              gap: 8,
             }}
           >
-            <div
-              style={{
-                background: "#f59e0b",
-                color: "#1a1a2e",
-                padding: "10px 28px",
-                borderRadius: 12,
-                fontSize: 22,
-                fontWeight: 700,
-                display: "flex",
-              }}
-            >
-              JOGAR AGORA
-            </div>
+            JOGAR AGORA
           </div>
         </div>
 
         {/* URL */}
         <div
           style={{
-            position: "absolute",
-            bottom: 20,
-            left: 60,
-            fontSize: 16,
-            color: "#475569",
             display: "flex",
+            fontSize: 15,
+            color: TEXT_SECONDARY,
+            marginTop: 14,
           }}
         >
           megaquiz.app.br
