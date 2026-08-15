@@ -183,7 +183,7 @@ export default async function ArticlePage({ params }: Props) {
                     <span>{source.label}</span>
                   )}
                   {source.organization && (
-                    <span className="text-text-secondary/70">— {source.organization}</span>
+                    <span className="text-text-secondary">— {source.organization}</span>
                   )}
                 </li>
               ))}

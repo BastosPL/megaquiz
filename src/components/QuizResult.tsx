@@ -181,7 +181,7 @@ export default function QuizResultView({
           {/* Affiliate CTA */}
           {affiliate && (
             <div className="mb-4">
-              <p className="mb-1 text-center text-caption text-text-secondary/70">Publicidade</p>
+              <p className="mb-1 text-center text-caption text-text-secondary">Publicidade</p>
               <a
                 href={affiliate.url}
                 target="_blank"

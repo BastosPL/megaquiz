@@ -291,7 +291,11 @@ export default function QuizEngine({ quiz }: QuizEngineProps) {
           </span>
           <div className="flex items-center gap-3">
             {isTrivia && (
-              <span className="flex items-center gap-1" aria-label={`${lives} de ${maxLives} vidas restantes`}>
+              <span
+                className="flex items-center gap-1"
+                role="img"
+                aria-label={`${lives} de ${maxLives} vidas restantes`}
+              >
                 {Array.from({ length: maxLives }).map((_, i) => (
                   <Heart
                     key={i}

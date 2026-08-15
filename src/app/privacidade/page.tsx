@@ -48,7 +48,7 @@ export default function PrivacidadePage() {
           visitas anteriores do usuário ao nosso site ou a outros sites. O uso de cookies
           para publicidade permite que o Google e seus parceiros veiculem anúncios baseados
           na visita dos usuários. Você pode desativar a publicidade personalizada acessando{" "}
-          <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-brand-dark hover:underline">
+          <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-brand-dark underline underline-offset-2 hover:no-underline">
             Configurações de Anúncios do Google
           </a>.
         </p>

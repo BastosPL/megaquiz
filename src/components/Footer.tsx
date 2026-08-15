@@ -36,7 +36,7 @@ export default function Footer() {
 
           {/* Explorar */}
           <div>
-            <h3 className="mb-3 text-label font-semibold uppercase tracking-wide text-white/40">
+            <h3 className="mb-3 text-label font-semibold uppercase tracking-wide text-white/50">
               Explorar
             </h3>
             <nav className="flex flex-col gap-2.5">
@@ -60,7 +60,7 @@ export default function Footer() {
 
           {/* MegaQuiz (institucionais) */}
           <div>
-            <h3 className="mb-3 text-label font-semibold uppercase tracking-wide text-white/40">
+            <h3 className="mb-3 text-label font-semibold uppercase tracking-wide text-white/50">
               MegaQuiz
             </h3>
             <nav className="flex flex-col gap-2.5">
@@ -81,7 +81,7 @@ export default function Footer() {
 
           {/* Legal + Privacidade */}
           <div>
-            <h3 className="mb-3 text-label font-semibold uppercase tracking-wide text-white/40">
+            <h3 className="mb-3 text-label font-semibold uppercase tracking-wide text-white/50">
               Legal
             </h3>
             <nav className="flex flex-col gap-2.5">
@@ -93,7 +93,7 @@ export default function Footer() {
               </Link>
             </nav>
 
-            <h3 className="mb-3 mt-6 text-label font-semibold uppercase tracking-wide text-white/40">
+            <h3 className="mb-3 mt-6 text-label font-semibold uppercase tracking-wide text-white/50">
               Privacidade
             </h3>
             <button
@@ -109,7 +109,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 flex flex-col gap-4 border-t border-white/10 pt-6 sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-caption text-white/40">
+          <p className="text-caption text-white/50">
             &copy; {new Date().getFullYear()} MegaQuiz. Todos os direitos reservados.
           </p>
           <nav className="flex flex-wrap gap-x-4 gap-y-1" aria-label="Categorias no rodapé">
@@ -117,7 +117,7 @@ export default function Footer() {
               <Link
                 key={cat.id}
                 href={`/categoria/${cat.id}`}
-                className="text-caption text-white/40 transition-colors hover:text-white/70"
+                className="text-caption text-white/50 transition-colors hover:text-white/70"
               >
                 {cat.name}
               </Link>

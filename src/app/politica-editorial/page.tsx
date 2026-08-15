@@ -105,12 +105,12 @@ export default function PoliticaEditorialPage() {
             Para reportar um erro, envie um email para{" "}
             <a
               href="mailto:contato@megaquiz.app.br"
-              className="text-brand-dark hover:underline"
+              className="text-brand-dark underline underline-offset-2 hover:no-underline"
             >
               contato@megaquiz.app.br
             </a>{" "}
             ou use o formulário na página de{" "}
-            <Link href="/contato" className="text-brand-dark hover:underline">
+            <Link href="/contato" className="text-brand-dark underline underline-offset-2 hover:no-underline">
               Contato
             </Link>
             .

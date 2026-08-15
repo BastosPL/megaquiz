@@ -67,7 +67,7 @@ export default function TermosPage() {
           Esses anúncios podem utilizar cookies para exibir conteúdo personalizado.
           O MegaQuiz não se responsabiliza pelo conteúdo dos anúncios exibidos.
           Para mais informações, consulte nossa{" "}
-          <a href="/privacidade" className="text-brand-dark hover:underline">
+          <a href="/privacidade" className="text-brand-dark underline underline-offset-2 hover:no-underline">
             Política de Privacidade
           </a>.
         </p>
@@ -109,7 +109,7 @@ export default function TermosPage() {
         <h2 className="mt-8 text-h3 font-semibold text-ink">11. Contato</h2>
         <p>
           Para dúvidas sobre estes termos, entre em contato:{" "}
-          <a href="mailto:contato@megaquiz.app.br" className="text-brand-dark hover:underline">
+          <a href="mailto:contato@megaquiz.app.br" className="text-brand-dark underline underline-offset-2 hover:no-underline">
             contato@megaquiz.app.br
           </a>
         </p>
