@@ -112,12 +112,12 @@ export default function Footer() {
           <p className="text-caption text-white/50">
             &copy; {new Date().getFullYear()} MegaQuiz. Todos os direitos reservados.
           </p>
-          <nav className="flex flex-wrap gap-x-4 gap-y-1" aria-label="Categorias no rodapé">
+          <nav className="flex flex-wrap gap-x-2 gap-y-1" aria-label="Categorias no rodapé">
             {CATEGORIES.map((cat) => (
               <Link
                 key={cat.id}
                 href={`/categoria/${cat.id}`}
-                className="text-caption text-white/50 transition-colors hover:text-white/70"
+                className="inline-block px-2 py-1.5 text-caption text-white/50 transition-colors hover:text-white/70"
               >
                 {cat.name}
               </Link>
