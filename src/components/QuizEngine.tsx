@@ -1,7 +1,19 @@
 "use client";
 
 import { useState, useCallback, useMemo } from "react";
-import type { Quiz, QuizResult, QuizProfile } from "@/lib/types";
+import Link from "next/link";
+import {
+  ChevronLeft,
+  Heart,
+  HeartCrack,
+  BatteryCharging,
+  CheckCircle2,
+  XCircle,
+  Lightbulb,
+  RotateCcw,
+} from "lucide-react";
+import type { Quiz, QuizResult, QuizProfile, QuizAnswerLogEntry } from "@/lib/types";
+import { accessibleForeground } from "@/lib/color";
 import QuizResultView from "./QuizResult";
 
 interface QuizEngineProps {
@@ -41,10 +53,12 @@ export default function QuizEngine({ quiz }: QuizEngineProps) {
   const [gameOver, setGameOver] = useState(false);
   const [showExtraLifeOffer, setShowExtraLifeOffer] = useState(false);
   const [usedExtraLife, setUsedExtraLife] = useState(false);
+  const [answerLog, setAnswerLog] = useState<QuizAnswerLogEntry[]>([]);
 
   const questions = isTrivia ? shuffledQuestions : quiz.questions;
   const question = questions[currentQuestion];
   const progress = ((currentQuestion + 1) / questions.length) * 100;
+  const safeColor = accessibleForeground(quiz.color);
 
   const calculatePersonalityResult = useCallback(
     (finalScores: Record<string, number>): QuizResult => {
@@ -95,11 +109,23 @@ export default function QuizEngine({ quiz }: QuizEngineProps) {
       setShowFeedback(true);
       const option = question.options.find((o) => o.id === optionId);
       const isCorrect = option?.isCorrect ?? false;
+      const correctOption = question.options.find((o) => o.isCorrect);
       const newScore = isCorrect ? score + 1 : score;
       const newLives = isCorrect ? lives : lives - 1;
 
       if (isCorrect) setScore(newScore);
       if (!isCorrect) setLives(newLives);
+
+      setAnswerLog((prev) => [
+        ...prev,
+        {
+          questionText: question.text,
+          selectedOptionText: option?.text ?? "",
+          correctOptionText: correctOption?.text,
+          isCorrect,
+          explanation: question.explanation,
+        },
+      ]);
 
       setTimeout(() => {
         // Perdeu todas as vidas
@@ -133,6 +159,14 @@ export default function QuizEngine({ quiz }: QuizEngineProps) {
       }
       setProfileScores(newScores);
 
+      setAnswerLog((prev) => [
+        ...prev,
+        {
+          questionText: question.text,
+          selectedOptionText: option?.text ?? "",
+        },
+      ]);
+
       setTimeout(() => {
         if (currentQuestion < questions.length - 1) {
           setCurrentQuestion((prev) => prev + 1);
@@ -152,30 +186,26 @@ export default function QuizEngine({ quiz }: QuizEngineProps) {
   // Tela de Game Over com oferta de vida extra
   if (showExtraLifeOffer) {
     return (
-      <div className="max-w-lg mx-auto text-center animate-slide-up">
-        <div className="bg-bg-card rounded-2xl border border-border p-8 shadow-lg">
-          <span className="text-6xl block mb-4">💀</span>
-          <h2 className="text-2xl font-extrabold text-text mb-2">
-            Você perdeu!
-          </h2>
-          <p className="text-text-light mb-2">
-            Acertou <span className="font-bold text-primary">{score}</span> de{" "}
+      <div className="mx-auto max-w-lg animate-slide-up text-center">
+        <div className="rounded-3xl border border-black/5 bg-surface-v2 p-8 shadow-lg">
+          <HeartCrack className="mx-auto mb-4 h-14 w-14 text-text-secondary" strokeWidth={1.5} aria-hidden="true" />
+          <h2 className="text-h2 font-extrabold text-ink mb-2">Você perdeu!</h2>
+          <p className="text-text-secondary mb-1">
+            Acertou <span className="font-bold text-brand-dark">{score}</span> de{" "}
             {currentQuestion + 1} perguntas
           </p>
-          <p className="text-text-light mb-6">
-            Suas 3 vidas acabaram...
-          </p>
+          <p className="text-text-secondary mb-6">Suas 3 vidas acabaram.</p>
 
           {/* Oferta de segunda chance */}
-          <div className="bg-secondary/10 border-2 border-secondary rounded-xl p-5 mb-6">
-            <span className="text-3xl block mb-2">🔋</span>
-            <h3 className="font-bold text-text mb-1">Segunda chance!</h3>
-            <p className="text-sm text-text-light mb-3">
+          <div className="mb-6 rounded-2xl border-2 border-accent-entertainment bg-accent-entertainment/10 p-5">
+            <BatteryCharging className="mx-auto mb-2 h-8 w-8 text-ink" strokeWidth={1.75} aria-hidden="true" />
+            <h3 className="font-bold text-ink mb-1">Segunda chance!</h3>
+            <p className="text-small text-text-secondary mb-3">
               Você pode ganhar +1 vida e continuar de onde parou.
             </p>
             <button
               onClick={handleExtraLife}
-              className="w-full py-3 bg-secondary text-white font-bold rounded-xl hover:bg-secondary-light transition-colors"
+              className="w-full rounded-xl bg-ink py-3 font-bold text-white transition-colors hover:bg-ink/85"
             >
               Continuar jogando
             </button>
@@ -183,16 +213,20 @@ export default function QuizEngine({ quiz }: QuizEngineProps) {
 
           <div className="flex flex-col gap-3">
             <button
-              onClick={() => setResult(calculateTriviaResult(score, currentQuestion + 1))}
-              className="w-full py-3 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors"
+              onClick={() => {
+                setShowExtraLifeOffer(false);
+                setResult(calculateTriviaResult(score, currentQuestion + 1));
+              }}
+              className="w-full rounded-xl bg-brand-dark py-3 font-semibold text-white transition-[filter] hover:brightness-90"
             >
               Ver meu resultado
             </button>
             <button
               onClick={handleRestart}
-              className="text-sm text-primary hover:underline font-medium"
+              className="inline-flex items-center justify-center gap-1.5 text-small font-medium text-brand-dark hover:underline"
             >
-              🔄 Tentar novamente (do início)
+              <RotateCcw className="h-4 w-4" aria-hidden="true" />
+              Tentar novamente (do início)
             </button>
           </div>
         </div>
@@ -202,54 +236,66 @@ export default function QuizEngine({ quiz }: QuizEngineProps) {
 
   if (result) {
     return (
-      <QuizResultView quiz={quiz} result={result} onRestart={handleRestart} />
+      <QuizResultView
+        quiz={quiz}
+        result={result}
+        onRestart={handleRestart}
+        answerLog={answerLog}
+      />
     );
   }
 
   return (
-    <div className="max-w-2xl mx-auto">
+    <div className="mx-auto max-w-2xl">
+      {/* Voltar */}
+      <div className="mb-4">
+        <Link
+          href="/"
+          className="inline-flex items-center gap-1 text-small font-medium text-text-secondary hover:text-brand-dark"
+        >
+          <ChevronLeft className="h-4 w-4" aria-hidden="true" />
+          Voltar
+        </Link>
+      </div>
+
       {/* Progress bar + Lives */}
       <div className="mb-6">
-        <div className="flex items-center justify-between text-sm text-text-light mb-2">
+        <div className="mb-2 flex items-center justify-between text-small text-text-secondary">
           <span>
             Pergunta {currentQuestion + 1} de {questions.length}
           </span>
           <div className="flex items-center gap-3">
             {isTrivia && (
-              <span className="flex items-center gap-1">
+              <span className="flex items-center gap-1" aria-label={`${lives} de ${maxLives} vidas restantes`}>
                 {Array.from({ length: maxLives }).map((_, i) => (
-                  <span
+                  <Heart
                     key={i}
-                    className={`text-lg transition-all duration-300 ${
-                      i < lives ? "scale-100 opacity-100" : "scale-75 opacity-30 grayscale"
+                    className={`h-4 w-4 transition-all duration-300 ${
+                      i < lives ? "fill-brand-bright text-brand-bright" : "text-text-secondary/30"
                     }`}
-                  >
-                    ❤️
-                  </span>
+                    aria-hidden="true"
+                  />
                 ))}
               </span>
             )}
             {isTrivia && (
-              <span className="font-medium text-primary">
+              <span className="font-medium text-brand-dark">
                 {score} acerto{score !== 1 ? "s" : ""}
               </span>
             )}
           </div>
         </div>
-        <div className="h-2.5 bg-border rounded-full overflow-hidden">
+        <div className="h-1.5 overflow-hidden rounded-full bg-black/10">
           <div
-            className="h-full rounded-full transition-all duration-500 ease-out"
-            style={{
-              width: `${progress}%`,
-              background: `linear-gradient(90deg, ${quiz.color}, ${quiz.color}cc)`,
-            }}
+            className="h-full rounded-full bg-brand-bright transition-all duration-500 ease-out"
+            style={{ width: `${progress}%` }}
           />
         </div>
       </div>
 
       {/* Question */}
       <div className="animate-fade-in" key={currentQuestion}>
-        <h2 className="text-xl sm:text-2xl font-bold text-text mb-6 text-center leading-snug">
+        <h2 className="mb-6 text-center text-h2 font-bold leading-snug text-ink">
           {question.text}
         </h2>
 
@@ -258,18 +304,18 @@ export default function QuizEngine({ quiz }: QuizEngineProps) {
           {question.options.map((option, index) => {
             const letters = ["A", "B", "C", "D", "E", "F"];
             let optionStyle =
-              "bg-bg-card border-border hover:border-primary/50 hover:shadow-md cursor-pointer";
+              "border-black/10 bg-surface-v2 hover:border-brand-bright/60 hover:shadow-md cursor-pointer";
 
             if (showFeedback && isTrivia) {
               if (option.isCorrect) {
-                optionStyle = "bg-success/10 border-success";
+                optionStyle = "bg-brand-soft border-brand-bright";
               } else if (option.id === selectedOption && !option.isCorrect) {
-                optionStyle = "bg-error/10 border-error shake";
+                optionStyle = "bg-red-50 border-red-400 shake";
               } else {
-                optionStyle = "bg-bg-card border-border opacity-40";
+                optionStyle = "border-black/10 bg-surface-v2 opacity-40";
               }
             } else if (selectedOption === option.id && !isTrivia) {
-              optionStyle = "border-primary bg-primary/10 shadow-md";
+              optionStyle = "border-brand-dark bg-brand-soft shadow-md";
             }
 
             return (
@@ -277,26 +323,26 @@ export default function QuizEngine({ quiz }: QuizEngineProps) {
                 key={option.id}
                 onClick={() => handleSelect(option.id)}
                 disabled={showFeedback}
-                className={`w-full text-left p-4 rounded-xl border-2 transition-all duration-200 ${optionStyle}`}
+                className={`w-full rounded-xl border-2 p-4 text-left transition-all duration-200 ${optionStyle}`}
               >
                 <div className="flex items-center gap-3">
                   <span
-                    className="flex-shrink-0 w-9 h-9 rounded-full flex items-center justify-center text-sm font-bold"
+                    className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full text-small font-bold"
                     style={{
                       backgroundColor: `${quiz.color}15`,
-                      color: quiz.color,
+                      color: safeColor,
                     }}
                   >
                     {letters[index]}
                   </span>
-                  <span className="font-medium text-text">{option.text}</span>
+                  <span className="font-medium text-ink">{option.text}</span>
                   {showFeedback && option.isCorrect && (
-                    <span className="ml-auto text-success text-xl">✓</span>
+                    <CheckCircle2 className="ml-auto h-5 w-5 flex-shrink-0 text-brand-dark" aria-label="Resposta correta" />
                   )}
                   {showFeedback &&
                     option.id === selectedOption &&
                     !option.isCorrect && (
-                      <span className="ml-auto text-error text-xl">✗</span>
+                      <XCircle className="ml-auto h-5 w-5 flex-shrink-0 text-red-500" aria-label="Resposta incorreta" />
                     )}
                 </div>
               </button>
@@ -306,10 +352,13 @@ export default function QuizEngine({ quiz }: QuizEngineProps) {
 
         {/* Explanation */}
         {showFeedback && question.explanation && (
-          <div className="mt-4 p-4 bg-primary/5 border border-primary/20 rounded-xl animate-fade-in">
-            <p className="text-sm text-text-light">
-              <span className="font-semibold text-primary">💡 Sabia?</span>{" "}
-              {question.explanation}
+          <div className="mt-4 animate-fade-in rounded-xl border border-brand-bright/25 bg-brand-soft/40 p-4">
+            <p className="flex gap-2 text-small text-text-secondary">
+              <Lightbulb className="h-4 w-4 flex-shrink-0 text-brand-dark" aria-hidden="true" />
+              <span>
+                <span className="font-semibold text-brand-dark">Sabia?</span>{" "}
+                {question.explanation}
+              </span>
             </p>
           </div>
         )}

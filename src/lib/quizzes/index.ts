@@ -82,3 +82,40 @@ export function getQuizzesByCategory(category: string): Quiz[] {
 export function getFeaturedQuizzes(): Quiz[] {
   return allQuizzes.filter((q) => q.featured);
 }
+
+/**
+ * Escolha determinística do "Desafio do Dia" — roda entre os quizzes em
+ * destaque com base no dia do ano, então o mesmo dia sempre mostra o
+ * mesmo quiz (estável para build estático) e o destaque muda diariamente.
+ */
+export function getDailyChallenge(referenceDate: Date = new Date()): Quiz {
+  const featured = getFeaturedQuizzes();
+  const pool = featured.length > 0 ? featured : allQuizzes;
+  const start = Date.UTC(referenceDate.getUTCFullYear(), 0, 0);
+  const diff = Date.UTC(
+    referenceDate.getUTCFullYear(),
+    referenceDate.getUTCMonth(),
+    referenceDate.getUTCDate()
+  ) - start;
+  const dayOfYear = Math.floor(diff / 86_400_000);
+  return pool[dayOfYear % pool.length];
+}
+
+/** Quizzes relacionados: prioriza a mesma categoria, completa com outras. */
+export function getRelatedQuizzes(quiz: Quiz, limit = 3): Quiz[] {
+  const sameCategory = allQuizzes.filter(
+    (q) => q.category === quiz.category && q.slug !== quiz.slug
+  );
+  if (sameCategory.length >= limit) return sameCategory.slice(0, limit);
+  const others = allQuizzes.filter(
+    (q) => q.category !== quiz.category && q.slug !== quiz.slug
+  );
+  return [...sameCategory, ...others].slice(0, limit);
+}
+
+/** Próximo quiz na lista principal, usado para o CTA "próximo desafio". */
+export function getNextQuiz(quiz: Quiz): Quiz | undefined {
+  const idx = allQuizzes.findIndex((q) => q.slug === quiz.slug);
+  if (idx === -1) return undefined;
+  return allQuizzes[(idx + 1) % allQuizzes.length];
+}

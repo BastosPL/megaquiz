@@ -1,8 +1,17 @@
+import type { ComponentType } from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
-import QuizCard from "@/components/QuizCard";
-import CategoryBadge from "@/components/CategoryBadge";
-import { allQuizzes, getFeaturedQuizzes } from "@/lib/quizzes";
+import { ArrowRight, CalendarDays, Flame, Users, Newspaper, Compass } from "lucide-react";
+import FeaturedQuizCard from "@/components/FeaturedQuizCard";
+import StandardQuizCard from "@/components/StandardQuizCard";
+import CompactQuizCard from "@/components/CompactQuizCard";
+import { CategoryIcon } from "@/lib/icons";
+import { accessibleForeground } from "@/lib/color";
+import {
+  allQuizzes,
+  getFeaturedQuizzes,
+  getDailyChallenge,
+} from "@/lib/quizzes";
 import { CATEGORIES } from "@/lib/types";
 import { allArticles } from "@/lib/articles";
 
@@ -14,97 +23,166 @@ export const metadata: Metadata = {
 
 export default function Home() {
   const featured = getFeaturedQuizzes();
+  const dailyChallenge = getDailyChallenge();
+
+  const emAlta = featured
+    .filter((q) => q.slug !== dailyChallenge.slug)
+    .slice(0, 3);
+
+  const escolhasDaEquipe = featured
+    .filter(
+      (q) => q.slug !== dailyChallenge.slug && !emAlta.some((e) => e.slug === q.slug)
+    )
+    .slice(0, 3);
+
+  const jaExibidos = new Set([
+    dailyChallenge.slug,
+    ...emAlta.map((q) => q.slug),
+    ...escolhasDaEquipe.map((q) => q.slug),
+  ]);
+  const continueExplorando = allQuizzes
+    .filter((q) => !jaExibidos.has(q.slug))
+    .slice(0, 6);
 
   return (
-    <div className="max-w-5xl mx-auto px-4 py-8">
-      {/* Hero */}
-      <section className="text-center mb-10">
-        <h1 className="text-3xl sm:text-4xl font-extrabold text-text mb-3">
-          🧩 Descubra, Desafie e{" "}
-          <span className="text-primary">Compartilhe!</span>
+    <div className="mx-auto max-w-5xl px-4 py-10 sm:py-14">
+      {/* 1. Hero — espaço negativo, CTA único, sem grade de cards */}
+      <section className="mx-auto max-w-2xl py-10 text-center sm:py-16">
+        <h1 className="text-display font-extrabold text-ink">
+          Descubra, desafie e{" "}
+          <span className="text-brand-dark">compartilhe</span>
         </h1>
-        <p className="text-text-light text-lg max-w-xl mx-auto mb-4">
+        <p className="mx-auto mt-5 max-w-xl text-body-lg text-text-secondary">
           Quizzes de trivia e personalidade em português. Teste seus
-          conhecimentos, descubra seu perfil e desafie seus amigos!
+          conhecimentos, descubra seu perfil e desafie seus amigos.
         </p>
-        <p className="text-text-light text-sm max-w-2xl mx-auto">
-          Mais de 30 quizzes gratuitos em 6 categorias: Copa do Mundo 2026,
-          personalidade, séries e filmes, conhecimentos gerais, esportes e
-          carreira. Perguntas originais com explicações e fontes — jogue,
-          aprenda e compartilhe com seus amigos.
-        </p>
+        <Link
+          href={`/quiz/${dailyChallenge.slug}`}
+          className="mt-8 inline-flex items-center gap-2 rounded-full bg-brand-dark px-7 py-3.5 text-body-lg font-semibold text-white transition-[filter] hover:brightness-90"
+        >
+          Jogar o desafio de hoje
+          <ArrowRight className="h-5 w-5" aria-hidden="true" />
+        </Link>
       </section>
 
-      {/* Categorias */}
-      <section className="mb-10">
-        <div className="flex items-center justify-between mb-4">
-          <h2 className="text-lg font-bold text-text">Categorias</h2>
-        </div>
-        <div className="flex gap-3 overflow-x-auto pb-2 scrollbar-hide">
+      {/* 2. Desafio do Dia */}
+      <section className="mt-6 mb-16">
+        <SectionHeading icon={CalendarDays} title="Desafio do Dia" />
+        <FeaturedQuizCard
+          quiz={dailyChallenge}
+          eyebrow="Desafio do Dia"
+          eyebrowIcon={CalendarDays}
+        />
+      </section>
+
+      {/* 3. Em Alta */}
+      {emAlta.length > 0 && (
+        <section className="mb-16">
+          <SectionHeading icon={Flame} title="Em Alta" />
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
+            {emAlta.map((quiz) => (
+              <StandardQuizCard key={quiz.id} quiz={quiz} />
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* 4. Explore por Assunto */}
+      <section className="mb-16">
+        <SectionHeading icon={Compass} title="Explore por Assunto" />
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
           {CATEGORIES.map((cat) => (
-            <CategoryBadge key={cat.id} category={cat} />
+            <Link
+              key={cat.id}
+              href={`/categoria/${cat.id}`}
+              className="group flex flex-col items-center gap-2.5 rounded-2xl border border-black/5 bg-surface-v2 px-3 py-5 text-center shadow-sm transition-shadow hover:shadow-md"
+            >
+              <span
+                className="flex h-12 w-12 items-center justify-center rounded-full"
+                style={{ backgroundColor: `${cat.color}14` }}
+              >
+                <CategoryIcon category={cat.id} className="h-6 w-6" style={{ color: accessibleForeground(cat.color) }} strokeWidth={1.75} aria-hidden="true" />
+              </span>
+              <span className="text-small font-semibold text-ink group-hover:text-brand-dark transition-colors">
+                {cat.name}
+              </span>
+            </Link>
           ))}
         </div>
       </section>
 
-      {/* Quizzes em Destaque */}
-      <section className="mb-10">
-        <div className="flex items-center justify-between mb-4">
-          <h2 className="text-lg font-bold text-text">🔥 Em Destaque</h2>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {featured.map((quiz) => (
-            <QuizCard key={quiz.id} quiz={quiz} />
-          ))}
-        </div>
-      </section>
+      {/* 5. Escolhas da Equipe */}
+      {escolhasDaEquipe.length > 0 && (
+        <section className="mb-16">
+          <SectionHeading icon={Users} title="Escolhas da Equipe" />
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
+            {escolhasDaEquipe.map((quiz) => (
+              <StandardQuizCard key={quiz.id} quiz={quiz} />
+            ))}
+          </div>
+        </section>
+      )}
 
-      {/* Todos os Quizzes */}
-      <section className="mb-10">
-        <div className="flex items-center justify-between mb-4">
-          <h2 className="text-lg font-bold text-text">Todos os Quizzes</h2>
-          <span className="text-sm text-text-light">
-            {allQuizzes.length} quizzes
-          </span>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {allQuizzes.map((quiz) => (
-            <QuizCard key={quiz.id} quiz={quiz} />
-          ))}
-        </div>
-      </section>
-
-      {/* Blog / Artigos */}
-      <section>
-        <div className="flex items-center justify-between mb-4">
-          <h2 className="text-lg font-bold text-text">Artigos</h2>
-          <Link href="/blog" className="text-sm text-primary font-semibold hover:underline">
-            Ver todos →
+      {/* 6. Artigos */}
+      <section className="mb-16">
+        <div className="mb-5 flex items-center justify-between">
+          <SectionHeading icon={Newspaper} title="Artigos" noMargin />
+          <Link href="/blog" className="text-small font-semibold text-brand-dark hover:underline">
+            Ver todos
           </Link>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
           {allArticles.slice(0, 3).map((article) => (
             <Link
               key={article.slug}
               href={`/blog/${article.slug}`}
-              className="bg-bg-card rounded-2xl border border-border p-5 hover:border-primary hover:shadow-md transition-all"
+              className="rounded-2xl border border-black/5 bg-surface-v2 p-5 shadow-sm transition-shadow hover:shadow-md"
             >
-              <span className="text-xs font-semibold text-primary">
+              <span className="text-caption font-semibold uppercase tracking-wide text-brand-dark">
                 {article.category}
               </span>
-              <h3 className="text-sm font-bold text-text mt-2 mb-2 leading-snug">
+              <h3 className="mt-2 mb-2 text-small font-bold leading-snug text-ink">
                 {article.title}
               </h3>
-              <p className="text-xs text-text-light line-clamp-2">
+              <p className="text-caption text-text-secondary line-clamp-2">
                 {article.excerpt}
               </p>
-              <span className="text-xs text-text-light mt-2 block">
+              <span className="mt-2 block text-caption text-text-secondary">
                 {article.readTime} min de leitura
               </span>
             </Link>
           ))}
         </div>
       </section>
+
+      {/* 7. Continue Explorando */}
+      {continueExplorando.length > 0 && (
+        <section>
+          <SectionHeading icon={Compass} title="Continue Explorando" />
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+            {continueExplorando.map((quiz) => (
+              <CompactQuizCard key={quiz.id} quiz={quiz} />
+            ))}
+          </div>
+        </section>
+      )}
+    </div>
+  );
+}
+
+function SectionHeading({
+  icon: Icon,
+  title,
+  noMargin,
+}: {
+  icon: ComponentType<{ className?: string }>;
+  title: string;
+  noMargin?: boolean;
+}) {
+  return (
+    <div className={`flex items-center gap-2 ${noMargin ? "" : "mb-5"}`}>
+      <Icon className="h-5 w-5 text-brand-dark" aria-hidden="true" />
+      <h2 className="text-h2 font-bold text-ink">{title}</h2>
     </div>
   );
 }

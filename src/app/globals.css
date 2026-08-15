@@ -16,7 +16,51 @@
   --color-success: #22C55E;
   --color-error: #EF4444;
   --color-border: #E2E8F0;
-  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-sans: var(--font-plus-jakarta), system-ui, -apple-system, sans-serif;
+
+  /* ---------------------------------------------------------------
+   * Redesign V2 — Editorial Game Premium (Fresh Green)
+   * Tokens novos e aditivos. Os tokens antigos acima permanecem
+   * intactos para as telas ainda não migradas (fora do checkpoint).
+   * Ver docs/REDESIGN-SPEC-editorial-game-premium.md, secao 1 e 2.
+   * --------------------------------------------------------------- */
+  --color-brand-dark: #15803D;
+  --color-brand-bright: #22C55E;
+  --color-brand-soft: #DCFCE7;
+  --color-bg-v2: #F8FAF7;
+  --color-surface-v2: #FFFFFF;
+  --color-ink: #18181B;
+  --color-text-secondary: #5F6872;
+  --color-accent-entertainment: #FBBF24;
+
+  /* Escala tipografica (Display, H1, H2, H3, Body Large, Body, Small, Caption, Label) */
+  --text-display: 2.75rem;
+  --text-display--line-height: 1.08;
+  --text-display--font-weight: 800;
+  --text-h1: 2.25rem;
+  --text-h1--line-height: 1.15;
+  --text-h1--font-weight: 700;
+  --text-h2: 1.625rem;
+  --text-h2--line-height: 1.22;
+  --text-h2--font-weight: 700;
+  --text-h3: 1.25rem;
+  --text-h3--line-height: 1.3;
+  --text-h3--font-weight: 600;
+  --text-body-lg: 1.125rem;
+  --text-body-lg--line-height: 1.6;
+  --text-body-lg--font-weight: 400;
+  --text-body: 1rem;
+  --text-body--line-height: 1.6;
+  --text-body--font-weight: 400;
+  --text-small: 0.875rem;
+  --text-small--line-height: 1.5;
+  --text-small--font-weight: 400;
+  --text-caption: 0.75rem;
+  --text-caption--line-height: 1.4;
+  --text-caption--font-weight: 500;
+  --text-label: 0.8125rem;
+  --text-label--line-height: 1.3;
+  --text-label--font-weight: 600;
 }
 
 body {

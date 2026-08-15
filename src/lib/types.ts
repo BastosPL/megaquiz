@@ -46,6 +46,17 @@ export interface QuizResult {
   shareText: string;
 }
 
+/** Registro de uma resposta dada durante o quiz, usado na tela de resultado
+ *  para a seção "Revisar respostas" (SPEC secao 7). Aditivo — não afeta os
+ *  dados de nenhum dos 31 quizzes. */
+export interface QuizAnswerLogEntry {
+  questionText: string;
+  selectedOptionText: string;
+  correctOptionText?: string;
+  isCorrect?: boolean;
+  explanation?: string;
+}
+
 export interface ContentSource {
   label: string;
   url?: string;
