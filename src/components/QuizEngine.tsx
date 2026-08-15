@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback, useMemo } from "react";
+import { useState, useCallback, useEffect } from "react";
 import Link from "next/link";
 import {
   ChevronLeft,
@@ -33,15 +33,40 @@ export default function QuizEngine({ quiz }: QuizEngineProps) {
   const isTrivia = quiz.type === "trivia";
   const maxLives = isTrivia ? 3 : 0;
 
-  const shuffledQuestions = useMemo(
-    () =>
+  /**
+   * BUG CORRIGIDO (Fase 2): o embaralhamento usava Math.random() dentro de um
+   * useMemo executado tanto no SSR quanto na hidratacao do cliente — como as
+   * duas execucoes usam sementes diferentes, o HTML do servidor e a primeira
+   * renderizacao do cliente mostravam perguntas em ordens diferentes,
+   * causando um erro de hydration mismatch (confirmado no console do
+   * navegador) em todo quiz de trivia, toda vez que a pagina carrega. React
+   * descarta e reconstroi a arvore inteira quando isso acontece — custo de
+   * performance real, alem do erro. Pre-existente desde o commit 301fc5f
+   * (08/06/2026), muito antes do redesign.
+   *
+   * Correcao: a primeira renderizacao (servidor E cliente) usa a ordem
+   * original e deterministica de quiz.questions — identica nos dois lados,
+   * sem mismatch. O embaralhamento em si só acontece depois, num useEffect
+   * (client-only, roda depois da hidratacao), via setState normal — não é
+   * mais parte da hidratacao, então não gera o erro.
+   */
+  const [shuffledQuestions, setShuffledQuestions] = useState(quiz.questions);
+
+  useEffect(() => {
+    if (!isTrivia) return;
+    // Intencional: este é exatamente o padrão recomendado para conteúdo
+    // aleatório client-only sem quebrar a hidratação (ver comentário acima).
+    // Não há alternativa sem reintroduzir o mismatch: o valor tem que nascer
+    // determinístico (SSR-safe) e só virar aleatório depois de montado.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setShuffledQuestions(
       shuffleArray(quiz.questions).map((q) => ({
         ...q,
         options: shuffleArray(q.options),
-      })),
+      }))
+    );
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    []
-  );
+  }, []);
 
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
