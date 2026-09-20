@@ -125,11 +125,32 @@ export default async function QuizPage({ params }: Props) {
         <h3 className="text-h3 font-semibold text-ink mb-3">
           Perguntas deste quiz
         </h3>
-        <ol className="list-decimal list-inside space-y-2 text-text-secondary">
-          {quiz.questions.map((q) => (
-            <li key={q.id}>{q.text}</li>
-          ))}
-        </ol>
+        {quiz.type === "trivia" ? (
+          <ol className="list-decimal list-inside space-y-4 text-text-secondary">
+            {quiz.questions.map((q) => {
+              const correct = q.options.find((o) => o.isCorrect);
+              return (
+                <li key={q.id}>
+                  <span className="font-medium text-ink">{q.text}</span>
+                  {correct && (
+                    <p className="mt-1 ml-6 text-small">
+                      <strong className="text-ink">Resposta:</strong> {correct.text}
+                    </p>
+                  )}
+                  {q.explanation && (
+                    <p className="mt-0.5 ml-6 text-small">{q.explanation}</p>
+                  )}
+                </li>
+              );
+            })}
+          </ol>
+        ) : (
+          <ol className="list-decimal list-inside space-y-2 text-text-secondary">
+            {quiz.questions.map((q) => (
+              <li key={q.id}>{q.text}</li>
+            ))}
+          </ol>
+        )}
 
         {quiz.type === "personality" && quiz.profiles && (
           <>

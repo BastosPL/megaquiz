@@ -56,7 +56,7 @@ export default function CategoriasPage() {
                   {cat.name}
                 </h2>
                 <p className="mt-1.5 text-small text-text-secondary">
-                  {cat.description}
+                  {cat.longDescription}
                 </p>
               </div>
 

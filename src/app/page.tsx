@@ -56,6 +56,14 @@ export default function Home() {
           Quizzes de trivia e personalidade em português. Teste seus
           conhecimentos, descubra seu perfil e desafie seus amigos.
         </p>
+        <p className="mx-auto mt-4 max-w-xl text-small text-text-secondary">
+          O MegaQuiz reúne mais de 400 perguntas com explicações detalhadas, fontes
+          verificáveis e quizzes de personalidade com perfis aprofundados. Cada
+          resposta vem acompanhada de contexto educativo — porque aprender pode ser
+          tão divertido quanto competir. Criado pela equipe do Grupo Bastos em
+          Recife, o projeto segue uma política editorial transparente e cita suas
+          fontes em cada quiz.
+        </p>
         <Link
           href={`/quiz/${dailyChallenge.slug}`}
           className="mt-8 inline-flex items-center gap-2 rounded-full bg-brand-dark px-7 py-3.5 text-body-lg font-semibold text-white transition-[filter] hover:brightness-90"
