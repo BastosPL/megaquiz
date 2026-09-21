@@ -15,6 +15,21 @@ const nextConfig: NextConfig = {
         destination: "/quiz/desafio-conhecimentos-gerais-8-perguntas",
         permanent: true,
       },
+      {
+        source: "/quiz/quiz-futebol-mundial",
+        destination: "/quiz/quanto-voce-sabe-sobre-a-copa-2026",
+        permanent: true,
+      },
+      {
+        source: "/quiz/qual-profissao-ideal-pra-voce",
+        destination: "/quiz/descubra-seu-perfil-profissional",
+        permanent: true,
+      },
+      {
+        source: "/quiz/qual-jogador-voce-seria-na-copa-2026",
+        destination: "/quiz/qual-artilheiro-historico-voce-e",
+        permanent: true,
+      },
     ];
   },
 };

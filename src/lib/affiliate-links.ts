@@ -49,17 +49,7 @@ const SHOPEE_CROACIA: AffiliateLink = {
 };
 
 const affiliateMap: AffiliateMap = {
-  "qual-jogador-copa-2026": {
-    vini: SHOPEE_BRASIL,
-    neymar: SHOPEE_BRASIL,
-    endrick: SHOPEE_BRASIL,
-    messi: SHOPEE_ARGENTINA,
-    mbappe: SHOPEE_FRANCA,
-    cr7: SHOPEE_PORTUGAL,
-    haaland: SHOPEE_NORUEGA,
-    bellingham: SHOPEE_INGLATERRA,
-    modric: SHOPEE_CROACIA,
-  },
+
   "qual-artilheiro-historico": {
     pele: SHOPEE_BRASIL,
     romario: SHOPEE_BRASIL,

@@ -78,7 +78,7 @@ export const allArticles: Article[] = [
     category: "Esportes",
     date: "2026-06-18",
     readTime: 5,
-    relatedQuizSlug: "qual-jogador-voce-seria-na-copa-2026",
+    relatedQuizSlug: "qual-artilheiro-historico-voce-e",
     author: "Patrick Bastos",
     authorBio: "Diretor executivo, autor e empreendedor digital, Patrick Bastos atua na criação de projetos que unem conteúdo, tecnologia e experiência do usuário. No MegaQuiz, é responsável pela direção editorial e revisão dos conteúdos.",
     sources: [

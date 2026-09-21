@@ -12,11 +12,8 @@ import { seriesNetflix } from "./series-netflix";
 import { filmesClassicos } from "./filmes-classicos";
 import { historiaDoBrasil } from "./historia-do-brasil";
 import { qualPersonagemVoceSeria } from "./qual-personagem-voce-seria";
-import { qualProfissaoIdeal } from "./qual-profissao-ideal";
 import { geografiaDoBrasil } from "./geografia-do-brasil";
-import { futebolMundial } from "./futebol-mundial";
 import { curiosidadesCiencia } from "./curiosidades-ciencia";
-import { qualJogadorCopa2026 } from "./qual-jogador-copa-2026";
 import { bandeirasCopa2026 } from "./bandeiras-copa-2026";
 import { golsHistoricosCopa } from "./gols-historicos-copa";
 import { qualArtilheiroHistorico } from "./qual-artilheiro-historico";
@@ -34,7 +31,6 @@ import { verdadeOuMitoSaude } from "./verdade-ou-mito-saude";
 export const allQuizzes: Quiz[] = [
   // Copa do Mundo 2026
   copa2026Trivia,
-  qualJogadorCopa2026,
   bandeirasCopa2026,
   golsHistoricosCopa,
   qualArtilheiroHistorico,
@@ -47,7 +43,6 @@ export const allQuizzes: Quiz[] = [
   // Carreira
   perfilProfissionalDisc,
   areaTiIdeal,
-  qualProfissaoIdeal,
   // Series & Filmes
   seriesNetflix,
   filmesClassicos,
@@ -68,7 +63,6 @@ export const allQuizzes: Quiz[] = [
   verdadeOuMitoSaude,
   // Esportes
   timesBrasileiros,
-  futebolMundial,
 ];
 
 export function getQuizBySlug(slug: string): Quiz | undefined {
