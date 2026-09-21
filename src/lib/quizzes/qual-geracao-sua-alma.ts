@@ -14,8 +14,12 @@ export const qualGeracaoSuaAlma: Quiz = {
   featured: true,
   author: "Patrick Bastos",
   authorBio: "Diretor executivo, autor e empreendedor digital, Patrick Bastos atua na criação de projetos que unem conteúdo, tecnologia e experiência do usuário. No MegaQuiz, é responsável pela direção editorial e revisão dos conteúdos.",
-  lastReviewedAt: "2026-07-12",
-  introText: "Nem sempre a geração em que nascemos define nossos hábitos e valores. Responda sobre tecnologia, cultura e rotina para ver qual geração realmente representa você.",
+  sources: [
+    { label: "Pew Research Center — Generations and Age", url: "https://www.pewresearch.org/topic/generations-age/", organization: "Pew Research Center", accessedAt: "2026-09-20" },
+    { label: "Britannica — Generation", url: "https://www.britannica.com/topic/generation-society", organization: "Encyclopædia Britannica", accessedAt: "2026-09-20" },
+  ],
+  lastReviewedAt: "2026-09-20",
+  introText: "As gerações não são apenas faixas etárias — são molduras culturais que definem como as pessoas se relacionam com tecnologia, trabalho, consumo e autoridade. A teoria geracional, popularizada pelos historiadores William Strauss e Neil Howe em 1991, propõe que cada geração é moldada por eventos compartilhados que criam valores e comportamentos coletivos.\n\nOs Baby Boomers (1946-1964) cresceram no pós-guerra e construíram o conceito moderno de carreira corporativa. A Geração X (1965-1980) foi a primeira a crescer com televisão onipresente e desenvolveu um ceticismo saudável que virou marca registrada. Os Millennials (1981-1996) são a geração da internet, do 11 de setembro e da crise de 2008 — idealistas por formação, pragmáticos por necessidade. A Geração Z (1997-2012) não conhece um mundo sem smartphones e trata redes sociais como extensão da identidade. E a Geração Alpha (2013+) está crescendo com inteligência artificial, assistentes de voz e tablets antes da alfabetização.\n\nMas nem todo mundo se encaixa nos padrões da geração em que nasceu. Tem Boomer que entende TikTok melhor que muito Gen Z. Tem Millennial com valores de Geração X. E tem Gen Z que prefere vinil e cartas escritas à mão.\n\nEste quiz de personalidade usa 10 perguntas sobre tecnologia, cultura, rotina e valores para determinar qual geração realmente representa a sua alma — com perfis que explicam as referências culturais e os marcos históricos de cada uma.",
   profiles: [
     {
       id: "boomer",

@@ -19,7 +19,7 @@ export const capitaisDoMundo: Quiz = {
     { label: "United Nations — Member States", organization: "Nações Unidas", accessedAt: "2026-07-12" },
   ],
   lastReviewedAt: "2026-07-12",
-  introText: "Nem toda capital é a maior cidade do país, e algumas vão pegar você de surpresa. São 15 perguntas cobrindo todos os continentes.",
+  introText: "A capital de um país nem sempre é sua cidade mais famosa — e essa é a armadilha que pega a maioria das pessoas. A capital da Austrália não é Sydney (é Camberra). A do Canadá não é Toronto nem Vancouver (é Ottawa). A da Turquia não é Istambul (é Ancara). E a capital do Myanmar é Naypyidaw, uma cidade planejada em 2006 que a maioria dos brasileiros nunca ouviu falar.\n\nEssas escolhas não são aleatórias. Países mudam suas capitais por razões estratégicas: o Brasil transferiu a capital do Rio para Brasília em 1960 para ocupar o interior. A Nigéria trocou Lagos por Abuja em 1991 para fugir da superlotação costeira. O Cazaquistão moveu a capital de Almaty para Astana em 1997 por questões geopolíticas. Cada capital conta uma história sobre as prioridades de um país.\n\nEste quiz apresenta 15 perguntas sobre capitais de todos os continentes, com níveis variados de dificuldade. Algumas são diretas — Paris, Tóquio, Buenos Aires. Outras exigem conhecimento real de geografia política, especialmente na África e no Sudeste Asiático, regiões onde fronteiras e capitais mudaram significativamente nas últimas décadas.\n\nCada resposta vem com contexto geográfico e histórico, baseado em dados da CIA World Factbook e das Nações Unidas. Três vidas, 15 perguntas, e a certeza de que pelo menos uma capital vai surpreender você.",
   questions: [
     {
       id: "q1",

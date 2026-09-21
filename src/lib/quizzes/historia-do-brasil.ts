@@ -19,7 +19,7 @@ export const historiaDoBrasil: Quiz = {
     { label: "Britannica — History of Brazil", organization: "Encyclopædia Britannica", accessedAt: "2026-07-12" },
   ],
   lastReviewedAt: "2026-07-12",
-  introText: "Colonização, independência, escravidão, república, ditadura e redemocratização — perguntas que cobrem os eventos mais importantes da história brasileira.",
+  introText: "A história do Brasil é uma sequência de rupturas que nunca se completaram. A independência de 1822 foi proclamada por um príncipe português. A abolição de 1888 libertou os escravizados sem nenhum plano de integração social. A República de 1889 foi um golpe militar que a maioria da população nem entendeu. E a redemocratização de 1985 veio por um acordo entre militares e civis, não por uma revolução popular.\n\nEssas contradições explicam muito do Brasil contemporâneo. O país que foi o último das Américas a abolir a escravidão — foram 388 anos de trabalho forçado — ainda carrega as marcas desse período em indicadores de renda, educação e moradia. A Era Vargas (1930-1945 e 1951-1954) criou a CLT e a Petrobras, mas também censurou a imprensa e prendeu opositores. A ditadura militar (1964-1985) construiu Itaipu e a Transamazônica, mas torturou e desapareceu com centenas de cidadãos.\n\nEste quiz não é uma prova de vestibular — é um teste de quanto você realmente compreende sobre os eventos que moldaram o país onde você vive. São 15 perguntas que cobrem do período colonial à Constituição de 1988, com explicações que contextualizam cada resposta usando fontes do Portal do Governo Federal e da Encyclopædia Britannica.\n\nTrês vidas. A história é complexa, mas as perguntas são diretas.",
   questions: [
     {
       id: "q1",

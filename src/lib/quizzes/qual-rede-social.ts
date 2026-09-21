@@ -14,8 +14,12 @@ export const qualRedeSocial: Quiz = {
   featured: true,
   author: "Patrick Bastos",
   authorBio: "Diretor executivo, autor e empreendedor digital, Patrick Bastos atua na criação de projetos que unem conteúdo, tecnologia e experiência do usuário. No MegaQuiz, é responsável pela direção editorial e revisão dos conteúdos.",
-  lastReviewedAt: "2026-07-12",
-  introText: "TikTok premia criatividade, Instagram valoriza estética, X vive de opinião rápida e Reddit recompensa profundidade. Cada plataforma tem uma cultura própria — qual delas combina com o seu jeito de estar online?",
+  sources: [
+    { label: "DataReportal — Digital 2026: Brazil", url: "https://datareportal.com/reports/digital-2026-brazil", organization: "We Are Social / Meltwater", accessedAt: "2026-09-20" },
+    { label: "Pew Research Center — Social Media Use", url: "https://www.pewresearch.org/internet/fact-sheet/social-media/", organization: "Pew Research Center", accessedAt: "2026-09-20" },
+  ],
+  lastReviewedAt: "2026-09-20",
+  introText: "Cada rede social desenvolveu uma cultura própria que atrai — e molda — tipos específicos de comportamento. Segundo o relatório Digital 2026 da We Are Social, o brasileiro passa em média 3 horas e 37 minutos por dia em redes sociais, mas a forma como esse tempo é distribuído varia radicalmente de pessoa para pessoa.\n\nO TikTok premia autenticidade e criatividade rápida — vídeos de 15 segundos podem alcançar milhões de views sem nenhum seguidor, porque o algoritmo prioriza conteúdo sobre conexão social. O Instagram evoluiu de um app de fotos para uma plataforma de estilo de vida onde estética, curadoria e narrativa visual são moedas de troca. O X (antigo Twitter) é onde opiniões são formadas e destruídas em tempo real — uma arena de debate perpétuo onde o texto curto reina. E o Reddit funciona como uma coleção de fóruns temáticos onde profundidade de argumento e evidência vencem popularidade social.\n\nO que torna essas plataformas diferentes não é apenas o formato do conteúdo — é o tipo de comportamento que cada uma recompensa. TikTok recompensa quem arrisca. Instagram recompensa quem cuida da aparência. X recompensa quem forma opinião. Reddit recompensa quem explica bem.\n\nEste quiz de personalidade usa 10 perguntas sobre como você consome conteúdo, se expressa e interage online para determinar qual plataforma mais combina com o seu perfil digital. Os resultados incluem dados de uso e características culturais de cada rede.",
   profiles: [
     {
       id: "tiktok",

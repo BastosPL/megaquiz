@@ -19,7 +19,7 @@ export const mitologiaGrega: Quiz = {
     { label: "Britannica — Greek Mythology", organization: "Encyclopædia Britannica", accessedAt: "2026-07-12" },
   ],
   lastReviewedAt: "2026-07-12",
-  introText: "Deuses do Olimpo, heróis mortais, criaturas impossíveis e guerras épicas — a mitologia grega é rica em histórias e este quiz cobre as principais.",
+  introText: "A mitologia grega sobreviveu 3.000 anos porque nunca foi apenas sobre deuses e monstros — é um sistema completo de explicações para tudo que os gregos antigos não conseguiam entender: por que o sol se move, por que as estações mudam, por que as pessoas se apaixonam por quem não deviam e por que o poder absoluto corrompe até os imortais.\n\nZeus, o rei dos deuses, era ao mesmo tempo o guardião da justiça cósmica e um marido compulsivamente infiel — e praticamente metade dos mitos gregos existe porque Hera descobriu mais um caso dele. Atenas recebeu seu nome porque Atena ofereceu uma oliveira à cidade enquanto Poseidon ofereceu uma fonte de água salgada — e os cidadãos, pragmaticamente, escolheram a árvore. Prometeu roubou o fogo dos deuses para dar aos humanos e foi condenado a ter o fígado devorado por uma águia todos os dias, para sempre — o fígado se regenerava à noite.\n\nEssas histórias influenciaram profundamente o vocabulário moderno. Narcisismo vem de Narciso. Pânico vem de Pã. Eco vem da ninfa Eco. Atlas carrega o mundo nos ombros — ou, mais precisamente, carrega o céu, que é o que o mito original diz.\n\nEste quiz reúne 15 perguntas sobre deuses, heróis, criaturas e eventos da mitologia grega, com fontes do Theoi Project e da Encyclopædia Britannica. Três vidas e três mil anos de histórias para testar.",
   questions: [
     {
       id: "q1",

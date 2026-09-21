@@ -19,7 +19,7 @@ export const geografiaDoBrasil: Quiz = {
     { label: "ICMBio — Biomas brasileiros", organization: "ICMBio/MMA", accessedAt: "2026-07-12" },
   ],
   lastReviewedAt: "2026-07-12",
-  introText: "O Brasil tem 26 estados, 6 biomas e o maior rio do mundo em volume — este quiz explora rios, relevo, clima e divisões regionais do país.",
+  introText: "O Brasil ocupa 47% da América do Sul e tem uma diversidade geográfica que a maioria dos brasileiros desconhece. O país possui 6 biomas distintos — Amazônia, Cerrado, Mata Atlântica, Caatinga, Pampa e Pantanal — cada um com ecossistemas, climas e desafios ambientais completamente diferentes. O Cerrado, por exemplo, é a savana mais biodiversa do planeta, com mais de 11 mil espécies de plantas nativas, mas perdeu 50% da sua cobertura original para a agropecuária.\n\nEm termos hidrográficos, o Rio Amazonas é o maior do mundo em volume de água — despejando no Atlântico cerca de 209 mil metros cúbicos por segundo, mais do que os outros seis maiores rios do mundo combinados. Mas o Brasil também tem o Aquífero Guarani, uma das maiores reservas subterrâneas de água doce do planeta, que se estende por baixo de quatro países.\n\nA divisão em 26 estados e um Distrito Federal cria contrastes impressionantes: Sergipe inteiro cabe dentro do município de Altamira, no Pará. O Acre tem menos habitantes que muitos bairros de São Paulo. E Roraima é o estado menos populoso, com 631 mil habitantes em uma área maior que a Grécia.\n\nEste quiz reúne 15 perguntas sobre rios, biomas, relevo, estados e regiões do Brasil, com dados do IBGE e do ICMBio. Três vidas e a geografia mais diversa do continente.",
   questions: [
     {
       id: "q1",

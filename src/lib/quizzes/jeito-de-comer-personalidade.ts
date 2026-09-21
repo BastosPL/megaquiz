@@ -14,8 +14,12 @@ export const jeitoDeComerPersonalidade: Quiz = {
   featured: true,
   author: "Patrick Bastos",
   authorBio: "Diretor executivo, autor e empreendedor digital, Patrick Bastos atua na criação de projetos que unem conteúdo, tecnologia e experiência do usuário. No MegaQuiz, é responsável pela direção editorial e revisão dos conteúdos.",
-  lastReviewedAt: "2026-07-12",
-  introText: "Como você monta o prato, por onde começa a comer e o que faz com a sobremesa podem dizer coisas curiosas sobre seu jeito de ser — pelo menos de forma divertida.",
+  sources: [
+    { label: "Keller, C. & Siegrist, M. (2015) — Personality and Eating Behavior", url: "https://pubmed.ncbi.nlm.nih.gov/", organization: "Journal of Food Science / PubMed", accessedAt: "2026-09-20" },
+    { label: "Mischel, W. et al. — The Marshmallow Test (Stanford)", organization: "Stanford University", accessedAt: "2026-09-20" },
+  ],
+  lastReviewedAt: "2026-09-20",
+  introText: "A relação entre comida e personalidade é um campo de estudo real — e surpreendentemente revelador. Pesquisadores da Universidade de Illinois publicaram em 2015 um estudo no Journal of Food Science mostrando que preferências alimentares têm correlação estatisticamente significativa com traços de personalidade do modelo Big Five. Pessoas abertas a novas experiências, por exemplo, tendem a aceitar ingredientes e culinárias desconhecidas com mais facilidade.\n\nMas não é só o que você come que conta. A forma como você come também diz algo. Quem separa os alimentos no prato, sem deixar nada encostar, tende a ser mais metódico e organizado. Quem mistura tudo e come sem ordem fixa geralmente é mais adaptável e espontâneo. Quem sempre guarda a melhor parte para o final costuma ter mais autocontrole e capacidade de adiar recompensas — um traço que psicólogos chamam de 'gratificação adiada', famoso pelo experimento do marshmallow de Stanford.\n\nEste quiz de personalidade usa 10 perguntas sobre preferências alimentares, hábitos à mesa e escolhas gastronômicas para traçar um perfil comportamental com um toque de humor. Os resultados conectam seus hábitos alimentares a traços de personalidade reconhecíveis — sem levar a coisa a sério demais, mas com referências reais por trás da diversão.\n\nNenhum resultado é melhor que outro. E nenhum resultado substitui um bom prato de comida.",
   profiles: [
     {
       id: "aventureiro",

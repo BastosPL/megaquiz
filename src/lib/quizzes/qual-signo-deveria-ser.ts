@@ -14,8 +14,12 @@ export const qualSignoDeveriaSer: Quiz = {
   featured: true,
   author: "Patrick Bastos",
   authorBio: "Diretor executivo, autor e empreendedor digital, Patrick Bastos atua na criação de projetos que unem conteúdo, tecnologia e experiência do usuário. No MegaQuiz, é responsável pela direção editorial e revisão dos conteúdos.",
-  lastReviewedAt: "2026-07-12",
-  introText: "Nem todo mundo se reconhece no signo em que nasceu. Fogo, Terra, Ar ou Água — responda sobre temperamento, rotina e valores para ver se o zodíaco erraria ou acertaria no seu caso.",
+  sources: [
+    { label: "IAU — The Constellations", url: "https://www.iau.org/public/themes/constellations/", organization: "International Astronomical Union", accessedAt: "2026-09-20" },
+    { label: "Britannica — Zodiac", url: "https://www.britannica.com/topic/zodiac", organization: "Encyclopædia Britannica", accessedAt: "2026-09-20" },
+  ],
+  lastReviewedAt: "2026-09-20",
+  introText: "O zodíaco divide o céu em 12 faixas de 30 graus cada, baseadas na posição aparente do Sol ao longo do ano. É um sistema com mais de 2.000 anos de história — os babilônios já mapeavam constelações associadas a traços de personalidade por volta de 500 a.C., e os gregos refinaram o sistema adicionando os quatro elementos: Fogo (Áries, Leão, Sagitário), Terra (Touro, Virgem, Capricórnio), Ar (Gêmeos, Libra, Aquário) e Água (Câncer, Escorpião, Peixes).\n\nDo ponto de vista astronômico, os signos não têm relação comprovada com personalidade — a União Astronômica Internacional (IAU) classifica a astrologia como pseudociência. Mas do ponto de vista cultural, o zodíaco é um dos sistemas de classificação de personalidade mais populares do mundo: pesquisas indicam que mais de 30% dos adultos nos Estados Unidos e Europa consultam horóscopos regularmente, e no Brasil o número é ainda maior.\n\nO que torna o zodíaco interessante como exercício é menos a previsão e mais a reflexão. Muitas pessoas não se reconhecem no signo em que nasceram — e quando leem a descrição de outro signo, sentem que aquele sim captura quem elas realmente são.\n\nEste quiz de personalidade usa 10 perguntas sobre temperamento, rotina, valores e forma de lidar com conflitos para determinar qual signo do zodíaco mais se alinha com o seu perfil comportamental — independente de quando você nasceu. É autoconhecimento com um toque de diversão astronômica.",
   profiles: [
     {
       id: "aries",

@@ -19,7 +19,7 @@ export const seriesNetflix: Quiz = {
     { label: "IMDb — Most Popular TV Shows", url: "https://www.imdb.com/chart/tvmeter/", organization: "IMDb", accessedAt: "2026-07-12" },
   ],
   lastReviewedAt: "2026-07-12",
-  introText: "Stranger Things, Round 6, La Casa de Papel, The Witcher — se você maratonou as séries mais populares da Netflix, essas perguntas vão ser moleza. Ou não.",
+  introText: "A Netflix transformou a forma como o mundo consome televisão. Antes dela, séries tinham uma temporada por ano, um episódio por semana e dependiam de horário nobre. Depois dela, temporadas inteiras caem de uma vez, maratonas de 10 horas viram programa de fim de semana e produções coreanas, espanholas e brasileiras competem de igual para igual com Hollywood.\n\nAlgumas séries originais Netflix se tornaram fenômenos culturais genuínos. Stranger Things popularizou a nostalgia dos anos 80 para uma geração que não viveu aquela década. La Casa de Papel fez uma série espanhola com atores desconhecidos virar a produção não anglófona mais assistida da plataforma. Round 6 provou que conteúdo em coreano pode quebrar todos os recordes de audiência global. E The Witcher demonstrou que adaptações de jogos e livros de fantasia podem funcionar no streaming quando feitas com respeito ao material original.\n\nEste quiz cobre 15 perguntas sobre as séries mais populares da Netflix — elencos, tramas, recordes de audiência, curiosidades de produção e detalhes que só quem realmente assistiu (e não apenas viu o resumo no YouTube) consegue acertar. As fontes incluem dados oficiais da Netflix e do IMDb.\n\nTrês vidas. Se você acha que maratonou o suficiente para passar, agora é a hora de provar.",
   questions: [
     {
       id: "q1",

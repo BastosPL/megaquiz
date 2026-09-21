@@ -19,7 +19,7 @@ export const qiTeste: Quiz = {
     { label: "Britannica — General Knowledge", organization: "Encyclopædia Britannica", accessedAt: "2026-07-12" },
   ],
   lastReviewedAt: "2026-07-12",
-  introText: "Dez perguntas que misturam lógica, cultura geral, ciência e atualidades — um desafio curto, mas que pega muita gente de surpresa.",
+  introText: "Existe uma diferença entre saber muito e saber de tudo um pouco. Este quiz testa a segunda habilidade — a capacidade de transitar entre assuntos completamente diferentes e acertar mais do que errar em cada um deles.\n\nSão 10 perguntas que pulam de geografia para ciência, de história para lógica, de atualidades para cultura pop, sem aviso prévio. O formato é propositalmente curto: você não tem 50 perguntas para se recuperar de um erro. Cada acerto conta, cada erro pesa, e o desafio é manter a consistência quando o assunto muda a cada 30 segundos.\n\nQuizzes de conhecimentos gerais existem desde o rádio AM dos anos 40, quando programas como 'Quiz Kids' nos Estados Unidos e 'O Céu é o Limite' no Brasil transformavam cultura geral em entretenimento de massa. A lógica por trás do formato é simples: perguntas de área única testam profundidade; perguntas variadas testam amplitude — e a amplitude é o que geralmente separa quem lê de quem apenas assiste.\n\nCada resposta vem com uma explicação que vai além do 'certo ou errado', contextualizando o fato e conectando-o a algo maior. As fontes incluem a Encyclopædia Britannica.\n\nTrês vidas. Dez perguntas. A meta está no título: 8 acertos. Parece fácil até você começar.",
   disclaimer: "Este quiz é um desafio de conhecimentos gerais para diversão. Não mede QI, inteligência ou capacidade cognitiva.",
   questions: [
     {

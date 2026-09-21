@@ -19,7 +19,7 @@ export const filmesClassicos: Quiz = {
     { label: "Academy Awards Database", organization: "Academy of Motion Picture Arts and Sciences", accessedAt: "2026-07-12" },
   ],
   lastReviewedAt: "2026-07-12",
-  introText: "Cenas icônicas, diretores lendários e frases que marcaram gerações — este quiz cobre os grandes clássicos do cinema, dos anos 70 até os anos 2000.",
+  introText: "Existe uma diferença entre assistir um filme e conhecer cinema. Todo mundo viu Titanic — mas quantas pessoas sabem que James Cameron mergulhou 33 vezes nos destroços reais do navio antes de filmar? Que o orçamento de 200 milhões de dólares em 1997 fez a Fox quase cancelar a produção? Ou que a cena do Jack desenhando Rose foi filmada com a câmera invertida porque Leonardo DiCaprio é canhoto?\n\nOs grandes clássicos de Hollywood carregam histórias tão interessantes nos bastidores quanto na tela. A trilogia Matrix introduziu o 'bullet time' — uma técnica de câmera que exigiu 120 câmeras fotográficas disparando em sequência, revolucionando os efeitos visuais para sempre. O Poderoso Chefão quase não foi dirigido por Coppola, que só conseguiu o cargo porque todos os outros diretores recusaram. E Pulp Fiction, de Tarantino, foi feito com um orçamento de 8 milhões e arrecadou 213 — provando que roteiro importa mais que explosões.\n\nEste quiz cobre 15 perguntas sobre filmes que marcaram as décadas de 70, 80, 90 e 2000 — diretores, atores, premiações do Oscar, bilheterias recordistas e detalhes de produção que só cinéfilos dedicados conhecem. As fontes incluem IMDb e registros da Academy of Motion Picture Arts and Sciences.\n\nTrês vidas. O pipoqueiro confia em você.",
   questions: [
     {
       id: "q1",

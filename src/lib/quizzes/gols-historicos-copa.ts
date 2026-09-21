@@ -19,7 +19,7 @@ export const golsHistoricosCopa: Quiz = {
     { label: "FIFA.com — Awards & Records", organization: "FIFA", accessedAt: "2026-07-12" },
   ],
   lastReviewedAt: "2026-07-12",
-  introText: "Gols de bicicleta, viradas épicas e finais decididas nos acréscimos — quanto você lembra dos momentos mais marcantes das Copas?",
+  introText: "Alguns gols transcendem o esporte e viram marcos culturais. O drible de Pelé em que ele passou pelo goleiro sem tocar na bola na Copa de 1970 é estudado em cursos de educação física até hoje. O gol de placa de Carlos Alberto na mesma final — um toque de calcanhar de Pelé, um cruzamento perfeito e uma pancada de primeira — é considerado por muitos o gol coletivo mais bonito já marcado em Copas.\n\nMas a história dos gols em Copas do Mundo também é feita de momentos que ninguém planejou: Maradona driblando seis ingleses em 1986, Zinedine Zidane fazendo dois gols de cabeça numa final e depois sendo expulso na seguinte, Götze marcando na prorrogação de 2014 com um domínio de peito que desafiava a gravidade, e Mbappé fazendo um hat-trick numa final que a França mesmo assim perdeu nos pênaltis em 2022.\n\nEste quiz reúne 15 perguntas sobre os gols e momentos ofensivos mais marcantes da história das Copas — de 1930 a 2022. Não é só sobre quem marcou: é sobre o contexto, o minuto, a consequência e o que aquele gol significou para a história do torneio. As explicações após cada resposta trazem dados da FIFA e detalhes que mesmo fãs dedicados podem ter esquecido.\n\nTrês vidas. Se você realmente viveu esses momentos, vai sobreviver.",
   questions: [
     {
       id: "q1",

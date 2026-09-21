@@ -19,7 +19,7 @@ export const bandeirasCopa2026: Quiz = {
     { label: "CIA World Factbook — Country Flags", organization: "CIA", accessedAt: "2026-07-12" },
   ],
   lastReviewedAt: "2026-07-12",
-  introText: "Cores, brasões e símbolos nacionais se misturam — aqui você precisa identificar corretamente as bandeiras das seleções classificadas para a Copa 2026.",
+  introText: "Uma bandeira nacional condensa séculos de história em um retângulo de tecido. As cores, os símbolos e os brasões que aparecem nelas não são decoração — são declarações de identidade. O verde e amarelo do Brasil remetem à Casa de Bragança e aos Habsburgo. A estrela solitária do Chile representa a unidade do Estado. A águia da Albânia vem de um selo do século XV associado a Skanderbeg, herói nacional da resistência contra o Império Otomano.\n\nQuando essas bandeiras aparecem juntas numa Copa do Mundo, o efeito visual é inconfundível — mas a capacidade de identificar cada uma é surpreendentemente rara. Estudos de vexilologia (a disciplina que estuda bandeiras) mostram que a maioria das pessoas reconhece menos de 30 bandeiras nacionais com segurança, mesmo entre países participantes de eventos globais.\n\nEste quiz apresenta 15 bandeiras de seleções classificadas para a Copa 2026 e pede que você identifique o país correto. Algumas são imediatas — ninguém confunde a bandeira da Argentina. Outras vão testar de verdade: você sabe diferenciar Costa do Marfim da Irlanda? Romênia do Chade? Austrália da Nova Zelândia?\n\nCada resposta vem acompanhada de um contexto sobre a origem e o significado dos elementos da bandeira, com base em dados da FIFA e do CIA World Factbook. Três vidas, 15 perguntas, zero margem para chute.",
   questions: [
     {
       id: "q1",

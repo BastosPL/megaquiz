@@ -20,7 +20,7 @@ export const timesBrasileiros: Quiz = {
     { label: "CONMEBOL — Libertadores", organization: "CONMEBOL", accessedAt: "2026-07-12" },
   ],
   lastReviewedAt: "2026-07-12",
-  introText: "Títulos, rivalidades, ídolos e estádios — perguntas sobre os grandes clubes do futebol brasileiro, da Série A aos clássicos regionais.",
+  introText: "O futebol brasileiro é o único do mundo onde o campeonato nacional tem 20 clubes com torcidas de milhões, onde um time da Série B lota estádio de 60 mil lugares e onde rivalidades regionais são tão intensas quanto qualquer clássico europeu. Flamengo e Vasco, Corinthians e Palmeiras, Grêmio e Inter, Bahia e Vitória — cada clássico carrega décadas de história, provocações e momentos que definem gerações inteiras de torcedores.\n\nOs números impressionam. O Flamengo tem a maior torcida do país, com estimativas que variam entre 40 e 50 milhões de pessoas. O Santos de Pelé é considerado um dos maiores times da história do futebol — entre 1962 e 1963, ganhou tudo que era possível ganhar. O Palmeiras acumula mais títulos nacionais do que qualquer outro clube. E o Sport Club do Recife tem uma disputa centenária com o Fluminense sobre quem realmente venceu o primeiro campeonato brasileiro em 1987.\n\nEste quiz cobre 20 perguntas sobre clubes, títulos, ídolos, estádios e rivalidades do futebol brasileiro — da Série A aos clássicos regionais que a televisão nem sempre mostra. As fontes incluem a CBF e a CONMEBOL, e as explicações trazem contexto histórico que vai além do resultado no placar.\n\nTrês vidas. Se você é daqueles que sabe mais sobre o seu time do que sobre a própria família, este quiz é para você.",
   questions: [
     {
       id: "q1",

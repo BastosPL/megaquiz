@@ -18,7 +18,7 @@ export const vestibular1990: Quiz = {
     { label: "Questões de vestibulares brasileiros (anos 1990)", organization: "Universidades brasileiras", accessedAt: "2026-07-12" },
   ],
   lastReviewedAt: "2026-07-12",
-  introText: "Questões inspiradas nos vestibulares dos anos 90 — época sem Google, sem calculadora e com muito conteúdo decorado. Será que você passaria?",
+  introText: "Nos anos 90, passar no vestibular era uma experiência completamente diferente. Não existia ENEM unificado — cada universidade aplicava sua própria prova, com seu próprio estilo e suas próprias manias. A FUVEST era temida pela interpretação de texto. A UNICAMP cobrava raciocínio lógico puro. A UERJ misturava atualidades com pegadinhas. E todas exigiam um nível de memorização que hoje parece absurdo: tabelas periódicas inteiras, datas históricas exatas, fórmulas de física sem consulta.\n\nO contexto era outro também. Não tinha Google para verificar um fato em 3 segundos. Não tinha calculadora permitida na maioria das provas. O material de estudo era o Objetivo, o Anglo ou o COC — apostilas enormes que os alunos carregavam em mochilas que pesavam mais que eles. E o cursinho pré-vestibular era quase um rito de passagem social: salas com 200 alunos, professores-celebridade e uma pressão que hoje seria considerada insalubre.\n\nEste quiz reúne 15 questões inspiradas no estilo e no conteúdo dos vestibulares brasileiros dos anos 1990 — história, geografia, ciências e atualidades da época. Não são questões oficiais reproduzidas, mas capturam o nível e o formato que caracterizavam aquelas provas.\n\nTrês vidas. Se você viveu os anos 90, é hora de provar que o cursinho valeu a pena. Se não viveu, boa sorte — vai precisar.",
   questions: [
     {
       id: "q1",

@@ -19,7 +19,7 @@ export const round6Sobreviveria: Quiz = {
     { label: "IMDb — Squid Game", url: "https://www.imdb.com/title/tt10919420/", organization: "IMDb", accessedAt: "2026-07-12" },
   ],
   lastReviewedAt: "2026-07-12",
-  introText: "Regras dos jogos, estratégias dos participantes e detalhes que passaram despercebidos — este quiz vai mostrar se você realmente prestou atenção em Round 6.",
+  introText: "Round 6 (Squid Game) não virou a série mais assistida da história da Netflix por ser apenas mais uma história de sobrevivência. A série sul-coreana criada por Hwang Dong-hyuk levou 13 anos para sair do papel — o roteiro original foi escrito em 2008 e rejeitado por todos os estúdios da Coreia do Sul. Quando finalmente estreou em setembro de 2021, quebrou todos os recordes da plataforma: 1,65 bilhão de horas assistidas nas primeiras 28 semanas.\n\nO que torna Round 6 diferente é a simplicidade perturbadora dos jogos. Batatinha frita 1-2-3, cabo de guerra, bolinhas de gude — são brincadeiras de criança transformadas em questões de vida ou morte. Mas a série esconde camadas de complexidade que muita gente perde na primeira assistida: o significado das cores dos uniformes (jogadores em verde = dinheiro; guardas em vermelho = poder), os números dos participantes (Gi-hun é 456, o último, o menos provável), e referências a obras como Battle Royale e A Metamorfose de Kafka.\n\nEste quiz reúne 15 perguntas sobre regras dos jogos, estratégias dos participantes, simbolismos visuais e detalhes de produção que só quem realmente prestou atenção — ou assistiu mais de uma vez — consegue acertar. As fontes incluem dados da Netflix e do IMDb.\n\nTrês vidas. Ironicamente, na série, uma era suficiente.",
   questions: [
     {
       id: "q1",

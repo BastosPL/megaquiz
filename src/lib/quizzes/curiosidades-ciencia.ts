@@ -19,7 +19,7 @@ export const curiosidadesCiencia: Quiz = {
     { label: "Britannica — Science", organization: "Encyclopædia Britannica", accessedAt: "2026-07-12" },
   ],
   lastReviewedAt: "2026-07-12",
-  introText: "Fatos sobre o espaço, o corpo humano, reações químicas e fenômenos naturais que parecem mentira mas são reais — e alguns que parecem reais mas não são.",
+  introText: "A ciência tem um problema de marketing: os fatos mais extraordinários parecem inventados, e os mitos mais absurdos parecem plausíveis. O Sol caberia 1,3 milhão de Terras dentro dele. Um fóton leva 8 minutos para chegar do Sol até seus olhos, mas levou 100 mil anos para sair do núcleo solar até a superfície. E o corpo humano produz, ao longo de uma vida, saliva suficiente para encher duas piscinas olímpicas.\n\nAo mesmo tempo, existe uma quantidade impressionante de 'fatos científicos' que as pessoas repetem com convicção e que são completamente falsos. Não, os seres humanos não usam apenas 10% do cérebro — ressonâncias magnéticas funcionais mostram que praticamente todas as regiões são ativas ao longo do dia. Não, a Grande Muralha da China não é visível a olho nu do espaço — astronautas como Chris Hadfield já desmentiram isso publicamente.\n\nEste quiz reúne 15 perguntas que transitam entre astronomia, biologia, química e física, misturando fatos reais que parecem absurdos com mitos que parecem verdadeiros. O objetivo é testar não apenas o que você sabe, mas a qualidade do seu filtro para distinguir ciência de senso comum. As explicações após cada resposta citam fontes como NASA e Encyclopædia Britannica.\n\nTrês vidas. Se você acha que sabe separar o real do inventado, este é o teste.",
   questions: [
     {
       id: "q1",
